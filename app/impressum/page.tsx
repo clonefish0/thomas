@@ -16,14 +16,14 @@ export default function ImpressumPage() {
                 <Link
                     href="/"
                     className="inline-flex items-center gap-2 text-sm mb-12 transition-colors duration-200"
-                    style={{ color: "rgba(186,214,247,0.5)" }}
+                    style={{ color: "rgba(247,180,180,0.5)" }}
                 >
                     ← Zurück
                 </Link>
 
                 <p
                     className="text-xs tracking-[0.18em] uppercase mb-4"
-                    style={{ color: "rgba(186,214,247,0.4)" }}
+                    style={{ color: "rgba(247,180,180,0.4)" }}
                 >
                     Rechtliches
                 </p>
@@ -36,12 +36,12 @@ export default function ImpressumPage() {
 
                 <div
                     className="space-y-10 text-sm leading-relaxed"
-                    style={{ color: "rgba(200,212,234,0.65)" }}
+                    style={{ color: "rgba(234,200,200,0.65)" }}
                 >
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "rgba(200,212,234,0.9)" }}
+                            style={{ color: "rgba(234,200,200,0.9)" }}
                         >
                             Angaben gemäß § 5 TMG
                         </h2>
@@ -56,13 +56,13 @@ export default function ImpressumPage() {
 
                     <div
                         className="h-px"
-                        style={{ background: "rgba(186,214,247,0.07)" }}
+                        style={{ background: "rgba(247,180,180,0.07)" }}
                     />
 
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "rgba(200,212,234,0.9)" }}
+                            style={{ color: "rgba(234,200,200,0.9)" }}
                         >
                             Kontakt
                         </h2>
@@ -70,7 +70,7 @@ export default function ImpressumPage() {
                             Telefon:{" "}
                             <a
                                 href="tel:+4917632692381"
-                                style={{ color: "rgba(186,214,247,0.7)" }}
+                                style={{ color: "rgba(247,180,180,0.7)" }}
                             >
                                 +49 176 326 923 81
                             </a>
@@ -78,7 +78,7 @@ export default function ImpressumPage() {
                             E-Mail:{" "}
                             <a
                                 href="mailto:thomas@cbta-coaching.de"
-                                style={{ color: "rgba(186,214,247,0.7)" }}
+                                style={{ color: "rgba(247,180,180,0.7)" }}
                             >
                                 thomas@cbta-coaching.de
                             </a>
@@ -87,13 +87,13 @@ export default function ImpressumPage() {
 
                     <div
                         className="h-px"
-                        style={{ background: "rgba(186,214,247,0.07)" }}
+                        style={{ background: "rgba(247,180,180,0.07)" }}
                     />
 
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "rgba(200,212,234,0.9)" }}
+                            style={{ color: "rgba(234,200,200,0.9)" }}
                         >
                             Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
                         </h2>
@@ -108,13 +108,13 @@ export default function ImpressumPage() {
 
                     <div
                         className="h-px"
-                        style={{ background: "rgba(186,214,247,0.07)" }}
+                        style={{ background: "rgba(247,180,180,0.07)" }}
                     />
 
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "rgba(200,212,234,0.9)" }}
+                            style={{ color: "rgba(234,200,200,0.9)" }}
                         >
                             Streitschlichtung
                         </h2>
@@ -124,7 +124,7 @@ export default function ImpressumPage() {
                                 href="https://ec.europa.eu/consumers/odr/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                style={{ color: "rgba(186,214,247,0.7)" }}
+                                style={{ color: "rgba(247,180,180,0.7)" }}
                             >
                                 https://ec.europa.eu/consumers/odr/
                             </a>
@@ -137,13 +137,13 @@ export default function ImpressumPage() {
 
                     <div
                         className="h-px"
-                        style={{ background: "rgba(186,214,247,0.07)" }}
+                        style={{ background: "rgba(247,180,180,0.07)" }}
                     />
 
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "rgba(200,212,234,0.9)" }}
+                            style={{ color: "rgba(234,200,200,0.9)" }}
                         >
                             Haftung für Inhalte
                         </h2>
@@ -155,7 +155,7 @@ export default function ImpressumPage() {
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "rgba(200,212,234,0.9)" }}
+                            style={{ color: "rgba(234,200,200,0.9)" }}
                         >
                             Haftung für Links
                         </h2>
@@ -167,7 +167,7 @@ export default function ImpressumPage() {
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "rgba(200,212,234,0.9)" }}
+                            style={{ color: "rgba(234,200,200,0.9)" }}
                         >
                             Urheberrecht
                         </h2>

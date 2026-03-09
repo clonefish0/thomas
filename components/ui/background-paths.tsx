@@ -44,7 +44,7 @@ export function BackgroundPaths({
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
                         className="text-xs tracking-[0.18em] uppercase mb-6"
-                        style={{ color: "rgba(200,212,234,0.45)", fontFamily: "var(--font-mono)" }}
+                        style={{ color: "rgba(234,200,200,0.45)", fontFamily: "var(--font-mono)" }}
                     >
                         cbta
                     </motion.p>
@@ -72,7 +72,7 @@ export function BackgroundPaths({
                                         className="inline-block text-transparent bg-clip-text"
                                         style={{
                                             backgroundImage:
-                                                "linear-gradient(160deg, #ffffff 30%, rgba(186,214,247,0.7) 100%)",
+                                                "linear-gradient(160deg, #ffffff 30%, rgba(247,180,180,0.7) 100%)",
                                         }}
                                     >
                                         {letter}
@@ -90,12 +90,12 @@ export function BackgroundPaths({
                         className="inline-block mb-10"
                     >
                         <HoverButton
-                            glowColor="rgba(186,214,247,0.85)"
+                            glowColor="rgba(247,180,180,0.85)"
                             backgroundColor="rgba(13,15,30,0.9)"
                             textColor="#ffffff"
-                            hoverTextColor="rgba(186,214,247,1)"
+                            hoverTextColor="rgba(247,180,180,1)"
                             className="px-8 py-6 text-lg font-semibold rounded-[1.15rem] backdrop-blur-md shadow-lg"
-                            style={{ border: "1px solid rgba(186,214,247,0.15)" }}
+                            style={{ border: "1px solid rgba(247,180,180,0.15)" }}
                         >
                             <span>Jetzt Termin buchen</span>
                             <span className="ml-3 opacity-70 transition-all duration-300">→</span>
@@ -113,12 +113,12 @@ export function BackgroundPaths({
                             <RippleButton
                                 key={label}
                                 variant="hoverborder"
-                                hoverBorderEffectColor="rgba(186,214,247,0.5)"
+                                hoverBorderEffectColor="rgba(247,180,180,0.5)"
                                 hoverBorderEffectThickness="1px"
-                                rippleColor="rgba(186,214,247,0.1)"
+                                rippleColor="rgba(247,180,180,0.1)"
                                 className="flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-medium"
                                 style={{
-                                    background: "rgba(186,214,247,0.06)",
+                                    background: "rgba(247,180,180,0.06)",
                                     color: "rgba(200,212,234,0.7)",
                                 }}
                                 onClick={() =>

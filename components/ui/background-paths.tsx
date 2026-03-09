@@ -1,8 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Youtube, Instagram, Music2 } from "lucide-react";
-import { HoverButton } from "@/components/ui/hover-glow-button";
-import { RippleButton } from "@/components/ui/ripple-button";
+import { GradientButton } from "@/components/ui/gradient-button";
 
 const socials = [
     {
@@ -89,17 +88,10 @@ export function BackgroundPaths({
                         transition={{ delay: 0.8, duration: 0.6 }}
                         className="inline-block mb-10"
                     >
-                        <HoverButton
-                            glowColor="rgba(185,85,15,0.85)"
-                            backgroundColor="rgba(13,9,2,0.9)"
-                            textColor="#ffffff"
-                            hoverTextColor="rgba(255,190,100,1)"
-                            className="px-8 py-6 text-lg font-semibold rounded-[1.15rem] backdrop-blur-md shadow-lg"
-                            style={{ border: "1px solid rgba(185,85,15,0.15)" }}
-                        >
-                            <span>Jetzt Termin buchen</span>
-                            <span className="ml-3 opacity-70 transition-all duration-300">→</span>
-                        </HoverButton>
+                        <GradientButton className="px-8 py-6 text-lg rounded-[1.15rem] shadow-lg">
+                            Jetzt Termin buchen
+                            <span className="opacity-70">→</span>
+                        </GradientButton>
                     </motion.div>
 
                     {/* Social Media Buttons */}
@@ -110,24 +102,17 @@ export function BackgroundPaths({
                         className="flex items-center justify-center gap-4"
                     >
                         {socials.map(({ label, href, icon: Icon }) => (
-                            <RippleButton
+                            <GradientButton
                                 key={label}
-                                variant="hoverborder"
-                                hoverBorderEffectColor="rgba(185,85,15,0.5)"
-                                hoverBorderEffectThickness="1px"
-                                rippleColor="rgba(185,85,15,0.1)"
-                                className="flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-medium"
-                                style={{
-                                    background: "rgba(185,85,15,0.08)",
-                                    color: "rgba(74,46,8,0.75)",
-                                }}
+                                variant="soft"
+                                className="px-5 py-3 rounded-xl text-sm"
                                 onClick={() =>
                                     window.open(href, "_blank", "noopener,noreferrer")
                                 }
                             >
-                                <Icon className="w-5 h-5" />
-                                <span>{label}</span>
-                            </RippleButton>
+                                <Icon className="w-4 h-4" />
+                                {label}
+                            </GradientButton>
                         ))}
                     </motion.div>
                 </motion.div>

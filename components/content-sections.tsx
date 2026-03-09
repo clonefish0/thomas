@@ -1,6 +1,6 @@
 "use client";
 import { motion, type Variants } from "framer-motion";
-import { HoverButton } from "@/components/ui/hover-glow-button";
+import { GradientButton } from "@/components/ui/gradient-button";
 
 const fadeUp: Variants = {
     hidden: { opacity: 0, y: 32 },
@@ -429,17 +429,13 @@ function CTASection() {
                             />
                         </motion.div>
                         <motion.div variants={fadeUp} className="flex justify-center">
-                            <HoverButton
-                                glowColor="rgba(185,85,15,0.85)"
-                                backgroundColor="rgba(13,9,2,0.9)"
-                                textColor="#ffffff"
-                                hoverTextColor="rgba(255,190,100,1)"
-                                className="px-10 py-5 text-base font-semibold rounded-[1.15rem] shadow-lg"
-                                style={{ border: "1px solid rgba(185,85,15,0.15)" }}
+                            <GradientButton
+                                type="submit"
+                                className="px-10 py-5 text-base rounded-[1.15rem] shadow-lg"
                             >
-                                <span>Nachricht senden</span>
-                                <span className="ml-3 opacity-70 transition-all duration-300">→</span>
-                            </HoverButton>
+                                Nachricht senden
+                                <span className="opacity-70">→</span>
+                            </GradientButton>
                         </motion.div>
                     </motion.form>
 

@@ -16,7 +16,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
     return (
         <p
             className="text-xs tracking-[0.18em] uppercase mb-4"
-            style={{ color: "rgba(186,214,247,0.5)" }}
+            style={{ color: "rgba(186,214,247,0.5)", fontFamily: "var(--font-mono)" }}
         >
             {children}
         </p>
@@ -189,7 +189,7 @@ function SolutionSection() {
                             >
                                 <h4
                                     className="text-base font-semibold mb-2"
-                                    style={{ color: "rgba(186,214,247,0.9)" }}
+                                    style={{ color: "rgba(186,214,247,0.9)", fontFamily: "var(--font-mono)" }}
                                 >
                                     {item.label}
                                 </h4>

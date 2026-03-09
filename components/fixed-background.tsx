@@ -22,7 +22,7 @@ function FloatingPaths({ position }: { position: number }) {
                     <motion.path
                         key={path.id}
                         d={path.d}
-                        stroke="rgba(247,180,180,1)"
+                        stroke="rgba(255,190,100,1)"
                         strokeWidth={path.width}
                         strokeOpacity={0.04 + path.id * 0.018}
                         initial={{ pathLength: 0.3, opacity: 0.6 }}
@@ -47,14 +47,14 @@ export function FixedBackground() {
     return (
         <div
             className="fixed inset-0 pointer-events-none overflow-hidden"
-            style={{ zIndex: 0, backgroundColor: "#0f0505" }}
+            style={{ zIndex: 0, backgroundColor: "#0d0900" }}
         >
             {/* Radial glow */}
             <div
                 className="absolute inset-0"
                 style={{
                     background:
-                        "radial-gradient(50% 50% at 50% 40%, rgba(190,45,45,0.12) 0%, transparent 70%)",
+                        "radial-gradient(50% 50% at 50% 40%, rgba(185,85,15,0.15) 0%, transparent 70%)",
                 }}
             />
             <FloatingPaths position={1} />

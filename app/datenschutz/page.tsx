@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const h2Style = {
-    color: "#b9550f",
+    color: "#cc2d18",
     fontFamily: "var(--font-mono)",
     letterSpacing: "0.04em",
 } as const;
@@ -17,14 +17,14 @@ const h3Style = {
 } as const;
 
 const divider = (
-    <div className="h-px my-8" style={{ background: "rgba(185,85,15,0.07)" }} />
+    <div className="h-px my-8" style={{ background: "rgba(190,40,20,0.07)" }} />
 );
 
 const metaLabel = {
     fontFamily: "var(--font-mono)",
     fontSize: "0.7rem",
     letterSpacing: "0.12em",
-    color: "#a04510",
+    color: "#a02010",
     textTransform: "uppercase" as const,
 };
 
@@ -32,7 +32,7 @@ function DataBox({ items }: { items: { label: string; value: string }[] }) {
     return (
         <div
             className="rounded-lg p-4 mt-4 space-y-2 text-xs leading-relaxed"
-            style={{ background: "rgba(185,85,15,0.04)", border: "1px solid rgba(185,85,15,0.08)" }}
+            style={{ background: "rgba(190,40,20,0.04)", border: "1px solid rgba(190,40,20,0.08)" }}
         >
             {items.map(({ label, value }) => (
                 <div key={label}>
@@ -53,7 +53,7 @@ export default function DatenschutzPage() {
                 <Link
                     href="/"
                     className="inline-flex items-center gap-2 text-sm mb-12 transition-colors duration-200"
-                    style={{ color: "#b9550f" }}
+                    style={{ color: "#cc2d18" }}
                 >
                     ← Zurück
                 </Link>
@@ -66,7 +66,7 @@ export default function DatenschutzPage() {
                 <h1 className="text-4xl font-bold tracking-tight mb-2" style={{ color: "#1c0e02" }}>
                     Datenschutz & AGB
                 </h1>
-                <p className="text-sm mb-12" style={{ color: "#a04510", fontFamily: "var(--font-mono)" }}>
+                <p className="text-sm mb-12" style={{ color: "#a02010", fontFamily: "var(--font-mono)" }}>
                     Stand: 25. November 2025
                 </p>
 
@@ -110,15 +110,15 @@ export default function DatenschutzPage() {
                             Heiligenstraße 44c<br />
                             40721 Hilden<br /><br />
                             E-Mail:{" "}
-                            <a href="mailto:thomas@cbta-coaching.de" style={{ color: "#c86a1a" }}>
+                            <a href="mailto:thomas@cbta-coaching.de" style={{ color: "#c83520" }}>
                                 thomas@cbta-coaching.de
                             </a><br />
                             Telefon:{" "}
-                            <a href="tel:+4917632692381" style={{ color: "#c86a1a" }}>
+                            <a href="tel:+4917632692381" style={{ color: "#c83520" }}>
                                 017632692381
                             </a><br />
                             Impressum:{" "}
-                            <a href="/impressum" style={{ color: "#c86a1a" }}>
+                            <a href="/impressum" style={{ color: "#c83520" }}>
                                 cbta-coaching.de/impressum
                             </a>
                         </p>
@@ -274,7 +274,7 @@ export default function DatenschutzPage() {
                             Diese zweifache Absicherung gewährleistet einen umfassenden Schutz Ihrer Daten: Das DPF bildet
                             die primäre Schutzebene, während die Standardvertragsklauseln als zusätzliche Sicherheit dienen.
                             Weitere Informationen zum DPF finden Sie auf der Website des US-Handelsministeriums unter{" "}
-                            <a href="https://www.dataprivacyframework.gov/" target="_blank" rel="noopener noreferrer" style={{ color: "#c86a1a" }}>
+                            <a href="https://www.dataprivacyframework.gov/" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>
                                 dataprivacyframework.gov
                             </a>.
                         </p>
@@ -414,10 +414,10 @@ export default function DatenschutzPage() {
                                 eine Cloud-Plattform für die Bereitstellung von Webanwendungen und stellt die Infrastruktur
                                 für unsere Website bereit; Dienstanbieter: Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA
                                 91789, USA; Rechtsgrundlage: Art. 6 Abs. 1 S. 1 lit. f) DSGVO; Website:{" "}
-                                <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" style={{ color: "#c86a1a" }}>
+                                <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>
                                     vercel.com
                                 </a>; Datenschutzerklärung:{" "}
-                                <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" style={{ color: "#c86a1a" }}>
+                                <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>
                                     vercel.com/legal/privacy-policy
                                 </a>; Grundlage Drittlandtransfers: Standardvertragsklauseln.
                             </p>
@@ -586,10 +586,10 @@ export default function DatenschutzPage() {
                                 Geolokalisierungsdaten verwendet, bevor sie sofort gelöscht werden; Dienstanbieter: Google
                                 Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland; Rechtsgrundlage: Art. 6 Abs.
                                 1 S. 1 lit. a) DSGVO (Einwilligung); Datenschutzerklärung:{" "}
-                                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: "#c86a1a" }}>
+                                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>
                                     policies.google.com/privacy
                                 </a>; Grundlage Drittlandtransfers: Data Privacy Framework (DPF); Opt-Out:{" "}
-                                <a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noopener noreferrer" style={{ color: "#c86a1a" }}>
+                                <a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>
                                     tools.google.com/dlpage/gaoptout
                                 </a>.
                             </p>
@@ -645,19 +645,19 @@ export default function DatenschutzPage() {
                             <p>
                                 <strong style={{ color: "#1c0e02" }}>Instagram:</strong> Soziales Netzwerk, ermöglicht das Teilen von Fotos und Videos;
                                 Dienstanbieter: Meta Platforms Ireland Limited, Merrion Road, Dublin 4, Irland; Website:{" "}
-                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: "#c86a1a" }}>instagram.com</a>;
+                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>instagram.com</a>;
                                 Datenschutzerklärung:{" "}
-                                <a href="https://privacycenter.instagram.com/policy/" target="_blank" rel="noopener noreferrer" style={{ color: "#c86a1a" }}>privacycenter.instagram.com/policy/</a>;
+                                <a href="https://privacycenter.instagram.com/policy/" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>privacycenter.instagram.com/policy/</a>;
                                 Grundlage Drittlandtransfers: Data Privacy Framework (DPF).
                             </p>
                             <p>
                                 <strong style={{ color: "#1c0e02" }}>YouTube:</strong> Soziales Netzwerk und Videoplattform;
                                 Dienstanbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland;
                                 Datenschutzerklärung:{" "}
-                                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: "#c86a1a" }}>policies.google.com/privacy</a>;
+                                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>policies.google.com/privacy</a>;
                                 Grundlage Drittlandtransfers: Data Privacy Framework (DPF);
                                 Opt-Out:{" "}
-                                <a href="https://myadcenter.google.com/personalizationoff" target="_blank" rel="noopener noreferrer" style={{ color: "#c86a1a" }}>myadcenter.google.com/personalizationoff</a>.
+                                <a href="https://myadcenter.google.com/personalizationoff" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>myadcenter.google.com/personalizationoff</a>.
                             </p>
                         </div>
                     </section>
@@ -684,17 +684,17 @@ export default function DatenschutzPage() {
                                 Bilder, Videos oder Texte und Schaltflächen gehören, mit denen Nutzer Inhalte innerhalb von
                                 Instagram teilen können; Dienstanbieter: Meta Platforms Ireland Limited, Merrion Road, Dublin
                                 4, Irland; Rechtsgrundlage: Art. 6 Abs. 1 S. 1 lit. f) DSGVO; Datenschutzerklärung:{" "}
-                                <a href="https://privacycenter.instagram.com/policy/" target="_blank" rel="noopener noreferrer" style={{ color: "#c86a1a" }}>privacycenter.instagram.com/policy/</a>.
+                                <a href="https://privacycenter.instagram.com/policy/" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>privacycenter.instagram.com/policy/</a>.
                             </p>
                             <p>
                                 <strong style={{ color: "#1c0e02" }}>YouTube-Videos:</strong> Videoinhalte; Dienstanbieter: Google Ireland Limited, Gordon House,
                                 Barrow Street, Dublin 4, Irland; Rechtsgrundlage: Art. 6 Abs. 1 S. 1 lit. a) DSGVO
                                 (Einwilligung); Website:{" "}
-                                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" style={{ color: "#c86a1a" }}>youtube.com</a>;
+                                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>youtube.com</a>;
                                 Datenschutzerklärung:{" "}
-                                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: "#c86a1a" }}>policies.google.com/privacy</a>;
+                                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>policies.google.com/privacy</a>;
                                 Grundlage Drittlandtransfers: Data Privacy Framework (DPF). Opt-Out:{" "}
-                                <a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noopener noreferrer" style={{ color: "#c86a1a" }}>
+                                <a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>
                                     tools.google.com/dlpage/gaoptout
                                 </a>.
                             </p>
@@ -827,7 +827,7 @@ export default function DatenschutzPage() {
                     {/*  AGB                                                     */}
                     {/* ──────────────────────────────────────────────────────── */}
 
-                    <div className="h-px my-12" style={{ background: "rgba(185,85,15,0.15)" }} />
+                    <div className="h-px my-12" style={{ background: "rgba(190,40,20,0.15)" }} />
 
                     <div className="pt-4">
                         <p
@@ -839,7 +839,7 @@ export default function DatenschutzPage() {
                         <h2 className="text-2xl font-semibold mb-2" style={{ ...h2Style, color: "#1c0e02" }}>
                             Allgemeine Geschäftsbedingungen
                         </h2>
-                        <p className="text-sm mb-10" style={{ color: "#a04510", fontFamily: "var(--font-mono)" }}>
+                        <p className="text-sm mb-10" style={{ color: "#a02010", fontFamily: "var(--font-mono)" }}>
                             CoachingbyThomasArndt · Stand: 2025
                         </p>
                     </div>
@@ -1053,10 +1053,10 @@ export default function DatenschutzPage() {
                     </div>
 
                     {/* Footer nav */}
-                    <div className="h-px mt-16 mb-8" style={{ background: "rgba(185,85,15,0.07)" }} />
+                    <div className="h-px mt-16 mb-8" style={{ background: "rgba(190,40,20,0.07)" }} />
                     <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between text-xs" style={{ color: "#4a2808" }}>
                         <span style={{ fontFamily: "var(--font-mono)" }}>cbta – Coaching by Thomas Arndt</span>
-                        <Link href="/impressum" style={{ color: "#b9550f" }}>→ Impressum</Link>
+                        <Link href="/impressum" style={{ color: "#cc2d18" }}>→ Impressum</Link>
                     </div>
                 </div>
             </div>

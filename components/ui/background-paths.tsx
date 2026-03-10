@@ -37,17 +37,6 @@ export function BackgroundPaths({
                     transition={{ duration: 2 }}
                     className="max-w-4xl mx-auto"
                 >
-                    {/* Label */}
-                    <motion.p
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3, duration: 0.8 }}
-                        className="text-xs tracking-[0.18em] uppercase mb-6"
-                        style={{ color: "#4a2808", fontFamily: "var(--font-mono)" }}
-                    >
-                        cbta
-                    </motion.p>
-
                     {/* Animated title */}
                     <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-10 tracking-tighter">
                         {words.map((word, wordIndex) => (
@@ -71,7 +60,7 @@ export function BackgroundPaths({
                                         className="inline-block text-transparent bg-clip-text"
                                         style={{
                                             backgroundImage:
-                                                "linear-gradient(160deg, #1c0e02 30%, rgba(185,85,15,0.9) 100%)",
+                                                "linear-gradient(160deg, #1c0e02 30%, rgba(190,40,20,0.9) 100%)",
                                         }}
                                     >
                                         {letter}

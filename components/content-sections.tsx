@@ -16,7 +16,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
     return (
         <p
             className="text-xs tracking-[0.18em] uppercase mb-4"
-            style={{ color: "#b9550f", fontFamily: "var(--font-mono)" }}
+            style={{ color: "#cc2d18", fontFamily: "var(--font-mono)" }}
         >
             {children}
         </p>
@@ -27,7 +27,7 @@ function Divider() {
     return (
         <div
             className="w-full h-px"
-            style={{ background: "linear-gradient(90deg, transparent, rgba(185,85,15,0.08), transparent)" }}
+            style={{ background: "linear-gradient(90deg, transparent, rgba(190,40,20,0.08), transparent)" }}
         />
     );
 }
@@ -73,7 +73,7 @@ function ProblemSection() {
                                 className="text-transparent bg-clip-text"
                                 style={{
                                     backgroundImage:
-                                        "linear-gradient(160deg, #1c0e02 30%, #b9550f 100%)",
+                                        "linear-gradient(160deg, #1c0e02 30%, #cc2d18 100%)",
                                 }}
                             >
                                 gescheitert ist
@@ -95,13 +95,13 @@ function ProblemSection() {
                             variants={fadeUp}
                             className="rounded-2xl p-8"
                             style={{
-                                background: "rgba(185,85,15,0.04)",
-                                border: "1px solid rgba(185,85,15,0.08)",
+                                background: "rgba(190,40,20,0.04)",
+                                border: "1px solid rgba(190,40,20,0.08)",
                             }}
                         >
                             <span
                                 className="text-xs font-mono tracking-widest mb-4 block"
-                                style={{ color: "#8a4a18" }}
+                                style={{ color: "#8a1e14" }}
                             >
                                 {p.number}
                             </span>
@@ -153,7 +153,7 @@ function SolutionSection() {
                                 className="text-transparent bg-clip-text"
                                 style={{
                                     backgroundImage:
-                                        "linear-gradient(160deg, #1c0e02 30%, #b9550f 100%)",
+                                        "linear-gradient(160deg, #1c0e02 30%, #cc2d18 100%)",
                                 }}
                             >
                                 Simpel umgesetzt.
@@ -183,13 +183,13 @@ function SolutionSection() {
                                 variants={fadeUp}
                                 className="rounded-2xl p-6"
                                 style={{
-                                    background: "rgba(185,85,15,0.06)",
-                                    border: "1px solid rgba(185,85,15,0.1)",
+                                    background: "rgba(190,40,20,0.06)",
+                                    border: "1px solid rgba(190,40,20,0.1)",
                                 }}
                             >
                                 <h4
                                     className="text-base font-semibold mb-2"
-                                    style={{ color: "#b9550f", fontFamily: "var(--font-mono)" }}
+                                    style={{ color: "#cc2d18", fontFamily: "var(--font-mono)" }}
                                 >
                                     {item.label}
                                 </h4>
@@ -251,7 +251,7 @@ function BenefitsSection() {
                                 className="text-transparent bg-clip-text"
                                 style={{
                                     backgroundImage:
-                                        "linear-gradient(160deg, #1c0e02 30%, #b9550f 100%)",
+                                        "linear-gradient(160deg, #1c0e02 30%, #cc2d18 100%)",
                                 }}
                             >
                                 Dein Körper zieht nach.
@@ -273,14 +273,14 @@ function BenefitsSection() {
                             variants={fadeUp}
                             className="rounded-2xl p-8 relative overflow-hidden"
                             style={{
-                                background: "rgba(185,85,15,0.04)",
-                                border: "1px solid rgba(185,85,15,0.08)",
+                                background: "rgba(190,40,20,0.04)",
+                                border: "1px solid rgba(190,40,20,0.08)",
                             }}
                         >
                             <div
                                 className="absolute top-0 left-0 w-full h-px"
                                 style={{
-                                    background: `linear-gradient(90deg, transparent, rgba(185,85,15,${0.2 + i * 0.1}), transparent)`,
+                                    background: `linear-gradient(90deg, transparent, rgba(190,40,20,${0.2 + i * 0.1}), transparent)`,
                                 }}
                             />
                             <h3
@@ -316,7 +316,7 @@ function CTASection() {
                 className="absolute inset-0 pointer-events-none"
                 style={{
                     background:
-                        "radial-gradient(50% 80% at 50% 100%, rgba(185,85,15,0.1) 0%, transparent 70%)",
+                        "radial-gradient(50% 80% at 50% 100%, rgba(190,40,20,0.1) 0%, transparent 70%)",
                 }}
             />
             <div className="relative max-w-3xl mx-auto pt-20 text-center">
@@ -338,7 +338,7 @@ function CTASection() {
                                 className="text-transparent bg-clip-text"
                                 style={{
                                     backgroundImage:
-                                        "linear-gradient(160deg, #1c0e02 30%, #b9550f 100%)",
+                                        "linear-gradient(160deg, #1c0e02 30%, #cc2d18 100%)",
                                 }}
                             >
                                 in meine Hände zu legen?
@@ -376,11 +376,11 @@ function CTASection() {
                                 className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
                                 style={{
                                     background: "rgba(255,255,255,0.85)",
-                                    border: "1px solid rgba(185,85,15,0.12)",
+                                    border: "1px solid rgba(190,40,20,0.12)",
                                     color: "#1c0e02",
                                 }}
-                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a4a18")}
-                                onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(185,85,15,0.12)")}
+                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a1e14")}
+                                onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(190,40,20,0.12)")}
                             />
                             <input
                                 name="email"
@@ -390,11 +390,11 @@ function CTASection() {
                                 className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
                                 style={{
                                     background: "rgba(255,255,255,0.85)",
-                                    border: "1px solid rgba(185,85,15,0.12)",
+                                    border: "1px solid rgba(190,40,20,0.12)",
                                     color: "#1c0e02",
                                 }}
-                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a4a18")}
-                                onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(185,85,15,0.12)")}
+                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a1e14")}
+                                onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(190,40,20,0.12)")}
                             />
                         </motion.div>
                         <motion.div variants={fadeUp}>
@@ -405,11 +405,11 @@ function CTASection() {
                                 className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
                                 style={{
                                     background: "rgba(255,255,255,0.85)",
-                                    border: "1px solid rgba(185,85,15,0.12)",
+                                    border: "1px solid rgba(190,40,20,0.12)",
                                     color: "#1c0e02",
                                 }}
-                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a4a18")}
-                                onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(185,85,15,0.12)")}
+                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a1e14")}
+                                onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(190,40,20,0.12)")}
                             />
                         </motion.div>
                         <motion.div variants={fadeUp}>
@@ -421,11 +421,11 @@ function CTASection() {
                                 className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200 resize-none"
                                 style={{
                                     background: "rgba(255,255,255,0.85)",
-                                    border: "1px solid rgba(185,85,15,0.12)",
+                                    border: "1px solid rgba(190,40,20,0.12)",
                                     color: "#1c0e02",
                                 }}
-                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a4a18")}
-                                onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(185,85,15,0.12)")}
+                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a1e14")}
+                                onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(190,40,20,0.12)")}
                             />
                         </motion.div>
                         <motion.div variants={fadeUp} className="flex justify-center">
@@ -447,14 +447,14 @@ function CTASection() {
                         Oder direkt:{" "}
                         <a
                             href="mailto:thomas@cbta-coaching.de"
-                            style={{ color: "#c05e12" }}
+                            style={{ color: "#c83520" }}
                         >
                             thomas@cbta-coaching.de
                         </a>
                         {" · "}
                         <a
                             href="tel:+4917632692381"
-                            style={{ color: "#c05e12" }}
+                            style={{ color: "#c83520" }}
                         >
                             +49 176 326 923 81
                         </a>

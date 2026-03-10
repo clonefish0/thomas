@@ -22,7 +22,7 @@ function FloatingPaths({ position }: { position: number }) {
                     <motion.path
                         key={path.id}
                         d={path.d}
-                        stroke="rgba(185,85,15,1)"
+                        stroke="rgba(190,40,20,1)"
                         strokeWidth={path.width}
                         strokeOpacity={0.025 + path.id * 0.009}
                         initial={{ pathLength: 0.3, opacity: 0.6 }}
@@ -54,7 +54,7 @@ export function FixedBackground() {
                 className="absolute inset-0"
                 style={{
                     background:
-                        "radial-gradient(60% 50% at 50% 30%, rgba(255,190,100,0.18) 0%, transparent 70%)",
+                        "radial-gradient(60% 50% at 50% 30%, rgba(200,40,20,0.1) 0%, transparent 70%)",
                 }}
             />
             <FloatingPaths position={1} />

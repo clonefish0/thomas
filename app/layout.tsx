@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { FixedBackground } from "@/components/fixed-background";
+import { SiteHeader } from "@/components/site-header";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -27,9 +28,10 @@ export default function RootLayout({
     <html lang="de" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
-        style={{ backgroundColor: "transparent", position: "relative", zIndex: 1 }}
+        style={{ backgroundColor: "transparent", position: "relative", zIndex: 1, paddingTop: "70px" }}
       >
         <FixedBackground />
+        <SiteHeader />
         {children}
       </body>
     </html>

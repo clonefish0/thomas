@@ -154,27 +154,27 @@
   }
   @property --color-1 {
     syntax: '<color>';
-    initial-value: #0d0500;
+    initial-value: #0a0202;
     inherits: false;
   }
   @property --color-2 {
     syntax: '<color>';
-    initial-value: #2c1205;
+    initial-value: #2a0604;
     inherits: false;
   }
   @property --color-3 {
     syntax: '<color>';
-    initial-value: #6b2e0c;
+    initial-value: #6e1008;
     inherits: false;
   }
   @property --color-4 {
     syntax: '<color>';
-    initial-value: #a54d12;
+    initial-value: #a01c0e;
     inherits: false;
   }
   @property --color-5 {
     syntax: '<color>';
-    initial-value: #c86a1e;
+    initial-value: #c82010;
     inherits: false;
   }
   @property --border-angle {
@@ -184,12 +184,12 @@
   }
   @property --border-color-1 {
     syntax: '<color>';
-    initial-value: hsla(28, 75%, 60%, 0.2);
+    initial-value: hsla(8, 75%, 60%, 0.2);
     inherits: true;
   }
   @property --border-color-2 {
     syntax: '<color>';
-    initial-value: hsla(28, 75%, 40%, 0.75);
+    initial-value: hsla(8, 75%, 40%, 0.75);
     inherits: true;
   }
   @property --stop-1 {
@@ -265,20 +265,20 @@
     mask-composite: exclude;
     pointer-events: none;
   }
-  /* Default hover: shift to warm amber glow */
+  /* Default hover: shift to vivid brand red */
   .gradient-button:hover {
     --pos-x: 0%;
     --pos-y: 91.51%;
     --spread-x: 120.24%;
     --spread-y: 103.18%;
-    --color-1: #d4751a;
-    --color-2: #c26018;
-    --color-3: #8a3d10;
-    --color-4: #2c1205;
-    --color-5: #0d0500;
+    --color-1: #d42c1a;
+    --color-2: #c02418;
+    --color-3: #881410;
+    --color-4: #2a0604;
+    --color-5: #0a0202;
     --border-angle: 190deg;
-    --border-color-1: hsla(28, 78%, 90%, 0.1);
-    --border-color-2: hsla(28, 75%, 90%, 0.6);
+    --border-color-1: hsla(8, 78%, 90%, 0.1);
+    --border-color-2: hsla(8, 75%, 90%, 0.6);
     --stop-1: 0%;
     --stop-2: 8.8%;
     --stop-3: 21.44%;
@@ -286,34 +286,34 @@
     --stop-5: 85.76%;
   }
 
-  /* ── Soft variant: slightly brighter amber, for secondary/social buttons ── */
+  /* ── Soft variant: secondary/social buttons ── */
   .gradient-button-soft {
-    --color-1: #1c0e02;
-    --color-2: #4a2208;
-    --color-3: #8a4218;
-    --color-4: #c06a20;
-    --color-5: #d4851e;
+    --color-1: #180806;
+    --color-2: #460a08;
+    --color-3: #821412;
+    --color-4: #be1e10;
+    --color-5: #d02a14;
     --border-angle: 200deg;
-    --border-color-1: hsla(30, 75%, 90%, 0.55);
-    --border-color-2: hsla(30, 50%, 60%, 0.15);
+    --border-color-1: hsla(8, 75%, 90%, 0.55);
+    --border-color-2: hsla(8, 50%, 60%, 0.15);
   }
   .gradient-button-soft:hover {
     --pos-x: 0%;
     --pos-y: 95.51%;
     --spread-x: 110.24%;
     --spread-y: 110.2%;
-    --color-1: #c86a1e;
-    --color-2: #a54d12;
-    --color-3: #6b2e0c;
-    --color-4: #2c1205;
-    --color-5: #0d0500;
+    --color-1: #c82010;
+    --color-2: #9e1a0e;
+    --color-3: #641010;
+    --color-4: #2a0604;
+    --color-5: #0a0202;
     --stop-1: 0%;
     --stop-2: 10%;
     --stop-3: 35.44%;
     --stop-4: 71.34%;
     --stop-5: 90.76%;
     --border-angle: 210deg;
-    --border-color-1: hsla(30, 75%, 90%, 0.2);
-    --border-color-2: hsla(30, 50%, 90%, 0.75);
+    --border-color-1: hsla(8, 75%, 90%, 0.2);
+    --border-color-2: hsla(8, 50%, 90%, 0.75);
   }
 }

@@ -16,14 +16,14 @@ export default function ImpressumPage() {
                 <Link
                     href="/"
                     className="inline-flex items-center gap-2 text-sm mb-12 transition-colors duration-200"
-                    style={{ color: "#b9550f" }}
+                    style={{ color: "#cc2d18" }}
                 >
                     ← Zurück
                 </Link>
 
                 <p
                     className="text-xs tracking-[0.18em] uppercase mb-4"
-                    style={{ color: "#a04510" }}
+                    style={{ color: "#a02010" }}
                 >
                     Rechtliches
                 </p>
@@ -56,7 +56,7 @@ export default function ImpressumPage() {
 
                     <div
                         className="h-px"
-                        style={{ background: "rgba(185,85,15,0.07)" }}
+                        style={{ background: "rgba(190,40,20,0.07)" }}
                     />
 
                     <section>
@@ -70,7 +70,7 @@ export default function ImpressumPage() {
                             Telefon:{" "}
                             <a
                                 href="tel:+4917632692381"
-                                style={{ color: "#c86a1a" }}
+                                style={{ color: "#c83520" }}
                             >
                                 +49 176 326 923 81
                             </a>
@@ -78,7 +78,7 @@ export default function ImpressumPage() {
                             E-Mail:{" "}
                             <a
                                 href="mailto:thomas@cbta-coaching.de"
-                                style={{ color: "#c86a1a" }}
+                                style={{ color: "#c83520" }}
                             >
                                 thomas@cbta-coaching.de
                             </a>
@@ -87,7 +87,7 @@ export default function ImpressumPage() {
 
                     <div
                         className="h-px"
-                        style={{ background: "rgba(185,85,15,0.07)" }}
+                        style={{ background: "rgba(190,40,20,0.07)" }}
                     />
 
                     <section>
@@ -108,7 +108,7 @@ export default function ImpressumPage() {
 
                     <div
                         className="h-px"
-                        style={{ background: "rgba(185,85,15,0.07)" }}
+                        style={{ background: "rgba(190,40,20,0.07)" }}
                     />
 
                     <section>
@@ -124,7 +124,7 @@ export default function ImpressumPage() {
                                 href="https://ec.europa.eu/consumers/odr/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                style={{ color: "#c86a1a" }}
+                                style={{ color: "#c83520" }}
                             >
                                 https://ec.europa.eu/consumers/odr/
                             </a>
@@ -137,7 +137,7 @@ export default function ImpressumPage() {
 
                     <div
                         className="h-px"
-                        style={{ background: "rgba(185,85,15,0.07)" }}
+                        style={{ background: "rgba(190,40,20,0.07)" }}
                     />
 
                     <section>

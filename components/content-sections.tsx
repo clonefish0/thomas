@@ -306,14 +306,14 @@ function BenefitsSection() {
 
 // ─── CTA Section ───────────────────────────────────────────────────
 const inputStyle = {
-    background: "rgba(255,255,255,0.9)",
-    border: "1px solid rgba(210,32,10,0.12)",
+    background: "rgba(0,0,0,0.04)",
+    border: "1.5px solid rgba(210,32,10,0.18)",
     color: "#1c0e02",
 };
 const focusBorder = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     (e.currentTarget.style.borderColor = "#8a1e14");
 const blurBorder = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) =>
-    (e.currentTarget.style.borderColor = "rgba(210,32,10,0.12)");
+    (e.currentTarget.style.borderColor = "rgba(210,32,10,0.18)");
 
 function CTASection() {
     const [tab, setTab] = useState<"frage" | "termin">("frage");

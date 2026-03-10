@@ -409,67 +409,57 @@ function CTASection() {
 
                     {/* ── Frage stellen ── */}
                     {tab === "frage" && (
-                        <motion.form
-                            key="frage"
-                            variants={stagger}
+                        <form
                             className="flex flex-col gap-4 text-left mb-10"
                             onSubmit={(e) => buildMailto(e, "Coaching-Anfrage")}
                         >
-                            <motion.div variants={fadeUp} className="grid sm:grid-cols-2 gap-4">
+                            <div className="grid sm:grid-cols-2 gap-4">
                                 <input name="name" type="text" placeholder="Name" required
                                     className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
                                     style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
                                 <input name="email" type="email" placeholder="E-Mail" required
                                     className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
                                     style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
-                            </motion.div>
-                            <motion.div variants={fadeUp}>
-                                <input name="betreff" type="text" placeholder="Betreff"
-                                    className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
-                                    style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
-                            </motion.div>
-                            <motion.div variants={fadeUp}>
-                                <textarea name="nachricht" placeholder="Deine Frage" rows={5} required
-                                    className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200 resize-none"
-                                    style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
-                            </motion.div>
-                            <motion.div variants={fadeUp} className="flex justify-center">
+                            </div>
+                            <input name="betreff" type="text" placeholder="Betreff"
+                                className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
+                                style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
+                            <textarea name="nachricht" placeholder="Deine Frage" rows={5} required
+                                className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200 resize-none"
+                                style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
+                            <div className="flex justify-center">
                                 <GradientButton type="submit" className="px-10 py-5 text-base rounded-[1.15rem] shadow-lg">
                                     Frage senden <span className="opacity-70">→</span>
                                 </GradientButton>
-                            </motion.div>
-                        </motion.form>
+                            </div>
+                        </form>
                     )}
 
                     {/* ── Termin buchen ── */}
                     {tab === "termin" && (
-                        <motion.form
-                            key="termin"
-                            variants={stagger}
+                        <form
                             className="flex flex-col gap-4 text-left mb-10"
                             onSubmit={(e) => buildMailto(e, "Terminanfrage")}
                         >
-                            <motion.div variants={fadeUp} className="grid sm:grid-cols-2 gap-4">
+                            <div className="grid sm:grid-cols-2 gap-4">
                                 <input name="name" type="text" placeholder="Name" required
                                     className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
                                     style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
                                 <input name="email" type="email" placeholder="E-Mail" required
                                     className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
                                     style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
-                            </motion.div>
-                            <motion.div variants={fadeUp}>
-                                <textarea name="nachricht"
-                                    placeholder="Nenn mir deinen Wunschtermin und was du dir vom Coaching erhoffst."
-                                    rows={5} required
-                                    className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200 resize-none"
-                                    style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
-                            </motion.div>
-                            <motion.div variants={fadeUp} className="flex justify-center">
+                            </div>
+                            <textarea name="nachricht"
+                                placeholder="Nenn mir deinen Wunschtermin und was du dir vom Coaching erhoffst."
+                                rows={5} required
+                                className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200 resize-none"
+                                style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
+                            <div className="flex justify-center">
                                 <GradientButton type="submit" className="px-10 py-5 text-base rounded-[1.15rem] shadow-lg">
                                     Termin anfragen <span className="opacity-70">→</span>
                                 </GradientButton>
-                            </motion.div>
-                        </motion.form>
+                            </div>
+                        </form>
                     )}
 
                     <motion.p

@@ -43,7 +43,7 @@ export function BackgroundPaths({
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
                         className="text-xs tracking-[0.18em] uppercase mb-6"
-                        style={{ color: "rgba(74,46,8,0.45)", fontFamily: "var(--font-mono)" }}
+                        style={{ color: "#4a2808", fontFamily: "var(--font-mono)" }}
                     >
                         cbta
                     </motion.p>

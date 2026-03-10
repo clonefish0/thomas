@@ -16,7 +16,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
     return (
         <p
             className="text-xs tracking-[0.18em] uppercase mb-4"
-            style={{ color: "rgba(185,85,15,0.5)", fontFamily: "var(--font-mono)" }}
+            style={{ color: "#b9550f", fontFamily: "var(--font-mono)" }}
         >
             {children}
         </p>
@@ -73,7 +73,7 @@ function ProblemSection() {
                                 className="text-transparent bg-clip-text"
                                 style={{
                                     backgroundImage:
-                                        "linear-gradient(160deg, #1c0e02 30%, rgba(185,85,15,0.9) 100%)",
+                                        "linear-gradient(160deg, #1c0e02 30%, #b9550f 100%)",
                                 }}
                             >
                                 gescheitert ist
@@ -101,7 +101,7 @@ function ProblemSection() {
                         >
                             <span
                                 className="text-xs font-mono tracking-widest mb-4 block"
-                                style={{ color: "rgba(185,85,15,0.35)" }}
+                                style={{ color: "#8a4a18" }}
                             >
                                 {p.number}
                             </span>
@@ -113,7 +113,7 @@ function ProblemSection() {
                             </h3>
                             <p
                                 className="text-base leading-relaxed"
-                                style={{ color: "rgba(74,46,8,0.65)" }}
+                                style={{ color: "#3d1e05" }}
                             >
                                 {p.text}
                             </p>
@@ -153,7 +153,7 @@ function SolutionSection() {
                                 className="text-transparent bg-clip-text"
                                 style={{
                                     backgroundImage:
-                                        "linear-gradient(160deg, #1c0e02 30%, rgba(185,85,15,0.9) 100%)",
+                                        "linear-gradient(160deg, #1c0e02 30%, #b9550f 100%)",
                                 }}
                             >
                                 Simpel umgesetzt.
@@ -164,7 +164,7 @@ function SolutionSection() {
                     <motion.p
                         variants={fadeUp}
                         className="text-lg max-w-2xl mx-auto leading-relaxed mb-16"
-                        style={{ color: "rgba(74,46,8,0.65)" }}
+                        style={{ color: "#3d1e05" }}
                     >
                         Ich erkläre komplizierte Konzepte in verständlicher Sprache – so dass du sie sofort anwenden kannst. Kein Overwhelming, keine Verwirrung. Du übernimmst die Ausführung, ich die Planung und Verantwortung.
                     </motion.p>
@@ -189,13 +189,13 @@ function SolutionSection() {
                             >
                                 <h4
                                     className="text-base font-semibold mb-2"
-                                    style={{ color: "rgba(185,85,15,0.9)", fontFamily: "var(--font-mono)" }}
+                                    style={{ color: "#b9550f", fontFamily: "var(--font-mono)" }}
                                 >
                                     {item.label}
                                 </h4>
                                 <p
                                     className="text-sm leading-relaxed"
-                                    style={{ color: "rgba(74,46,8,0.6)" }}
+                                    style={{ color: "#3d1e05" }}
                                 >
                                     {item.text}
                                 </p>
@@ -251,7 +251,7 @@ function BenefitsSection() {
                                 className="text-transparent bg-clip-text"
                                 style={{
                                     backgroundImage:
-                                        "linear-gradient(160deg, #1c0e02 30%, rgba(185,85,15,0.9) 100%)",
+                                        "linear-gradient(160deg, #1c0e02 30%, #b9550f 100%)",
                                 }}
                             >
                                 Dein Körper zieht nach.
@@ -291,7 +291,7 @@ function BenefitsSection() {
                             </h3>
                             <p
                                 className="text-base leading-relaxed"
-                                style={{ color: "rgba(74,46,8,0.65)" }}
+                                style={{ color: "#3d1e05" }}
                             >
                                 {b.text}
                             </p>
@@ -338,7 +338,7 @@ function CTASection() {
                                 className="text-transparent bg-clip-text"
                                 style={{
                                     backgroundImage:
-                                        "linear-gradient(160deg, #1c0e02 30%, rgba(185,85,15,0.9) 100%)",
+                                        "linear-gradient(160deg, #1c0e02 30%, #b9550f 100%)",
                                 }}
                             >
                                 in meine Hände zu legen?
@@ -349,7 +349,7 @@ function CTASection() {
                     <motion.p
                         variants={fadeUp}
                         className="text-lg mb-12 leading-relaxed"
-                        style={{ color: "rgba(74,46,8,0.6)" }}
+                        style={{ color: "#3d1e05" }}
                     >
                         Schreib mir – ich melde mich persönlich zurück.
                     </motion.p>
@@ -379,7 +379,7 @@ function CTASection() {
                                     border: "1px solid rgba(185,85,15,0.12)",
                                     color: "#1c0e02",
                                 }}
-                                onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(185,85,15,0.35)")}
+                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a4a18")}
                                 onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(185,85,15,0.12)")}
                             />
                             <input
@@ -393,7 +393,7 @@ function CTASection() {
                                     border: "1px solid rgba(185,85,15,0.12)",
                                     color: "#1c0e02",
                                 }}
-                                onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(185,85,15,0.35)")}
+                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a4a18")}
                                 onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(185,85,15,0.12)")}
                             />
                         </motion.div>
@@ -408,7 +408,7 @@ function CTASection() {
                                     border: "1px solid rgba(185,85,15,0.12)",
                                     color: "#1c0e02",
                                 }}
-                                onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(185,85,15,0.35)")}
+                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a4a18")}
                                 onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(185,85,15,0.12)")}
                             />
                         </motion.div>
@@ -424,7 +424,7 @@ function CTASection() {
                                     border: "1px solid rgba(185,85,15,0.12)",
                                     color: "#1c0e02",
                                 }}
-                                onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(185,85,15,0.35)")}
+                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a4a18")}
                                 onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(185,85,15,0.12)")}
                             />
                         </motion.div>
@@ -442,19 +442,19 @@ function CTASection() {
                     <motion.p
                         variants={fadeUp}
                         className="text-sm"
-                        style={{ color: "rgba(74,46,8,0.35)" }}
+                        style={{ color: "#4a2808" }}
                     >
                         Oder direkt:{" "}
                         <a
                             href="mailto:thomas@cbta-coaching.de"
-                            style={{ color: "rgba(185,85,15,0.6)" }}
+                            style={{ color: "#c05e12" }}
                         >
                             thomas@cbta-coaching.de
                         </a>
                         {" · "}
                         <a
                             href="tel:+4917632692381"
-                            style={{ color: "rgba(185,85,15,0.6)" }}
+                            style={{ color: "#c05e12" }}
                         >
                             +49 176 326 923 81
                         </a>

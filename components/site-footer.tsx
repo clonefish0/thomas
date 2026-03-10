@@ -14,10 +14,10 @@ export function SiteFooter() {
             style={{ borderTop: "1px solid rgba(185,85,15,0.07)" }}
         >
             <style>{`
-                .footer-social { color: rgba(74,46,8,0.35); transition: color 0.2s; }
-                .footer-social:hover { color: rgba(185,85,15,0.8); }
-                .footer-link { color: rgba(74,46,8,0.35); transition: color 0.2s; }
-                .footer-link:hover { color: rgba(185,85,15,0.7); }
+                .footer-social { color: #4a2808; transition: color 0.2s; }
+                .footer-social:hover { color: #b9550f; }
+                .footer-link { color: #4a2808; transition: color 0.2s; }
+                .footer-link:hover { color: #b9550f; }
             `}</style>
             <div className="max-w-5xl mx-auto">
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-8">
@@ -25,7 +25,7 @@ export function SiteFooter() {
                     <div>
                         <p
                             className="text-xs tracking-[0.18em] uppercase mb-1"
-                            style={{ color: "rgba(185,85,15,0.5)" }}
+                            style={{ color: "#b9550f" }}
                         >
                             cbta
                         </p>

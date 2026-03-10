@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Youtube, Instagram, Music2 } from "lucide-react";
 import { GradientButton } from "@/components/ui/gradient-button";
 
@@ -21,13 +22,7 @@ const socials = [
     },
 ];
 
-export function BackgroundPaths({
-    title = "Background Paths",
-}: {
-    title?: string;
-}) {
-    const words = title.split(" ");
-
+export function BackgroundPaths() {
     return (
         <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
             <div className="relative z-10 container mx-auto px-4 md:px-6 text-center">
@@ -37,64 +32,40 @@ export function BackgroundPaths({
                     transition={{ duration: 2 }}
                     className="max-w-4xl mx-auto"
                 >
-                    {/* Animated title */}
-                    <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-10 tracking-tighter">
-                        {words.map((word, wordIndex) => (
-                            <span
-                                key={wordIndex}
-                                className="inline-block mr-4 last:mr-0"
-                            >
-                                {word.split("").map((letter, letterIndex) => (
-                                    <motion.span
-                                        key={`${wordIndex}-${letterIndex}`}
-                                        initial={{ y: 100, opacity: 0 }}
-                                        animate={{ y: 0, opacity: 1 }}
-                                        transition={{
-                                            delay:
-                                                wordIndex * 0.1 +
-                                                letterIndex * 0.03,
-                                            type: "spring",
-                                            stiffness: 150,
-                                            damping: 25,
-                                        }}
-                                        className="inline-block text-transparent bg-clip-text"
-                                        style={{
-                                            backgroundImage:
-                                                "linear-gradient(160deg, #f0e8e0 30%, rgba(220,60,30,1) 100%)",
-                                        }}
-                                    >
-                                        {letter}
-                                    </motion.span>
-                                ))}
-                            </span>
-                        ))}
-                    </h1>
-
-                    {/* CTA Button */}
+                    {/* Logo */}
                     <motion.div
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.8, duration: 0.6 }}
-                        className="inline-block mb-10"
+                        initial={{ opacity: 0, scale: 0.85 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.2, duration: 0.9, ease: "easeOut" }}
+                        className="flex justify-center mb-8"
                     >
-                        <GradientButton
-                            className="px-8 py-6 text-lg rounded-[1.15rem] shadow-lg"
-                            onClick={() =>
-                                document
-                                    .getElementById("kontakt")
-                                    ?.scrollIntoView({ behavior: "smooth" })
-                            }
-                        >
-                            Jetzt Termin buchen
-                            <span className="opacity-70">→</span>
-                        </GradientButton>
+                        <Image
+                            src="/Logo.png"
+                            alt="cbta – Coaching by Thomas Arndt"
+                            width={380}
+                            height={380}
+                            quality={100}
+                            className="rounded-none"
+                            priority
+                        />
                     </motion.div>
+
+                    {/* Welcome text */}
+                    <motion.p
+                        initial={{ opacity: 0, y: 12 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.9, duration: 0.8 }}
+                        className="text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed"
+                        style={{ color: "#c0a898" }}
+                    >
+                        Willkommen. Ich bin Thomas – dein Coach für Ernährung, Training und nachhaltige Veränderung. Hier findest du alles, was du brauchst, um endlich voranzukommen.
+                    </motion.p>
 
                     {/* Social Media Buttons */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 1.2, duration: 0.8 }}
+                        transition={{ delay: 1.3, duration: 0.8 }}
                         className="flex items-center justify-center gap-4"
                     >
                         {socials.map(({ label, href, icon: Icon }) => (

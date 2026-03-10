@@ -16,7 +16,7 @@ function FloatingPaths({ position }: { position: number }) {
 
     return (
         <div className="absolute inset-0 pointer-events-none">
-            <svg className="w-full h-full" viewBox="0 0 696 316" fill="none">
+            <svg className="w-full h-full" viewBox="0 0 696 316" fill="none" preserveAspectRatio="xMidYMid slice">
                 <title>Background Paths</title>
                 {paths.map((path) => (
                     <motion.path
@@ -54,7 +54,7 @@ export function FixedBackground() {
                 className="absolute inset-0"
                 style={{
                     background:
-                        "radial-gradient(60% 50% at 50% 30%, rgba(200,40,20,0.18) 0%, transparent 70%)",
+                        "radial-gradient(60% 50% at 50% 30%, rgba(200,40,20,0.15) 0%, transparent 70%)",
                 }}
             />
             <FloatingPaths position={1} />

@@ -143,47 +143,56 @@
   }
 }
 
-@layer components {
-  /* ── Solid glass button – primary CTA ── */
-  .gradient-button {
-    @apply relative appearance-none cursor-pointer;
-    background: #d42010;
-    border: 1px solid rgba(180, 20, 4, 0.35);
-    box-shadow:
-      0 2px 16px rgba(180, 20, 4, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.22),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.12);
-    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
-  }
-  .gradient-button:hover {
-    background: #e8200a;
-    box-shadow:
-      0 4px 24px rgba(180, 20, 4, 0.4),
-      inset 0 1px 0 rgba(255, 255, 255, 0.28),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.12);
-    transform: translateY(-1px);
-  }
-  .gradient-button:active {
-    transform: translateY(0);
-  }
+/* ── Button styles außerhalb @layer → schlägt alle Tailwind Utilities ── */
 
-  /* ── Glass button – soft/secondary ── */
-  .gradient-button-soft {
-    background: rgba(210, 30, 10, 0.07);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(210, 30, 10, 0.22);
-    box-shadow:
-      0 1px 8px rgba(200, 30, 10, 0.08),
-      inset 0 1px 0 rgba(255, 255, 255, 0.55);
-    transition: background 0.25s, box-shadow 0.25s, border-color 0.25s, transform 0.15s;
-  }
-  .gradient-button-soft:hover {
-    background: rgba(210, 30, 10, 0.13);
-    border-color: rgba(210, 30, 10, 0.38);
-    box-shadow:
-      0 2px 14px rgba(200, 30, 10, 0.15),
-      inset 0 1px 0 rgba(255, 255, 255, 0.6);
-    transform: translateY(-1px);
-  }
+.gradient-button {
+  position: relative;
+  appearance: none;
+  cursor: pointer;
+  background: #d42010;
+  border: 1px solid rgba(160, 18, 4, 0.4);
+  box-shadow:
+    0 2px 20px rgba(180, 20, 4, 0.38),
+    0 1px 4px rgba(180, 20, 4, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.24),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.14);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+.gradient-button:hover {
+  background: #e5200a;
+  box-shadow:
+    0 6px 28px rgba(180, 20, 4, 0.48),
+    0 2px 8px rgba(180, 20, 4, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.30),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.14);
+  transform: translateY(-1px);
+}
+.gradient-button:active {
+  transform: translateY(0);
+  box-shadow:
+    0 1px 8px rgba(180, 20, 4, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.gradient-button-soft {
+  background: rgba(210, 30, 10, 0.10);
+  border: 1px solid rgba(190, 40, 20, 0.32);
+  box-shadow:
+    0 1px 8px rgba(190, 40, 20, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.18);
+  transition: background 0.25s, box-shadow 0.25s, border-color 0.25s, transform 0.15s;
+}
+.gradient-button-soft:hover {
+  background: rgba(210, 30, 10, 0.18);
+  border-color: rgba(190, 40, 20, 0.50);
+  box-shadow:
+    0 3px 16px rgba(190, 40, 20, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.18);
+  transform: translateY(-1px);
+}
+.gradient-button-soft:active {
+  transform: translateY(0);
 }

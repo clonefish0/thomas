@@ -9,7 +9,7 @@ const gradientButtonVariants = cva(
     "gradient-button",
     "inline-flex items-center justify-center gap-2",
     "rounded-[11px] min-w-0 px-9 py-4",
-    "text-base leading-[19px] font-[500] text-white",
+    "text-base leading-[19px] font-[500]",
     "font-sans font-bold",
     "focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring",
     "disabled:pointer-events-none disabled:opacity-50",
@@ -17,8 +17,8 @@ const gradientButtonVariants = cva(
   {
     variants: {
       variant: {
-        default: "",
-        soft: "gradient-button-soft",
+        default: "text-white",
+        soft: "gradient-button-soft text-[#d42010]",
       },
     },
     defaultVariants: {

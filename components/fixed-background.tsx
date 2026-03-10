@@ -47,7 +47,7 @@ export function FixedBackground() {
     return (
         <div
             className="fixed inset-0 pointer-events-none overflow-hidden"
-            style={{ zIndex: 0, backgroundColor: "#faf6f0" }}
+            style={{ zIndex: 0, backgroundColor: "#ffffff" }}
         >
             {/* Radial glow */}
             <div

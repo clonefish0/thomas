@@ -77,7 +77,14 @@ export function BackgroundPaths({
                         transition={{ delay: 0.8, duration: 0.6 }}
                         className="inline-block mb-10"
                     >
-                        <GradientButton className="px-8 py-6 text-lg rounded-[1.15rem] shadow-lg">
+                        <GradientButton
+                            className="px-8 py-6 text-lg rounded-[1.15rem] shadow-lg"
+                            onClick={() =>
+                                document
+                                    .getElementById("kontakt")
+                                    ?.scrollIntoView({ behavior: "smooth" })
+                            }
+                        >
                             Jetzt Termin buchen
                             <span className="opacity-70">→</span>
                         </GradientButton>

@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import { motion, type Variants } from "framer-motion";
 import { GradientButton } from "@/components/ui/gradient-button";
 
@@ -304,9 +305,30 @@ function BenefitsSection() {
 }
 
 // ─── CTA Section ───────────────────────────────────────────────────
+const inputStyle = {
+    background: "rgba(255,255,255,0.9)",
+    border: "1px solid rgba(210,32,10,0.12)",
+    color: "#1c0e02",
+};
+const focusBorder = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+    (e.currentTarget.style.borderColor = "#8a1e14");
+const blurBorder = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+    (e.currentTarget.style.borderColor = "rgba(210,32,10,0.12)");
+
 function CTASection() {
+    const [tab, setTab] = useState<"frage" | "termin">("frage");
+
+    const buildMailto = (e: React.FormEvent<HTMLFormElement>, defaultSubject: string) => {
+        e.preventDefault();
+        const fd = new FormData(e.currentTarget);
+        const subject = encodeURIComponent((fd.get("betreff") as string) || defaultSubject);
+        const body = encodeURIComponent(`Name: ${fd.get("name")}\n\n${fd.get("nachricht")}`);
+        window.location.href = `mailto:thomas@cbta-coaching.de?subject=${subject}&body=${body}`;
+    };
+
     return (
         <section
+            id="kontakt"
             className="relative py-28 px-6"
             style={{ backgroundColor: "transparent" }}
         >
@@ -316,7 +338,7 @@ function CTASection() {
                 className="absolute inset-0 pointer-events-none"
                 style={{
                     background:
-                        "radial-gradient(50% 80% at 50% 100%, rgba(190,40,20,0.1) 0%, transparent 70%)",
+                        "radial-gradient(50% 80% at 50% 100%, rgba(210,32,10,0.1) 0%, transparent 70%)",
                 }}
             />
             <div className="relative max-w-3xl mx-auto pt-20 text-center">
@@ -348,96 +370,107 @@ function CTASection() {
 
                     <motion.p
                         variants={fadeUp}
-                        className="text-lg mb-12 leading-relaxed"
+                        className="text-lg mb-10 leading-relaxed"
                         style={{ color: "#3d1e05" }}
                     >
                         Schreib mir – ich melde mich persönlich zurück.
                     </motion.p>
 
-                    <motion.form
-                        variants={stagger}
-                        className="flex flex-col gap-4 text-left mb-10"
-                        onSubmit={(e) => {
-                            e.preventDefault();
-                            const fd = new FormData(e.currentTarget);
-                            const subject = encodeURIComponent(fd.get("betreff") as string || "Coaching-Anfrage");
-                            const body = encodeURIComponent(
-                                `Name: ${fd.get("name")}\n\n${fd.get("nachricht")}`
-                            );
-                            window.location.href = `mailto:thomas@cbta-coaching.de?subject=${subject}&body=${body}`;
-                        }}
-                    >
-                        <motion.div variants={fadeUp} className="grid sm:grid-cols-2 gap-4">
-                            <input
-                                name="name"
-                                type="text"
-                                placeholder="Name"
-                                required
-                                className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
-                                style={{
-                                    background: "rgba(255,255,255,0.85)",
-                                    border: "1px solid rgba(190,40,20,0.12)",
-                                    color: "#1c0e02",
-                                }}
-                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a1e14")}
-                                onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(190,40,20,0.12)")}
-                            />
-                            <input
-                                name="email"
-                                type="email"
-                                placeholder="E-Mail"
-                                required
-                                className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
-                                style={{
-                                    background: "rgba(255,255,255,0.85)",
-                                    border: "1px solid rgba(190,40,20,0.12)",
-                                    color: "#1c0e02",
-                                }}
-                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a1e14")}
-                                onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(190,40,20,0.12)")}
-                            />
-                        </motion.div>
-                        <motion.div variants={fadeUp}>
-                            <input
-                                name="betreff"
-                                type="text"
-                                placeholder="Betreff"
-                                className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
-                                style={{
-                                    background: "rgba(255,255,255,0.85)",
-                                    border: "1px solid rgba(190,40,20,0.12)",
-                                    color: "#1c0e02",
-                                }}
-                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a1e14")}
-                                onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(190,40,20,0.12)")}
-                            />
-                        </motion.div>
-                        <motion.div variants={fadeUp}>
-                            <textarea
-                                name="nachricht"
-                                placeholder="Deine Nachricht"
-                                rows={5}
-                                required
-                                className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200 resize-none"
-                                style={{
-                                    background: "rgba(255,255,255,0.85)",
-                                    border: "1px solid rgba(190,40,20,0.12)",
-                                    color: "#1c0e02",
-                                }}
-                                onFocus={(e) => (e.currentTarget.style.borderColor = "#8a1e14")}
-                                onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(190,40,20,0.12)")}
-                            />
-                        </motion.div>
-                        <motion.div variants={fadeUp} className="flex justify-center">
-                            <GradientButton
-                                type="submit"
-                                className="px-10 py-5 text-base rounded-[1.15rem] shadow-lg"
-                            >
-                                Nachricht senden
-                                <span className="opacity-70">→</span>
-                            </GradientButton>
-                        </motion.div>
-                    </motion.form>
+                    {/* ── Tab Switcher ── */}
+                    <motion.div variants={fadeUp} className="flex justify-center mb-10">
+                        <div
+                            className="inline-flex rounded-xl p-1"
+                            style={{
+                                background: "rgba(210,32,10,0.06)",
+                                border: "1px solid rgba(210,32,10,0.1)",
+                            }}
+                        >
+                            {(["frage", "termin"] as const).map((t) => (
+                                <button
+                                    key={t}
+                                    type="button"
+                                    onClick={() => setTab(t)}
+                                    className="px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200"
+                                    style={
+                                        tab === t
+                                            ? {
+                                                  background: "#d62010",
+                                                  color: "#fff",
+                                                  boxShadow: "0 2px 12px rgba(200,26,8,0.28)",
+                                              }
+                                            : { color: "#3d1e05" }
+                                    }
+                                >
+                                    {t === "frage" ? "Frage stellen" : "Termin buchen"}
+                                </button>
+                            ))}
+                        </div>
+                    </motion.div>
+
+                    {/* ── Frage stellen ── */}
+                    {tab === "frage" && (
+                        <motion.form
+                            key="frage"
+                            variants={stagger}
+                            className="flex flex-col gap-4 text-left mb-10"
+                            onSubmit={(e) => buildMailto(e, "Coaching-Anfrage")}
+                        >
+                            <motion.div variants={fadeUp} className="grid sm:grid-cols-2 gap-4">
+                                <input name="name" type="text" placeholder="Name" required
+                                    className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
+                                    style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
+                                <input name="email" type="email" placeholder="E-Mail" required
+                                    className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
+                                    style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
+                            </motion.div>
+                            <motion.div variants={fadeUp}>
+                                <input name="betreff" type="text" placeholder="Betreff"
+                                    className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
+                                    style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
+                            </motion.div>
+                            <motion.div variants={fadeUp}>
+                                <textarea name="nachricht" placeholder="Deine Frage" rows={5} required
+                                    className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200 resize-none"
+                                    style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
+                            </motion.div>
+                            <motion.div variants={fadeUp} className="flex justify-center">
+                                <GradientButton type="submit" className="px-10 py-5 text-base rounded-[1.15rem] shadow-lg">
+                                    Frage senden <span className="opacity-70">→</span>
+                                </GradientButton>
+                            </motion.div>
+                        </motion.form>
+                    )}
+
+                    {/* ── Termin buchen ── */}
+                    {tab === "termin" && (
+                        <motion.form
+                            key="termin"
+                            variants={stagger}
+                            className="flex flex-col gap-4 text-left mb-10"
+                            onSubmit={(e) => buildMailto(e, "Terminanfrage")}
+                        >
+                            <motion.div variants={fadeUp} className="grid sm:grid-cols-2 gap-4">
+                                <input name="name" type="text" placeholder="Name" required
+                                    className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
+                                    style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
+                                <input name="email" type="email" placeholder="E-Mail" required
+                                    className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200"
+                                    style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
+                            </motion.div>
+                            <motion.div variants={fadeUp}>
+                                <textarea name="nachricht"
+                                    placeholder="Nenn mir deinen Wunschtermin und was du dir vom Coaching erhoffst."
+                                    rows={5} required
+                                    className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200 resize-none"
+                                    style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
+                            </motion.div>
+                            <motion.div variants={fadeUp} className="flex justify-center">
+                                <GradientButton type="submit" className="px-10 py-5 text-base rounded-[1.15rem] shadow-lg">
+                                    Termin anfragen <span className="opacity-70">→</span>
+                                </GradientButton>
+                            </motion.div>
+                        </motion.form>
+                    )}
 
                     <motion.p
                         variants={fadeUp}

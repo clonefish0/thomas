@@ -20,8 +20,8 @@ export function SiteHeader() {
                     priority
                 />
                 <span
-                    className="text-sm tracking-[0.14em] uppercase font-semibold transition-colors duration-200 group-hover:text-[#cc2d18]"
-                    style={{ color: "#e8d8cc", fontFamily: "var(--font-mono)" }}
+                    className="text-sm tracking-[0.12em] uppercase font-bold text-white transition-opacity duration-200 group-hover:opacity-80"
+                    style={{ fontFamily: "var(--font-sans)" }}
                 >
                     Coaching by Thomas Arndt
                 </span>

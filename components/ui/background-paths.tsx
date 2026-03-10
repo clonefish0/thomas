@@ -60,7 +60,7 @@ export function BackgroundPaths({
                                         className="inline-block text-transparent bg-clip-text"
                                         style={{
                                             backgroundImage:
-                                                "linear-gradient(160deg, #1c0e02 30%, rgba(190,40,20,0.9) 100%)",
+                                                "linear-gradient(160deg, #f0e8e0 30%, rgba(220,60,30,1) 100%)",
                                         }}
                                     >
                                         {letter}

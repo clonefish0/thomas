@@ -11,13 +11,13 @@ export function SiteFooter() {
     return (
         <footer
             className="relative px-6 py-16"
-            style={{ borderTop: "1px solid rgba(190,40,20,0.07)" }}
+            style={{ borderTop: "1px solid rgba(190,40,20,0.2)" }}
         >
             <style>{`
-                .footer-social { color: #4a2808; transition: color 0.2s; }
-                .footer-social:hover { color: #cc2d18; }
-                .footer-link { color: #4a2808; transition: color 0.2s; }
-                .footer-link:hover { color: #cc2d18; }
+                .footer-social { color: #9a8070; transition: color 0.2s; }
+                .footer-social:hover { color: #e03a20; }
+                .footer-link { color: #9a8070; transition: color 0.2s; }
+                .footer-link:hover { color: #e03a20; }
             `}</style>
             <div className="max-w-5xl mx-auto">
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-8">
@@ -65,7 +65,7 @@ export function SiteFooter() {
 
                 <div
                     className="mt-10 pt-6 text-xs text-center footer-link"
-                    style={{ borderTop: "1px solid rgba(190,40,20,0.06)" }}
+                    style={{ borderTop: "1px solid rgba(190,40,20,0.18)" }}
                 >
                     © 2025 Thomas Arndt · Heiligenstraße 44c, 40721 Hilden
                 </div>

@@ -13,11 +13,11 @@ const h2Style = {
 } as const;
 
 const h3Style = {
-    color: "#1c0e02",
+    color: "#f0e8e0",
 } as const;
 
 const divider = (
-    <div className="h-px my-8" style={{ background: "rgba(190,40,20,0.07)" }} />
+    <div className="h-px my-8" style={{ background: "rgba(190,40,20,0.18)" }} />
 );
 
 const metaLabel = {
@@ -32,12 +32,12 @@ function DataBox({ items }: { items: { label: string; value: string }[] }) {
     return (
         <div
             className="rounded-lg p-4 mt-4 space-y-2 text-xs leading-relaxed"
-            style={{ background: "rgba(190,40,20,0.04)", border: "1px solid rgba(190,40,20,0.08)" }}
+            style={{ background: "rgba(190,40,20,0.12)", border: "1px solid rgba(190,40,20,0.22)" }}
         >
             {items.map(({ label, value }) => (
                 <div key={label}>
                     <span style={metaLabel}>{label}:</span>{" "}
-                    <span style={{ color: "#3d1e05" }}>{value}</span>
+                    <span style={{ color: "#c0a898" }}>{value}</span>
                 </div>
             ))}
         </div>
@@ -63,7 +63,7 @@ export default function DatenschutzPage() {
                     Rechtliches
                 </p>
 
-                <h1 className="text-4xl font-bold tracking-tight mb-2" style={{ color: "#1c0e02" }}>
+                <h1 className="text-4xl font-bold tracking-tight mb-2" style={{ color: "#f0e8e0" }}>
                     Datenschutz & AGB
                 </h1>
                 <p className="text-sm mb-12" style={{ color: "#a02010", fontFamily: "var(--font-mono)" }}>
@@ -80,11 +80,11 @@ export default function DatenschutzPage() {
                 >
                     Teil I
                 </p>
-                <h2 className="text-2xl font-semibold mb-8" style={{ ...h2Style, color: "#1c0e02" }}>
+                <h2 className="text-2xl font-semibold mb-8" style={{ ...h2Style, color: "#f0e8e0" }}>
                     Datenschutzerklärung
                 </h2>
 
-                <div className="space-y-10 text-sm leading-relaxed" style={{ color: "#3d1e05" }}>
+                <div className="space-y-10 text-sm leading-relaxed" style={{ color: "#c0a898" }}>
 
                     {/* Präambel */}
                     <section>
@@ -181,28 +181,28 @@ export default function DatenschutzPage() {
                         </p>
                         <ul className="list-disc list-inside space-y-3 mb-4">
                             <li>
-                                <strong style={{ color: "#1c0e02" }}>Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)</strong> – Die betroffene Person hat ihre
+                                <strong style={{ color: "#f0e8e0" }}>Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)</strong> – Die betroffene Person hat ihre
                                 Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen
                                 spezifischen Zweck oder mehrere bestimmte Zwecke gegeben.
                             </li>
                             <li>
-                                <strong style={{ color: "#1c0e02" }}>Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)</strong> – Die
+                                <strong style={{ color: "#f0e8e0" }}>Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)</strong> – Die
                                 Verarbeitung ist für die Erfüllung eines Vertrags, dessen Vertragspartei die betroffene
                                 Person ist, oder zur Durchführung vorvertraglicher Maßnahmen erforderlich.
                             </li>
                             <li>
-                                <strong style={{ color: "#1c0e02" }}>Rechtliche Verpflichtung (Art. 6 Abs. 1 S. 1 lit. c) DSGVO)</strong> – Die Verarbeitung ist zur
+                                <strong style={{ color: "#f0e8e0" }}>Rechtliche Verpflichtung (Art. 6 Abs. 1 S. 1 lit. c) DSGVO)</strong> – Die Verarbeitung ist zur
                                 Erfüllung einer rechtlichen Verpflichtung erforderlich, der der Verantwortliche unterliegt.
                             </li>
                             <li>
-                                <strong style={{ color: "#1c0e02" }}>Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)</strong> – Die Verarbeitung ist zur
+                                <strong style={{ color: "#f0e8e0" }}>Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)</strong> – Die Verarbeitung ist zur
                                 Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten notwendig,
                                 vorausgesetzt, dass die Interessen, Grundrechte und Grundfreiheiten der betroffenen Person
                                 nicht überwiegen.
                             </li>
                         </ul>
                         <p>
-                            <strong style={{ color: "#1c0e02" }}>Nationale Datenschutzregelungen in Deutschland:</strong> Zusätzlich zu den Datenschutzregelungen
+                            <strong style={{ color: "#f0e8e0" }}>Nationale Datenschutzregelungen in Deutschland:</strong> Zusätzlich zu den Datenschutzregelungen
                             der DSGVO gelten nationale Regelungen zum Datenschutz in Deutschland, insbesondere das
                             Bundesdatenschutzgesetz (BDSG). Das BDSG enthält insbesondere Spezialregelungen zum Recht auf
                             Auskunft, zum Recht auf Löschung, zum Widerspruchsrecht, zur Verarbeitung besonderer Kategorien
@@ -231,7 +231,7 @@ export default function DatenschutzPage() {
                             gewährleisten.
                         </p>
                         <p>
-                            <strong style={{ color: "#1c0e02" }}>TLS-/SSL-Verschlüsselung (HTTPS):</strong> Um die Daten der Nutzer vor unerlaubten Zugriffen zu
+                            <strong style={{ color: "#f0e8e0" }}>TLS-/SSL-Verschlüsselung (HTTPS):</strong> Um die Daten der Nutzer vor unerlaubten Zugriffen zu
                             schützen, setzen wir auf die TLS-/SSL-Verschlüsselungstechnologie. Wenn eine Website durch ein
                             SSL-/TLS-Zertifikat gesichert ist, wird dies durch die Anzeige von HTTPS in der URL
                             signalisiert.
@@ -260,7 +260,7 @@ export default function DatenschutzPage() {
                     <section>
                         <h2 className="text-base font-semibold mb-3" style={h2Style}>Internationale Datentransfers</h2>
                         <p className="mb-3">
-                            <strong style={{ color: "#1c0e02" }}>Datenverarbeitung in Drittländern:</strong> Sofern wir Daten in ein Drittland (d. h. außerhalb der
+                            <strong style={{ color: "#f0e8e0" }}>Datenverarbeitung in Drittländern:</strong> Sofern wir Daten in ein Drittland (d. h. außerhalb der
                             Europäischen Union (EU) oder des Europäischen Wirtschaftsraums (EWR)) übermitteln, erfolgt dies
                             stets im Einklang mit den gesetzlichen Vorgaben.
                         </p>
@@ -297,10 +297,10 @@ export default function DatenschutzPage() {
                         </p>
                         <h3 className="font-medium mb-2" style={h3Style}>Aufbewahrungsfristen nach deutschem Recht</h3>
                         <ul className="list-disc list-inside space-y-2">
-                            <li><strong style={{ color: "#1c0e02" }}>10 Jahre</strong> – Bücher und Aufzeichnungen, Jahresabschlüsse, Inventare, Lageberichte (§ 147 Abs. 1 Nr. 1 AO, § 257 Abs. 1 Nr. 1 HGB)</li>
-                            <li><strong style={{ color: "#1c0e02" }}>8 Jahre</strong> – Buchungsbelege, z. B. Rechnungen und Kostenbelege (§ 147 Abs. 1 Nr. 4 AO, § 257 Abs. 1 Nr. 4 HGB)</li>
-                            <li><strong style={{ color: "#1c0e02" }}>6 Jahre</strong> – Übrige Geschäftsunterlagen: empfangene Handels- und Geschäftsbriefe, sonstige Unterlagen (§ 147 Abs. 1 Nr. 2, 3, 5 AO, § 257 Abs. 1 Nr. 2 u. 3 HGB)</li>
-                            <li><strong style={{ color: "#1c0e02" }}>3 Jahre</strong> – Daten für potenzielle Gewährleistungs- und Schadensersatzansprüche, basierend auf der regulären gesetzlichen Verjährungsfrist (§§ 195, 199 BGB)</li>
+                            <li><strong style={{ color: "#f0e8e0" }}>10 Jahre</strong> – Bücher und Aufzeichnungen, Jahresabschlüsse, Inventare, Lageberichte (§ 147 Abs. 1 Nr. 1 AO, § 257 Abs. 1 Nr. 1 HGB)</li>
+                            <li><strong style={{ color: "#f0e8e0" }}>8 Jahre</strong> – Buchungsbelege, z. B. Rechnungen und Kostenbelege (§ 147 Abs. 1 Nr. 4 AO, § 257 Abs. 1 Nr. 4 HGB)</li>
+                            <li><strong style={{ color: "#f0e8e0" }}>6 Jahre</strong> – Übrige Geschäftsunterlagen: empfangene Handels- und Geschäftsbriefe, sonstige Unterlagen (§ 147 Abs. 1 Nr. 2, 3, 5 AO, § 257 Abs. 1 Nr. 2 u. 3 HGB)</li>
+                            <li><strong style={{ color: "#f0e8e0" }}>3 Jahre</strong> – Daten für potenzielle Gewährleistungs- und Schadensersatzansprüche, basierend auf der regulären gesetzlichen Verjährungsfrist (§§ 195, 199 BGB)</li>
                         </ul>
                     </section>
 
@@ -324,7 +324,7 @@ export default function DatenschutzPage() {
                                 ["Beschwerde bei Aufsichtsbehörde", "Sie haben das Recht auf Beschwerde bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes."],
                             ].map(([title, desc]) => (
                                 <li key={title} className="list-none">
-                                    <strong style={{ color: "#1c0e02" }}>{title}:</strong>{" "}
+                                    <strong style={{ color: "#f0e8e0" }}>{title}:</strong>{" "}
                                     {desc}
                                 </li>
                             ))}
@@ -361,13 +361,13 @@ export default function DatenschutzPage() {
 
                         <div className="mt-4 space-y-3">
                             <p>
-                                <strong style={{ color: "#1c0e02" }}>Onlineshop und E-Commerce:</strong> Wir verarbeiten die Daten unserer Kunden, um ihnen die
+                                <strong style={{ color: "#f0e8e0" }}>Onlineshop und E-Commerce:</strong> Wir verarbeiten die Daten unserer Kunden, um ihnen die
                                 Auswahl, den Erwerb, bzw. die Bestellung der gewählten Produkte, Waren sowie verbundener
                                 Leistungen als auch deren Bezahlung und Bereitstellung zu ermöglichen. Rechtsgrundlage:
                                 Art. 6 Abs. 1 S. 1 lit. b) DSGVO.
                             </p>
                             <p>
-                                <strong style={{ color: "#1c0e02" }}>Bildungs- und Schulungsleistungen:</strong> Wir verarbeiten die Daten der Teilnehmer unserer
+                                <strong style={{ color: "#f0e8e0" }}>Bildungs- und Schulungsleistungen:</strong> Wir verarbeiten die Daten der Teilnehmer unserer
                                 Bildungs- und Schulungsangebote, um ihnen gegenüber unsere Schulungsleistungen erbringen zu
                                 können. Rechtsgrundlage: Art. 6 Abs. 1 S. 1 lit. b) DSGVO.
                             </p>
@@ -394,13 +394,13 @@ export default function DatenschutzPage() {
 
                         <div className="mt-4 space-y-3">
                             <p>
-                                <strong style={{ color: "#1c0e02" }}>Webhosting (gemieteter Speicherplatz):</strong> Für die Bereitstellung unseres Onlineangebotes
+                                <strong style={{ color: "#f0e8e0" }}>Webhosting (gemieteter Speicherplatz):</strong> Für die Bereitstellung unseres Onlineangebotes
                                 nutzen wir Speicherplatz, Rechenkapazität und Software, die wir von einem entsprechenden
                                 Serveranbieter (auch „Webhoster" genannt) mieten oder anderweitig beziehen. Rechtsgrundlage:
                                 Art. 6 Abs. 1 S. 1 lit. f) DSGVO.
                             </p>
                             <p>
-                                <strong style={{ color: "#1c0e02" }}>Zugriffsdaten und Logfiles:</strong> Der Zugriff auf unser Onlineangebot wird in Form von
+                                <strong style={{ color: "#f0e8e0" }}>Zugriffsdaten und Logfiles:</strong> Der Zugriff auf unser Onlineangebot wird in Form von
                                 sogenannten „Server-Logfiles" protokolliert. Zu den Serverlogfiles können die Adresse und der
                                 Name der abgerufenen Webseiten und Dateien, Datum und Uhrzeit des Abrufs, übertragene
                                 Datenmengen, Meldung über erfolgreichen Abruf, Browsertyp nebst Version, das Betriebssystem
@@ -410,7 +410,7 @@ export default function DatenschutzPage() {
                             </p>
                             {/* ⚠️ Fehlerkorrektur: Squarespace → Vercel (Seite wird auf Vercel gehostet, nicht auf Squarespace) */}
                             <p>
-                                <strong style={{ color: "#1c0e02" }}>Vercel (Hosting):</strong> Wir nutzen Vercel für das Hosting unseres Onlineangebotes. Vercel ist
+                                <strong style={{ color: "#f0e8e0" }}>Vercel (Hosting):</strong> Wir nutzen Vercel für das Hosting unseres Onlineangebotes. Vercel ist
                                 eine Cloud-Plattform für die Bereitstellung von Webanwendungen und stellt die Infrastruktur
                                 für unsere Website bereit; Dienstanbieter: Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA
                                 91789, USA; Rechtsgrundlage: Art. 6 Abs. 1 S. 1 lit. f) DSGVO; Website:{" "}
@@ -436,14 +436,14 @@ export default function DatenschutzPage() {
                             Zustimmung nicht notwendig, setzen wir auf unsere berechtigten Interessen.
                         </p>
                         <p className="mb-3">
-                            <strong style={{ color: "#1c0e02" }}>Speicherdauer:</strong>
+                            <strong style={{ color: "#f0e8e0" }}>Speicherdauer:</strong>
                         </p>
                         <ul className="list-disc list-inside space-y-2 mb-4">
-                            <li><strong style={{ color: "#1c0e02" }}>Temporäre Cookies (Session-Cookies):</strong> Werden spätestens gelöscht, nachdem ein Nutzer das Onlineangebot verlassen und sein Endgerät geschlossen hat.</li>
-                            <li><strong style={{ color: "#1c0e02" }}>Permanente Cookies:</strong> Bleiben auch nach dem Schließen des Endgeräts gespeichert. Die Speicherdauer kann bis zu zwei Jahre betragen.</li>
+                            <li><strong style={{ color: "#f0e8e0" }}>Temporäre Cookies (Session-Cookies):</strong> Werden spätestens gelöscht, nachdem ein Nutzer das Onlineangebot verlassen und sein Endgerät geschlossen hat.</li>
+                            <li><strong style={{ color: "#f0e8e0" }}>Permanente Cookies:</strong> Bleiben auch nach dem Schließen des Endgeräts gespeichert. Die Speicherdauer kann bis zu zwei Jahre betragen.</li>
                         </ul>
                         <p className="mb-4">
-                            <strong style={{ color: "#1c0e02" }}>Widerruf und Widerspruch (Opt-out):</strong> Nutzer können die von ihnen abgegebenen
+                            <strong style={{ color: "#f0e8e0" }}>Widerruf und Widerspruch (Opt-out):</strong> Nutzer können die von ihnen abgegebenen
                             Einwilligungen jederzeit widerrufen und zudem einen Widerspruch gegen die Verarbeitung
                             entsprechend den gesetzlichen Vorgaben, auch mittels der Privatsphäre-Einstellungen ihres
                             Browsers, erklären.
@@ -479,7 +479,7 @@ export default function DatenschutzPage() {
                         ]} />
                         <div className="mt-4 space-y-3">
                             <p>
-                                <strong style={{ color: "#1c0e02" }}>Löschung nach Kündigung:</strong> Wenn Nutzer ihr Nutzerkonto gekündigt haben, werden deren Daten
+                                <strong style={{ color: "#f0e8e0" }}>Löschung nach Kündigung:</strong> Wenn Nutzer ihr Nutzerkonto gekündigt haben, werden deren Daten
                                 im Hinblick auf das Nutzerkonto gelöscht, vorbehaltlich einer gesetzlichen Erlaubnis, Pflicht
                                 oder Einwilligung. Rechtsgrundlage: Art. 6 Abs. 1 S. 1 lit. b) DSGVO.
                             </p>
@@ -498,7 +498,7 @@ export default function DatenschutzPage() {
                             Sicherheit erforderlich ist.
                         </p>
                         <p>
-                            <strong style={{ color: "#1c0e02" }}>Kommentare und Beiträge:</strong> Wenn Nutzer Kommentare oder sonstige Beiträge hinterlassen,
+                            <strong style={{ color: "#f0e8e0" }}>Kommentare und Beiträge:</strong> Wenn Nutzer Kommentare oder sonstige Beiträge hinterlassen,
                             können ihre IP-Adressen auf Grundlage unserer berechtigten Interessen gespeichert werden. Die im
                             Rahmen der Kommentare mitgeteilten Informationen zur Person werden von uns bis zum Widerspruch
                             der Nutzer dauerhaft gespeichert. Rechtsgrundlage: Art. 6 Abs. 1 S. 1 lit. f) DSGVO.
@@ -523,7 +523,7 @@ export default function DatenschutzPage() {
                             { label: "Rechtsgrundlagen", value: "Art. 6 Abs. 1 S. 1 lit. f) DSGVO (Berechtigte Interessen), lit. b) DSGVO (Vertragserfüllung)" },
                         ]} />
                         <p className="mt-4">
-                            <strong style={{ color: "#1c0e02" }}>Kontaktformular:</strong> Bei Kontaktaufnahme über unser Kontaktformular, per E-Mail oder anderen
+                            <strong style={{ color: "#f0e8e0" }}>Kontaktformular:</strong> Bei Kontaktaufnahme über unser Kontaktformular, per E-Mail oder anderen
                             Kommunikationswegen, verarbeiten wir die uns übermittelten personenbezogenen Daten zur
                             Beantwortung und Bearbeitung des jeweiligen Anliegens. Wir nutzen diese Daten ausschließlich für
                             den angegebenen Zweck der Kontaktaufnahme und Kommunikation.
@@ -579,7 +579,7 @@ export default function DatenschutzPage() {
                         ]} />
                         <div className="mt-4">
                             <p>
-                                <strong style={{ color: "#1c0e02" }}>Google Analytics:</strong> Wir verwenden Google Analytics zur Messung und Analyse der Nutzung
+                                <strong style={{ color: "#f0e8e0" }}>Google Analytics:</strong> Wir verwenden Google Analytics zur Messung und Analyse der Nutzung
                                 unseres Onlineangebotes auf der Grundlage einer pseudonymen Nutzeridentifikationsnummer.
                                 Google Analytics protokolliert und speichert keine individuellen IP-Adressen für EU-Nutzer.
                                 Beim EU-Datenverkehr werden die IP-Adressdaten ausschließlich für die Ableitung von
@@ -643,7 +643,7 @@ export default function DatenschutzPage() {
                         ]} />
                         <div className="mt-4 space-y-3">
                             <p>
-                                <strong style={{ color: "#1c0e02" }}>Instagram:</strong> Soziales Netzwerk, ermöglicht das Teilen von Fotos und Videos;
+                                <strong style={{ color: "#f0e8e0" }}>Instagram:</strong> Soziales Netzwerk, ermöglicht das Teilen von Fotos und Videos;
                                 Dienstanbieter: Meta Platforms Ireland Limited, Merrion Road, Dublin 4, Irland; Website:{" "}
                                 <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>instagram.com</a>;
                                 Datenschutzerklärung:{" "}
@@ -651,7 +651,7 @@ export default function DatenschutzPage() {
                                 Grundlage Drittlandtransfers: Data Privacy Framework (DPF).
                             </p>
                             <p>
-                                <strong style={{ color: "#1c0e02" }}>YouTube:</strong> Soziales Netzwerk und Videoplattform;
+                                <strong style={{ color: "#f0e8e0" }}>YouTube:</strong> Soziales Netzwerk und Videoplattform;
                                 Dienstanbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland;
                                 Datenschutzerklärung:{" "}
                                 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>policies.google.com/privacy</a>;
@@ -680,14 +680,14 @@ export default function DatenschutzPage() {
                         ]} />
                         <div className="mt-4 space-y-3">
                             <p>
-                                <strong style={{ color: "#1c0e02" }}>Instagram-Plugins und -Inhalte:</strong> Instagram Plugins und -Inhalte – hierzu können z. B.
+                                <strong style={{ color: "#f0e8e0" }}>Instagram-Plugins und -Inhalte:</strong> Instagram Plugins und -Inhalte – hierzu können z. B.
                                 Bilder, Videos oder Texte und Schaltflächen gehören, mit denen Nutzer Inhalte innerhalb von
                                 Instagram teilen können; Dienstanbieter: Meta Platforms Ireland Limited, Merrion Road, Dublin
                                 4, Irland; Rechtsgrundlage: Art. 6 Abs. 1 S. 1 lit. f) DSGVO; Datenschutzerklärung:{" "}
                                 <a href="https://privacycenter.instagram.com/policy/" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>privacycenter.instagram.com/policy/</a>.
                             </p>
                             <p>
-                                <strong style={{ color: "#1c0e02" }}>YouTube-Videos:</strong> Videoinhalte; Dienstanbieter: Google Ireland Limited, Gordon House,
+                                <strong style={{ color: "#f0e8e0" }}>YouTube-Videos:</strong> Videoinhalte; Dienstanbieter: Google Ireland Limited, Gordon House,
                                 Barrow Street, Dublin 4, Irland; Rechtsgrundlage: Art. 6 Abs. 1 S. 1 lit. a) DSGVO
                                 (Einwilligung); Website:{" "}
                                 <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" style={{ color: "#c83520" }}>youtube.com</a>;
@@ -699,7 +699,7 @@ export default function DatenschutzPage() {
                                 </a>.
                             </p>
                             <p>
-                                <strong style={{ color: "#1c0e02" }}>YouTube-Videos (erweiterter Datenschutzmodus):</strong> Die Integration von YouTube-Videos
+                                <strong style={{ color: "#f0e8e0" }}>YouTube-Videos (erweiterter Datenschutzmodus):</strong> Die Integration von YouTube-Videos
                                 erfolgt über eine spezielle Domain mithilfe der Komponente „youtube-nocookie" im sogenannten
                                 „erweiterten Datenschutzmodus". Im „erweiterten Datenschutzmodus" können bis zum Start des
                                 Videos lediglich Informationen, zu denen Ihre IP-Adresse sowie Angaben zum Browser und Ihrem
@@ -740,20 +740,20 @@ export default function DatenschutzPage() {
                             zur Meldung von möglichem Fehlverhalten anzubieten.
                         </p>
                         <p className="mb-3">
-                            <strong style={{ color: "#1c0e02" }}>Rechtsgrundlagen (Deutschland):</strong> Soweit wir Daten zur Erfüllung unserer gesetzlichen
+                            <strong style={{ color: "#f0e8e0" }}>Rechtsgrundlagen (Deutschland):</strong> Soweit wir Daten zur Erfüllung unserer gesetzlichen
                             Pflichten entsprechend dem Hinweisgeberschutzgesetz (HinSchG) verarbeiten, ist die rechtliche
                             Basis der Verarbeitung Art. 6 Abs. 1 S. 1 lit. c) DSGVO und im Fall besonderer Kategorien
                             personenbezogener Daten Art. 9 Abs. 2 lit. g) DSGVO, § 22 BDSG, jeweils in Verbindung mit
                             § 10 HinSchG.
                         </p>
                         <p className="mb-3">
-                            <strong style={{ color: "#1c0e02" }}>Angabe von Namen:</strong> Sie haben die Möglichkeit, Hinweise anonym abzugeben. Sofern es nicht
+                            <strong style={{ color: "#f0e8e0" }}>Angabe von Namen:</strong> Sie haben die Möglichkeit, Hinweise anonym abzugeben. Sofern es nicht
                             durch nationale Gesetzgebungen untersagt ist, empfehlen wir jedoch die Angabe Ihres Namens und
                             Ihrer Kontaktdaten. Dies ermöglicht uns, die Meldung effektiver nachzugehen und gegebenenfalls
                             direkt mit Ihnen in Kontakt zu treten. Ihre Identität wird streng vertraulich behandelt.
                         </p>
                         <p className="mb-4">
-                            <strong style={{ color: "#1c0e02" }}>Bereitstellung von Daten an Dritte:</strong> Daten, die im Zusammenhang mit den abgegebenen
+                            <strong style={{ color: "#f0e8e0" }}>Bereitstellung von Daten an Dritte:</strong> Daten, die im Zusammenhang mit den abgegebenen
                             Hinweisen stehen, werden von uns nur dann an Dritte weitergegeben, wenn Sie uns Ihre
                             ausdrückliche Einwilligung dazu erteilt haben oder wenn eine gesetzliche Verpflichtung zur
                             Weitergabe besteht.
@@ -814,7 +814,7 @@ export default function DatenschutzPage() {
                                 ["Zielgruppenbildung", "Bestimmung von Zielgruppen für Werbezwecke anhand von Nutzerinteressen und -verhalten. Zur Bildung von Custom Audiences und Lookalike Audiences werden im Regelfall Cookies und Web-Beacons eingesetzt."],
                             ].map(([term, def]) => (
                                 <div key={term}>
-                                    <dt className="font-medium mb-1" style={{ color: "#1c0e02", fontFamily: "var(--font-mono)", fontSize: "0.75rem" }}>
+                                    <dt className="font-medium mb-1" style={{ color: "#f0e8e0", fontFamily: "var(--font-mono)", fontSize: "0.75rem" }}>
                                         {term}
                                     </dt>
                                     <dd className="pl-0">{def}</dd>
@@ -836,7 +836,7 @@ export default function DatenschutzPage() {
                         >
                             Teil II
                         </p>
-                        <h2 className="text-2xl font-semibold mb-2" style={{ ...h2Style, color: "#1c0e02" }}>
+                        <h2 className="text-2xl font-semibold mb-2" style={{ ...h2Style, color: "#f0e8e0" }}>
                             Allgemeine Geschäftsbedingungen
                         </h2>
                         <p className="text-sm mb-10" style={{ color: "#a02010", fontFamily: "var(--font-mono)" }}>
@@ -888,15 +888,15 @@ export default function DatenschutzPage() {
                             <p className="mb-3">Ich biete folgende Dienstleistungen an:</p>
                             <ul className="list-disc list-inside space-y-2 mb-3">
                                 <li>
-                                    <strong style={{ color: "#1c0e02" }}>Online-Personal-Training:</strong> Erstellung individueller Trainingspläne, angepasst an Ihre
+                                    <strong style={{ color: "#f0e8e0" }}>Online-Personal-Training:</strong> Erstellung individueller Trainingspläne, angepasst an Ihre
                                     persönlichen Fitnessziele und körperlichen Voraussetzungen.
                                 </li>
                                 <li>
-                                    <strong style={{ color: "#1c0e02" }}>Online-Ernährungscoaching:</strong> Erstellung von personalisierten Ernährungsplänen und Beratung
+                                    <strong style={{ color: "#f0e8e0" }}>Online-Ernährungscoaching:</strong> Erstellung von personalisierten Ernährungsplänen und Beratung
                                     basierend auf Ihren Ernährungsbedürfnissen.
                                 </li>
                                 <li>
-                                    <strong style={{ color: "#1c0e02" }}>Online-Lifestyle-Coaching:</strong> Beratung zur Anpassung des Lebensstils zur Steigerung des
+                                    <strong style={{ color: "#f0e8e0" }}>Online-Lifestyle-Coaching:</strong> Beratung zur Anpassung des Lebensstils zur Steigerung des
                                     allgemeinen Wohlbefindens.
                                 </li>
                             </ul>
@@ -919,16 +919,16 @@ export default function DatenschutzPage() {
                             </p>
                             <ul className="list-disc list-inside space-y-3">
                                 <li>
-                                    <strong style={{ color: "#1c0e02" }}>Gesundheitsangaben:</strong> Sie müssen mich vor Beginn umfassend über Ihren aktuellen
+                                    <strong style={{ color: "#f0e8e0" }}>Gesundheitsangaben:</strong> Sie müssen mich vor Beginn umfassend über Ihren aktuellen
                                     Gesundheitszustand, Verletzungen und Vorerkrankungen informieren.
                                 </li>
                                 <li>
-                                    <strong style={{ color: "#1c0e02" }}>Eigenverantwortung & Stopp-Signal:</strong> Sie setzen die Pläne eigenverantwortlich um. Bei
+                                    <strong style={{ color: "#f0e8e0" }}>Eigenverantwortung & Stopp-Signal:</strong> Sie setzen die Pläne eigenverantwortlich um. Bei
                                     Schmerzen, Unwohlsein oder gesundheitlichen Problemen müssen Sie das Training sofort
                                     unterbrechen, einen Arzt aufsuchen und mich informieren.
                                 </li>
                                 <li>
-                                    <strong style={{ color: "#1c0e02" }}>Kommunikation:</strong> Eine regelmäßige Kommunikation (Check-ins) ist für den Erfolg
+                                    <strong style={{ color: "#f0e8e0" }}>Kommunikation:</strong> Eine regelmäßige Kommunikation (Check-ins) ist für den Erfolg
                                     unerlässlich. Bleiben Check-ins durch den Kunden aus, entbindet dies nicht von der
                                     Zahlungspflicht.
                                 </li>
@@ -981,7 +981,7 @@ export default function DatenschutzPage() {
                                 bitte der separaten Widerrufsbelehrung.
                             </p>
                             <p>
-                                <strong style={{ color: "#1c0e02" }}>Hinweis:</strong> Bei digitalen Dienstleistungen kann das Widerrufsrecht vorzeitig erlöschen,
+                                <strong style={{ color: "#f0e8e0" }}>Hinweis:</strong> Bei digitalen Dienstleistungen kann das Widerrufsrecht vorzeitig erlöschen,
                                 wenn Sie ausdrücklich zustimmen, dass ich mit der Ausführung des Vertrags vor Ablauf der
                                 Widerrufsfrist beginne.
                             </p>
@@ -1024,13 +1024,13 @@ export default function DatenschutzPage() {
                             </h2>
                             <ul className="list-disc list-inside space-y-3">
                                 <li>
-                                    <strong style={{ color: "#1c0e02" }}>Feste Laufzeit:</strong> Verträge mit einer vereinbarten Mindestlaufzeit (z. B. 6 Monate) können
+                                    <strong style={{ color: "#f0e8e0" }}>Feste Laufzeit:</strong> Verträge mit einer vereinbarten Mindestlaufzeit (z. B. 6 Monate) können
                                     nicht ordentlich vor Ablauf dieser Frist gekündigt werden. Das Recht zur außerordentlichen
                                     Kündigung aus wichtigem Grund (z. B. dauerhafte schwere Krankheit mit ärztlichem Attest)
                                     bleibt unberührt.
                                 </li>
                                 <li>
-                                    <strong style={{ color: "#1c0e02" }}>Abo-Modelle:</strong> Sofern ein monatlich kündbares Abo vereinbart wurde, bedarf die Kündigung
+                                    <strong style={{ color: "#f0e8e0" }}>Abo-Modelle:</strong> Sofern ein monatlich kündbares Abo vereinbart wurde, bedarf die Kündigung
                                     der Textform (E-Mail ausreichend).
                                 </li>
                             </ul>
@@ -1053,7 +1053,7 @@ export default function DatenschutzPage() {
                     </div>
 
                     {/* Footer nav */}
-                    <div className="h-px mt-16 mb-8" style={{ background: "rgba(190,40,20,0.07)" }} />
+                    <div className="h-px mt-16 mb-8" style={{ background: "rgba(190,40,20,0.18)" }} />
                     <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between text-xs" style={{ color: "#4a2808" }}>
                         <span style={{ fontFamily: "var(--font-mono)" }}>cbta – Coaching by Thomas Arndt</span>
                         <Link href="/impressum" style={{ color: "#cc2d18" }}>→ Impressum</Link>

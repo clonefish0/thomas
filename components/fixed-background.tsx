@@ -47,14 +47,14 @@ export function FixedBackground() {
     return (
         <div
             className="fixed inset-0 pointer-events-none overflow-hidden"
-            style={{ zIndex: 0, backgroundColor: "#ffffff" }}
+            style={{ zIndex: 0, backgroundColor: "#0f0d0b" }}
         >
             {/* Radial glow */}
             <div
                 className="absolute inset-0"
                 style={{
                     background:
-                        "radial-gradient(60% 50% at 50% 30%, rgba(200,40,20,0.1) 0%, transparent 70%)",
+                        "radial-gradient(60% 50% at 50% 30%, rgba(200,40,20,0.18) 0%, transparent 70%)",
                 }}
             />
             <FloatingPaths position={1} />

@@ -29,19 +29,19 @@ export default function ImpressumPage() {
                 </p>
                 <h1
                     className="text-4xl font-bold tracking-tight mb-12"
-                    style={{ color: "#1c0e02" }}
+                    style={{ color: "#f0e8e0" }}
                 >
                     Impressum
                 </h1>
 
                 <div
                     className="space-y-10 text-sm leading-relaxed"
-                    style={{ color: "#3d1e05" }}
+                    style={{ color: "#c0a898" }}
                 >
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "#1c0e02" }}
+                            style={{ color: "#f0e8e0" }}
                         >
                             Angaben gemäß § 5 TMG
                         </h2>
@@ -56,13 +56,13 @@ export default function ImpressumPage() {
 
                     <div
                         className="h-px"
-                        style={{ background: "rgba(190,40,20,0.07)" }}
+                        style={{ background: "rgba(190,40,20,0.18)" }}
                     />
 
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "#1c0e02" }}
+                            style={{ color: "#f0e8e0" }}
                         >
                             Kontakt
                         </h2>
@@ -87,13 +87,13 @@ export default function ImpressumPage() {
 
                     <div
                         className="h-px"
-                        style={{ background: "rgba(190,40,20,0.07)" }}
+                        style={{ background: "rgba(190,40,20,0.18)" }}
                     />
 
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "#1c0e02" }}
+                            style={{ color: "#f0e8e0" }}
                         >
                             Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
                         </h2>
@@ -108,13 +108,13 @@ export default function ImpressumPage() {
 
                     <div
                         className="h-px"
-                        style={{ background: "rgba(190,40,20,0.07)" }}
+                        style={{ background: "rgba(190,40,20,0.18)" }}
                     />
 
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "#1c0e02" }}
+                            style={{ color: "#f0e8e0" }}
                         >
                             Streitschlichtung
                         </h2>
@@ -137,13 +137,13 @@ export default function ImpressumPage() {
 
                     <div
                         className="h-px"
-                        style={{ background: "rgba(190,40,20,0.07)" }}
+                        style={{ background: "rgba(190,40,20,0.18)" }}
                     />
 
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "#1c0e02" }}
+                            style={{ color: "#f0e8e0" }}
                         >
                             Haftung für Inhalte
                         </h2>
@@ -155,7 +155,7 @@ export default function ImpressumPage() {
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "#1c0e02" }}
+                            style={{ color: "#f0e8e0" }}
                         >
                             Haftung für Links
                         </h2>
@@ -167,7 +167,7 @@ export default function ImpressumPage() {
                     <section>
                         <h2
                             className="text-base font-semibold mb-3"
-                            style={{ color: "#1c0e02" }}
+                            style={{ color: "#f0e8e0" }}
                         >
                             Urheberrecht
                         </h2>

@@ -28,7 +28,7 @@ function Divider() {
     return (
         <div
             className="w-full h-px"
-            style={{ background: "linear-gradient(90deg, transparent, rgba(190,40,20,0.08), transparent)" }}
+            style={{ background: "linear-gradient(90deg, transparent, rgba(190,40,20,0.22), transparent)" }}
         />
     );
 }
@@ -66,7 +66,7 @@ function ProblemSection() {
                         <SectionLabel>Das Problem</SectionLabel>
                         <h2
                             className="text-4xl sm:text-5xl font-bold tracking-tight"
-                            style={{ color: "#1c0e02" }}
+                            style={{ color: "#f0e8e0" }}
                         >
                             Woran es bisher
                             <br />
@@ -74,7 +74,7 @@ function ProblemSection() {
                                 className="text-transparent bg-clip-text"
                                 style={{
                                     backgroundImage:
-                                        "linear-gradient(160deg, #1c0e02 30%, #cc2d18 100%)",
+                                        "linear-gradient(160deg, #f0e8e0 30%, #cc2d18 100%)",
                                 }}
                             >
                                 gescheitert ist
@@ -96,8 +96,8 @@ function ProblemSection() {
                             variants={fadeUp}
                             className="rounded-2xl p-8"
                             style={{
-                                background: "rgba(190,40,20,0.04)",
-                                border: "1px solid rgba(190,40,20,0.08)",
+                                background: "rgba(190,40,20,0.10)",
+                                border: "1px solid rgba(190,40,20,0.22)",
                             }}
                         >
                             <span
@@ -108,13 +108,13 @@ function ProblemSection() {
                             </span>
                             <h3
                                 className="text-xl font-semibold mb-3"
-                                style={{ color: "#1c0e02" }}
+                                style={{ color: "#f0e8e0" }}
                             >
                                 {p.title}
                             </h3>
                             <p
                                 className="text-base leading-relaxed"
-                                style={{ color: "#3d1e05" }}
+                                style={{ color: "#c0a898" }}
                             >
                                 {p.text}
                             </p>
@@ -146,7 +146,7 @@ function SolutionSection() {
                         <SectionLabel>Die Lösung</SectionLabel>
                         <h2
                             className="text-4xl sm:text-5xl font-bold tracking-tight mb-6"
-                            style={{ color: "#1c0e02" }}
+                            style={{ color: "#f0e8e0" }}
                         >
                             Komplexes Wissen.
                             <br />
@@ -154,7 +154,7 @@ function SolutionSection() {
                                 className="text-transparent bg-clip-text"
                                 style={{
                                     backgroundImage:
-                                        "linear-gradient(160deg, #1c0e02 30%, #cc2d18 100%)",
+                                        "linear-gradient(160deg, #f0e8e0 30%, #cc2d18 100%)",
                                 }}
                             >
                                 Simpel umgesetzt.
@@ -165,7 +165,7 @@ function SolutionSection() {
                     <motion.p
                         variants={fadeUp}
                         className="text-lg max-w-2xl mx-auto leading-relaxed mb-16"
-                        style={{ color: "#3d1e05" }}
+                        style={{ color: "#c0a898" }}
                     >
                         Ich erkläre komplizierte Konzepte in verständlicher Sprache – so dass du sie sofort anwenden kannst. Kein Overwhelming, keine Verwirrung. Du übernimmst die Ausführung, ich die Planung und Verantwortung.
                     </motion.p>
@@ -184,8 +184,8 @@ function SolutionSection() {
                                 variants={fadeUp}
                                 className="rounded-2xl p-6"
                                 style={{
-                                    background: "rgba(190,40,20,0.06)",
-                                    border: "1px solid rgba(190,40,20,0.1)",
+                                    background: "rgba(190,40,20,0.14)",
+                                    border: "1px solid rgba(190,40,20,0.24)",
                                 }}
                             >
                                 <h4
@@ -196,7 +196,7 @@ function SolutionSection() {
                                 </h4>
                                 <p
                                     className="text-sm leading-relaxed"
-                                    style={{ color: "#3d1e05" }}
+                                    style={{ color: "#c0a898" }}
                                 >
                                     {item.text}
                                 </p>
@@ -244,7 +244,7 @@ function BenefitsSection() {
                         <SectionLabel>Was du bekommst</SectionLabel>
                         <h2
                             className="text-4xl sm:text-5xl font-bold tracking-tight"
-                            style={{ color: "#1c0e02" }}
+                            style={{ color: "#f0e8e0" }}
                         >
                             Dein Kopf wird frei.
                             <br />
@@ -252,7 +252,7 @@ function BenefitsSection() {
                                 className="text-transparent bg-clip-text"
                                 style={{
                                     backgroundImage:
-                                        "linear-gradient(160deg, #1c0e02 30%, #cc2d18 100%)",
+                                        "linear-gradient(160deg, #f0e8e0 30%, #cc2d18 100%)",
                                 }}
                             >
                                 Dein Körper zieht nach.
@@ -274,8 +274,8 @@ function BenefitsSection() {
                             variants={fadeUp}
                             className="rounded-2xl p-8 relative overflow-hidden"
                             style={{
-                                background: "rgba(190,40,20,0.04)",
-                                border: "1px solid rgba(190,40,20,0.08)",
+                                background: "rgba(190,40,20,0.10)",
+                                border: "1px solid rgba(190,40,20,0.22)",
                             }}
                         >
                             <div
@@ -286,13 +286,13 @@ function BenefitsSection() {
                             />
                             <h3
                                 className="text-xl font-semibold mb-4"
-                                style={{ color: "#1c0e02" }}
+                                style={{ color: "#f0e8e0" }}
                             >
                                 {b.title}
                             </h3>
                             <p
                                 className="text-base leading-relaxed"
-                                style={{ color: "#3d1e05" }}
+                                style={{ color: "#c0a898" }}
                             >
                                 {b.text}
                             </p>
@@ -306,9 +306,9 @@ function BenefitsSection() {
 
 // ─── CTA Section ───────────────────────────────────────────────────
 const inputStyle = {
-    background: "rgba(0,0,0,0.04)",
-    border: "1.5px solid rgba(210,32,10,0.18)",
-    color: "#1c0e02",
+    background: "rgba(255,255,255,0.07)",
+    border: "1.5px solid rgba(210,32,10,0.3)",
+    color: "#f0e8e0",
 };
 const focusBorder = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     (e.currentTarget.style.borderColor = "#8a1e14");
@@ -352,7 +352,7 @@ function CTASection() {
                         <SectionLabel>Bereit?</SectionLabel>
                         <h2
                             className="text-4xl sm:text-5xl font-bold tracking-tight mb-6"
-                            style={{ color: "#1c0e02" }}
+                            style={{ color: "#f0e8e0" }}
                         >
                             Bist du bereit, die Verantwortung
                             <br />
@@ -360,7 +360,7 @@ function CTASection() {
                                 className="text-transparent bg-clip-text"
                                 style={{
                                     backgroundImage:
-                                        "linear-gradient(160deg, #1c0e02 30%, #cc2d18 100%)",
+                                        "linear-gradient(160deg, #f0e8e0 30%, #cc2d18 100%)",
                                 }}
                             >
                                 in meine Hände zu legen?
@@ -371,7 +371,7 @@ function CTASection() {
                     <motion.p
                         variants={fadeUp}
                         className="text-lg mb-10 leading-relaxed"
-                        style={{ color: "#3d1e05" }}
+                        style={{ color: "#c0a898" }}
                     >
                         Schreib mir – ich melde mich persönlich zurück.
                     </motion.p>
@@ -381,8 +381,8 @@ function CTASection() {
                         <div
                             className="inline-flex rounded-xl p-1"
                             style={{
-                                background: "rgba(210,32,10,0.06)",
-                                border: "1px solid rgba(210,32,10,0.1)",
+                                background: "rgba(255,255,255,0.05)",
+                                border: "1px solid rgba(255,255,255,0.1)",
                             }}
                         >
                             {(["frage", "termin"] as const).map((t) => (
@@ -398,7 +398,7 @@ function CTASection() {
                                                   color: "#fff",
                                                   boxShadow: "0 2px 12px rgba(200,26,8,0.28)",
                                               }
-                                            : { color: "#3d1e05" }
+                                            : { color: "#c0a898" }
                                     }
                                 >
                                     {t === "frage" ? "Frage stellen" : "Termin buchen"}
@@ -475,7 +475,7 @@ function CTASection() {
                     <motion.p
                         variants={fadeUp}
                         className="text-sm"
-                        style={{ color: "#4a2808" }}
+                        style={{ color: "#9a7c68" }}
                     >
                         Oder direkt:{" "}
                         <a

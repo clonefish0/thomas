@@ -451,13 +451,6 @@ function CTASection() {
                         >
                             thomas@cbta-coaching.de
                         </a>
-                        {" · "}
-                        <a
-                            href="tel:+4917632692381"
-                            style={{ color: "#c83520" }}
-                        >
-                            +49 176 326 923 81
-                        </a>
                     </motion.p>
                 </motion.div>
             </div>

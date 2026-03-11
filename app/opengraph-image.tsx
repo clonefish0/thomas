@@ -23,7 +23,7 @@ export default async function Image() {
             >
                 {/* Background photo – right side */}
                 <img
-                    src={`${siteUrl}/Foto5.jpg`}
+                    src={`${siteUrl}/Foto6.jpg`}
                     style={{
                         position: "absolute",
                         right: 0,

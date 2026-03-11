@@ -7,7 +7,7 @@ const photos = [
     { src: "/Foto2.jpg", className: "rounded-xl" },
     { src: "/Foto3.jpg", className: "rounded-xl" },
     { src: "/Foto4.jpg", className: "rounded-xl" },
-    { src: "/Foto5.jpg", className: "rounded-xl" },
+    { src: "/Foto6.jpg", className: "rounded-xl" },
 ];
 
 const fadeUp = {
@@ -104,7 +104,7 @@ export function AboutSection() {
                         {/* Large photo top-left — Gesicht */}
                         <div className="col-span-2 row-span-2 relative overflow-hidden rounded-2xl">
                             <Image
-                                src="/Foto5.jpg"
+                                src="/Foto6.jpg"
                                 alt="Thomas Arndt – cbta Coach"
                                 fill
                                 className="object-cover object-top"

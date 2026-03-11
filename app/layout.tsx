@@ -58,7 +58,7 @@ export const metadata: Metadata = {
       "cbta – Persönliches Coaching für Ernährung, Training & nachhaltige Veränderung in Düsseldorf & Hilden. Kein Schema F. Jetzt kostenloses Erstgespräch sichern.",
     images: [
       {
-        url: "/Foto5.jpg",
+        url: "/Foto6.jpg",
         width: 1080,
         height: 1578,
         alt: "Thomas Arndt – cbta Coach für Ernährung und Training",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: "cbta – Coaching by Thomas Arndt",
     description:
       "Persönliches Coaching für Ernährung, Training & nachhaltige Veränderung. Kein Schema F. In Düsseldorf & Hilden oder online.",
-    images: ["/Foto5.jpg"],
+    images: ["/Foto6.jpg"],
   },
   robots: {
     index: true,
@@ -98,12 +98,12 @@ const jsonLdBusiness = {
     "cbta ist das persönliche Coaching von Thomas Arndt: Ernährung, Training und nachhaltige Veränderung ohne Schema F – in Düsseldorf, Hilden und online.",
   url: siteUrl,
   logo: `${siteUrl}/Logo.png`,
-  image: `${siteUrl}/Foto5.jpg`,
+  image: `${siteUrl}/Foto6.jpg`,
   founder: {
     "@type": "Person",
     name: "Thomas Arndt",
     jobTitle: "Coach für Ernährung und Training",
-    image: `${siteUrl}/Foto5.jpg`,
+    image: `${siteUrl}/Foto6.jpg`,
     sameAs: [
       "https://www.youtube.com/@ThomasArndt_cbta",
       "https://www.instagram.com/thomasarndt_cbta/",
@@ -146,7 +146,7 @@ const jsonLdPerson = {
   jobTitle: "Fitness- und Ernährungscoach",
   description: "Thomas Arndt ist Gründer von cbta – Coaching by Thomas Arndt. Seit 2013 hilft er Menschen mit individuellem Ernährungs- und Trainingscoaching in Düsseldorf, Hilden und online.",
   url: siteUrl,
-  image: `${siteUrl}/Foto5.jpg`,
+  image: `${siteUrl}/Foto6.jpg`,
   sameAs: [
     "https://www.youtube.com/@ThomasArndt_cbta",
     "https://www.instagram.com/thomasarndt_cbta/",

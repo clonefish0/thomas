@@ -203,6 +203,8 @@ function CTASection() {
     const buildMailto = (e: React.FormEvent<HTMLFormElement>, defaultSubject: string) => {
         e.preventDefault();
         const fd = new FormData(e.currentTarget);
+        // Honeypot: Bots füllen dieses versteckte Feld aus – Menschen nicht
+        if (fd.get("website")) return;
         const subject = encodeURIComponent((fd.get("betreff") as string) || defaultSubject);
         const body = encodeURIComponent(`Name: ${fd.get("name")}\n\n${fd.get("nachricht")}`);
         window.location.href = `mailto:thomas@cbta-coaching.de?subject=${subject}&body=${body}`;
@@ -257,6 +259,9 @@ function CTASection() {
                     {/* ── Frage stellen ── */}
                     {tab === "frage" && (
                         <form className="flex flex-col gap-4 text-left mb-10" onSubmit={(e) => buildMailto(e, "Coaching-Anfrage")}>
+                            {/* Honeypot – für Bots unsichtbar */}
+                            <input name="website" type="text" tabIndex={-1} autoComplete="off"
+                                aria-hidden="true" style={{ position: "absolute", opacity: 0, pointerEvents: "none", height: 0 }} />
                             <div className="grid sm:grid-cols-2 gap-4">
                                 <input name="name" type="text" placeholder="Name" required
                                     className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200 placeholder:text-[#6a4830]"
@@ -282,6 +287,9 @@ function CTASection() {
                     {/* ── Termin buchen ── */}
                     {tab === "termin" && (
                         <form className="flex flex-col gap-4 text-left mb-10" onSubmit={(e) => buildMailto(e, "Terminanfrage")}>
+                            {/* Honeypot – für Bots unsichtbar */}
+                            <input name="website" type="text" tabIndex={-1} autoComplete="off"
+                                aria-hidden="true" style={{ position: "absolute", opacity: 0, pointerEvents: "none", height: 0 }} />
                             <div className="grid sm:grid-cols-2 gap-4">
                                 <input name="name" type="text" placeholder="Name" required
                                     className="w-full px-5 py-4 rounded-xl text-sm outline-none transition-all duration-200 placeholder:text-[#6a4830]"

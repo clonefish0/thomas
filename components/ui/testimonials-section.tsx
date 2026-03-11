@@ -59,6 +59,12 @@ const testimonials: Testimonial[] = [
         role: "Client",
         image: "/testimonials/Markus.jpeg",
     },
+    {
+        quote: "Seit 2 Jahren wachsen wir gemeinsam – du als Coach, der sich permanent weiterbildet, um uns alle bestmöglich zu betreuen. Ich kenne kaum jemanden, der so viel Herzblut in diese Sache hineinsteckt. Du bist nicht nur Coach, sondern auch Mensch. Gehst individuell auf Bedürfnisse ein und machst es wirklich für jeden umsetzbar – erfolgreich sogar! Lösungsorientiert, informierst dich bei unbekannten Problemen, und dabei steht immer der Mensch im Vordergrund. Deshalb würde ich auch keinen anderen Coach wählen.",
+        name: "Alina B.",
+        role: "Client",
+        image: "/testimonials/Alina.jpeg",
+    },
 ];
 
 export function TestimonialsSection() {

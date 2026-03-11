@@ -83,6 +83,12 @@ const testimonials: Testimonial[] = [
         role: "Client",
         image: "/testimonials/Basti.jpeg",
     },
+    {
+        quote: "Mit 52 Jahren, alleinerziehend und mitten in den Wechseljahren kam ich zu Thomas – und er hat mich in seinen Safe-Space mitgenommen. Ehrlich, motiviert und fachlich extrem kompetent. Durch sein Coaching haben sich meine Nebenwirkungen in Luft aufgelöst und ich kann endlich auch langsam abnehmen. Körperlich und seelisch geht es mir immer besser. Das cbta Team ist so positiv – hier habe ich Menschen gefunden, die sich gegenseitig pushen. Es war die beste Entscheidung meines Lebens, definitiv.",
+        name: "Sandra B.",
+        role: "Client",
+        image: "/testimonials/Sandy.jpeg",
+    },
 ];
 
 export function TestimonialsSection() {

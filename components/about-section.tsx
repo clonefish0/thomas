@@ -111,6 +111,13 @@ export function AboutSection() {
                                 sizes="(max-width: 768px) 100vw, 400px"
                                 priority
                             />
+                            {/* Vignette: blendet Hintergrund (Backofen) unten aus */}
+                            <div
+                                className="absolute inset-0 rounded-2xl pointer-events-none"
+                                style={{
+                                    background: "radial-gradient(ellipse 90% 60% at 50% 30%, transparent 40%, rgba(14,10,8,0.55) 70%, rgba(14,10,8,0.92) 100%)",
+                                }}
+                            />
                         </div>
 
                         {/* Small top-right */}

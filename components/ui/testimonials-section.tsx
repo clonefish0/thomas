@@ -103,6 +103,7 @@ export function TestimonialsSection() {
 
     return (
         <section
+            id="kunden"
             className="relative w-full py-28 px-6"
             onClick={() => setFocused(null)}
         >

@@ -11,72 +11,72 @@ const faqItems = [
     {
         value: "ablauf",
         title: "Wie läuft das Coaching genau ab?",
-        content: "Im ersten Schritt führen wir gemeinsam ein kostenloses Erstgespräch, in dem wir deine individuellen Ziele besprechen und eine konkrete Strategie festlegen. Danach erhältst du dein Onboarding über unsere App: Du füllst den Anamnesebogen aus und bekommst alle auf dich abgestimmten Pläne – jederzeit abrufbar an einem Ort. Über die App hast du außerdem 24/7 die Möglichkeit, mich direkt per Chat zu erreichen und bekommst immer innerhalb von 24 Stunden eine Antwort. 1x pro Woche machst du einen Check-In und erhältst dein persönliches Feedback sowie deine Ziele für die neue Woche.",
+        content: "Erstmal reden wir – kostenlos, kein Pitch, kein Verkaufsgespräch. Du erzählst mir wo du stehst, ich erkläre dir wie ich arbeite. Wenn es passt, starten wir. Du bekommst dann dein Onboarding über unsere App, füllst einen Anamnesebogen aus und erhältst danach alle Pläne, die ich speziell für dich erstellt habe. Alles an einem Ort, jederzeit abrufbar. Ich bin per Chat erreichbar und antworte dir innerhalb von 24 Stunden. Einmal pro Woche machst du einen kurzen Check-In – ich schaue drauf, gebe dir Feedback und wir legen fest, was die nächste Woche bringt.",
     },
     {
         value: "kommunikation",
         title: "Über welchen Kommunikationskanal läuft das Coaching?",
-        content: "Das Coaching läuft über eine App. Das hat den Vorteil, dass du sämtliche Informationen und Pläne an einem Ort hast und jederzeit darauf zugreifen kannst. Zudem hast du in der App eine 24/7 verfügbare Chatfunktion für alle Fragen und Bedürfnisse.",
+        content: "Alles läuft über unsere Coaching-App. Deine Pläne, dein Tracking, unser Chat – alles an einem Ort. Kein WhatsApp-Chaos, keine verlorenen Nachrichten. Du schreibst mir wenn du Fragen hast, und ich bin da.",
     },
     {
         value: "daten",
         title: "Muss ich jeden Tag meine Daten erfassen?",
-        content: "Alles kann, nichts muss! Natürlich kann ich umso besser arbeiten, je mehr Daten ich von dir habe. Allerdings ist es nicht Ziel der Sache, bei dir Stress auszulösen. Geh gerne in die Kommunikation und wir finden einen gesunden Mittelweg, der in deinen Alltag passt.",
+        content: "Nein. Mehr Daten helfen mir, besser für dich arbeiten zu können – aber ich will keinen zusätzlichen Stress in dein Leben bringen. Sag mir was für dich realistisch ist, und wir finden einen Weg, der auch wirklich funktioniert.",
     },
     {
         value: "krank",
         title: "Was passiert wenn ich mal krank bin?",
-        content: "Wenn du krank bist, helfe ich dir z.B. durch den gezielten Einsatz von Supplementen (Vitaminen und Mineralien), deine Gesundheit zu unterstützen, damit du schnell wieder fit wirst. Gemeinsam passen wir deinen Plan an die Situation an.",
+        content: "Dann meldest du dich bei mir, und wir schauen gemeinsam was sinnvoll ist. Je nach Situation passen wir deinen Plan an, reduzieren die Belastung oder ich gebe dir konkrete Tipps zu Supplementen die dir helfen können, schneller wieder fit zu werden. Kein Druck – Gesundheit geht vor.",
     },
     {
         value: "pause",
         title: "Kann ich das Coaching pausieren?",
-        content: "Das Leben ist individuell – die Päckchen, die wir tragen, sind es auch. Bitte such bei Problemen immer die direkte Kommunikation mit mir. Wir finden immer eine Lösung.",
+        content: "Das Leben läuft nicht immer nach Plan – das weiß ich. Wenn sich etwas ändert, ruf mich an oder schreib mir. Wir reden drüber und finden eine Lösung. Einfach verschwinden musst du auf keinen Fall.",
     },
     {
         value: "anfaenger",
         title: "Kann ich auch als kompletter Anfänger starten?",
-        content: "Selbstverständlich! Auch als Trainingsanfänger nehme ich dich an die Hand. Ich empfehle sogar, früh mit professioneller Betreuung zu starten – so erzielen wir vom ersten Tag an echte Ergebnisse und vermeiden schlechte Gewohnheiten von Beginn an.",
+        content: "Gerade als Anfänger macht professionelle Begleitung am meisten Sinn. Du lernst es von Anfang an richtig – keine schlechten Gewohnheiten, keine Verletzungen durch falsches Training, keine verlorene Zeit durch sinnlose Diäten. Ich nehme dich an die Hand, egal bei null du startest.",
     },
     {
         value: "preise",
         title: "Welche Laufzeiten und Preise gibt es?",
-        content: "Es gibt drei Modelle – je länger die Laufzeit, desto günstiger der monatliche Beitrag:\n\n1 Monat: 250 €/Monat\n3 Monate: 200 €/Monat\n12 Monate: 150 €/Monat\n\nDu erhältst selbstverständlich einen Vertrag sowie monatliche Rechnungen. Alle Details klären wir im kostenlosen Erstgespräch.",
+        content: "Es gibt drei Modelle – je länger die Laufzeit, desto günstiger der monatliche Beitrag:\n\n1 Monat: 250 €/Monat\n3 Monate: 200 €/Monat\n12 Monate: 150 €/Monat\n\nDu bekommst einen Vertrag und monatliche Rechnungen. Welches Modell für dich passt, klären wir gemeinsam im Erstgespräch.",
     },
     {
         value: "ernaehrung",
         title: "Darf ich flexibel essen oder muss ich mich an einen festen Plan halten?",
-        content: "Ich plane immer abgestimmt auf deine Bedürfnisse – egal ob du einen konkreten Ernährungsplan wünschst, Kalorienvorgaben oder mehr Flexibilität. Wir finden gemeinsam den passenden Weg. Die Coaching-App bietet zudem eine Trackingfunktion, damit wir deine Ernährung auch bei flexibler Handhabung nachvollziehen können.",
+        content: "Das entscheidest du. Manche wollen einen klaren Plan mit genauen Mahlzeiten – andere brauchen mehr Freiheit. Beides funktioniert, wenn wir es richtig aufsetzen. Ich frage dich, was zu deinem Leben passt, und dann planen wir genau das.",
     },
     {
         value: "kein-kochen",
         title: "Kann ich auch abnehmen wenn ich wenig Zeit zum Kochen habe?",
-        content: "Auch für Menschen, die keine Zeit zum Kochen haben oder einfach ungern vorkochen, finden wir eine Lösung, die im Alltag umsetzbar ist – damit du deine Ziele erreichst.",
+        content: "Ja. Ich arbeite mit Menschen, die voll im Berufsleben stehen, Kinder haben, wenig Zeit und noch weniger Lust auf Meal-Prep. Wir finden Lösungen, die in deinen Alltag passen – nicht in einen Idealzustand, den du sowieso nicht hast.",
     },
     {
         value: "studio",
         title: "Brauche ich ein Fitnessstudio oder kann ich auch zuhause trainieren?",
-        content: "Du benötigst nicht zwingend ein Fitnessstudio. Auch Übungen daheim sind möglich, oder wir finden gemeinsam eine andere Lösung für mehr Aktivität in deinem Alltag.",
+        content: "Ein Studio ist schön, aber kein Muss. Ich erstelle dir Pläne die mit dem funktionieren was du hast – ob Studio, Zuhause oder gar nichts außer deinem eigenen Körpergewicht. Hauptsache du bewegst dich.",
     },
     {
         value: "haeufigkeit",
         title: "Wie oft pro Woche muss ich trainieren?",
-        content: "Wir finden gemeinsam das Trainingspensum, das in deinem Alltag realistisch umsetzbar ist. Es gibt keine starre Vorgabe – was zählt, ist Kontinuität, nicht Perfektion.",
+        content: "So oft wie es für dich realistisch ist. Zwei Mal die Woche und konsequent ist mehr wert als fünf Mal die Woche und nach zwei Wochen wieder aufgehört. Wir finden dein Pensum – nicht das aus irgendeinem YouTube-Video.",
     },
     {
         value: "warum",
         title: "Ich habe schon vieles ausprobiert – warum sollte es jetzt funktionieren?",
-        content: "Weil ich dich begleite. Du bist nicht allein mit deinen Struggles und ich stehe jederzeit an deiner Seite. Mein Coaching ist kein starres Gerüst – es ist ein Coaching, das zu deinem Leben passt und dir damit leichter von der Hand geht. Mit langjähriger Erfahrung und echtem Interesse an deiner Person finden wir den Weg, der wirklich funktioniert.",
+        content: "Weil diesmal jemand dabei ist. Nicht irgendein Plan aus dem Internet, der dich nicht kennt. Nicht eine App, die dich nach zwei Wochen vergessen hat. Ich bin da, ich sehe was passiert, und ich passe an wenn nötig. Das ist der Unterschied.",
     },
     {
         value: "stress",
         title: "Kann ich auch gute Ergebnisse erzielen wenn ich viel Stress / Reise / Schichtdienst habe?",
-        content: "Jeder Mensch hat sein Paket zu tragen und ist individuell zu betrachten. Auch für stressige Lebenssituationen finden wir die richtige Lösung. Ich begleite dich z.B. auch auf Dienstreisen und finde individuelle Wege im Rahmen deiner Umstände.",
+        content: "Ich habe Klienten mit Schichtdienst, mit drei Kindern, auf Dienstreisen, mit chronischen Erkrankungen. Das Leben ist selten perfekt – deshalb bin ich da. Wir arbeiten mit dem was du hast, nicht mit dem was du gerne hättest.",
     },
     {
         value: "blutbild",
         title: "Werden auch Blutbilder analysiert?",
-        content: "Deine Gesundheit steht für mich an erster Stelle. Blutbilder sind mir daher sehr wichtig und werden selbstverständlich ausgewertet und mit dir persönlich besprochen.",
+        content: "Ja – und ich nehme das ernst. Gesundheit ist das Fundament von allem. Wenn du mir dein Blutbild schickst, schaue ich es mir an und wir besprechen was die Werte bedeuten und was wir daraus machen.",
     },
 ];
 
@@ -106,11 +106,14 @@ export function FAQSection() {
                             FAQ
                         </p>
                         <h2
-                            className="text-4xl sm:text-5xl font-bold tracking-tight"
+                            className="text-4xl sm:text-5xl font-bold tracking-tight mb-4"
                             style={{ color: "#f0e8e0" }}
                         >
                             Häufige Fragen
                         </h2>
+                        <p className="text-base max-w-xl mx-auto" style={{ color: "#c0a898" }}>
+                            Ich beantworte die hier gerne. Wenn noch etwas offen bleibt – schreib mir einfach direkt.
+                        </p>
                     </motion.div>
 
                     <motion.div variants={fadeUp}>

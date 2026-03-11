@@ -77,6 +77,12 @@ const testimonials: Testimonial[] = [
         role: "Client",
         image: "/testimonials/Jamie.jpeg",
     },
+    {
+        quote: "Danke an meinen Coach – oder eher Freund – der mich nicht nur körperlich, sondern auch mental auf ein ganz neues Level gebracht hat. Du hast immer ein offenes Ohr und gibst einem das Gefühl, dass man mit allem zu dir kommen kann. Was ich am meisten schätze: Du kümmerst dich IMMER zuerst um deine Klienten. Training, Ernährung, Fortschritte und ganz besonders die Psyche – gerade in schwierigen Zeiten hast du immer nachgefragt und unterstützt. Du bist nicht nur Coach, sondern ein echter Wegbegleiter. Hab dich lieb 🫶💪🏼",
+        name: "Sebastian K.",
+        role: "Client",
+        image: "/testimonials/Basti.jpeg",
+    },
 ];
 
 export function TestimonialsSection() {

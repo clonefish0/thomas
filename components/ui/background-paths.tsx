@@ -55,7 +55,7 @@ export function BackgroundPaths() {
                         initial={{ opacity: 0, y: 12 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.9, duration: 0.8 }}
-                        className="text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed"
+                        className="text-lg sm:text-xl max-w-xl mx-auto mb-10 leading-relaxed"
                         style={{ color: "#ddd0c8" }}
                     >
                         Du hast es schon versucht. Alleine, mit irgendwelchen Plänen, mit Apps. Irgendetwas fehlte immer. Ich bin Thomas – und das hier ist kein Schema F.
@@ -114,17 +114,19 @@ export function BackgroundPaths() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 2, duration: 1 }}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 cursor-pointer"
+                className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer"
                 onClick={() => document.getElementById("ueber-mich")?.scrollIntoView({ behavior: "smooth" })}
             >
-                <span className="text-xs tracking-[0.2em] uppercase" style={{ color: "#9a8070", fontFamily: "var(--font-mono)" }}>
-                    Mehr
+                <span className="text-xs tracking-[0.2em] uppercase" style={{ color: "#c0a898", fontFamily: "var(--font-mono)" }}>
+                    Scroll
                 </span>
                 <motion.div
-                    animate={{ y: [0, 6, 0] }}
-                    transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
+                    animate={{ y: [0, 8, 0] }}
+                    transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
+                    className="flex flex-col items-center"
                 >
-                    <ChevronDown className="w-5 h-5" style={{ color: "#cc2d18" }} />
+                    <ChevronDown className="w-5 h-5 -mb-2" style={{ color: "#cc2d18", opacity: 1 }} />
+                    <ChevronDown className="w-5 h-5" style={{ color: "#cc2d18", opacity: 0.4 }} />
                 </motion.div>
             </motion.div>
         </div>

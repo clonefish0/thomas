@@ -146,7 +146,7 @@ export function TestimonialsSection() {
                 </motion.div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     {testimonials.map(({ name, role, quote, image }, index) => (
                         <motion.div
                             key={index}
@@ -158,7 +158,7 @@ export function TestimonialsSection() {
                                 e.stopPropagation();
                                 setFocused((prev) => (prev === index ? null : index));
                             }}
-                            className="relative grid grid-cols-[auto_1fr] gap-x-3 overflow-hidden p-5 rounded-2xl cursor-pointer"
+                            className="relative grid grid-cols-[auto_1fr] gap-x-3 overflow-hidden p-5 sm:p-6 rounded-2xl cursor-pointer"
                             style={{
                                 background: "rgba(190,40,20,0.08)",
                                 border:
@@ -219,7 +219,7 @@ export function TestimonialsSection() {
                                 </div>
                                 <blockquote className="mt-3">
                                     <p
-                                        className="text-sm font-light leading-relaxed"
+                                        className="text-sm sm:text-[15px] font-light leading-relaxed"
                                         style={{ color: "#c0a898" }}
                                     >
                                         {quote}

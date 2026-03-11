@@ -14,9 +14,9 @@ export default function Home() {
     <>
       <DemoBackgroundPaths />
       <AboutSection />
+      <ContentSections />
       <StatsSection />
       <MarqueeSection />
-      <ContentSections />
       <ProcessSection />
       <TestimonialsSection />
       <FAQSection />

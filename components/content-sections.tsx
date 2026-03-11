@@ -37,13 +37,13 @@ function Divider() {
 const problems = [
     {
         number: "01",
-        title: "Social-Media-Chaos",
-        text: "Ein Coach sagt High Carb, der nächste Low Carb. HIT-Training vs. Volumentraining. Widersprüchliche Tipps auf jedem Kanal – du weißt nicht mehr, was für dich stimmt.",
+        title: "Jeder hat den richtigen Tipp",
+        text: "YouTube sagt Kalorien zählen. Instagram sagt intuitiv essen. Der eine Trainer schwört auf Kraft, der andere auf Cardio. Irgendwann glaubst du gar nichts mehr – und machst gar nichts.",
     },
     {
         number: "02",
-        title: "Die Disziplin-Falle",
-        text: "Anfangs bist du hoch motiviert. Doch sobald Stress kommt, bricht der Plan zusammen. Ohne System bleibt Konsistenz ein Zufallsprodukt.",
+        title: "Pläne, die dein Leben ignorieren",
+        text: "Ein Plan, der nicht zu deinem Alltag passt, ist kein Plan – er ist eine Aufgabe, bei der du scheitern musst. Schichtdienst, Familie, Dienstreisen: Das Leben macht keine Pause für deine Ziele.",
     },
 ];
 
@@ -60,10 +60,10 @@ function ProblemSection() {
                     <motion.div variants={fadeUp}>
                         <SectionLabel>Das Problem</SectionLabel>
                         <h2 className="text-4xl sm:text-5xl font-bold tracking-tight" style={{ color: "#f0e8e0" }}>
-                            Woran es bisher
+                            Nicht du warst das Problem.
                             <br />
                             <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(160deg, #f0e8e0 30%, #cc2d18 100%)" }}>
-                                gescheitert ist
+                                Niemand war wirklich da.
                             </span>
                         </h2>
                     </motion.div>
@@ -103,23 +103,23 @@ function SolutionSection() {
                     <motion.div variants={fadeUp}>
                         <SectionLabel>Die Lösung</SectionLabel>
                         <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6" style={{ color: "#f0e8e0" }}>
-                            Komplexes Wissen.
+                            Kein Copy-Paste.
                             <br />
                             <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(160deg, #f0e8e0 30%, #cc2d18 100%)" }}>
-                                Simpel umgesetzt.
+                                Kein Schema F.
                             </span>
                         </h2>
                     </motion.div>
 
                     <motion.p variants={fadeUp} className="text-lg max-w-2xl mx-auto leading-relaxed mb-16" style={{ color: "#c0a898" }}>
-                        Ich erkläre komplizierte Konzepte in verständlicher Sprache – so dass du sie sofort anwenden kannst. Kein Overwhelming, keine Verwirrung. Du übernimmst die Ausführung, ich die Planung und Verantwortung.
+                        Nach Jahren mit Menschen in den unterschiedlichsten Lebenssituationen weiß ich: Es gibt keinen universellen Weg. Was du bekommst, passt sich deinem Leben an – nicht umgekehrt.
                     </motion.p>
 
                     <motion.div variants={stagger} className="grid md:grid-cols-3 gap-6 text-left">
                         {[
-                            { label: "Klarer Plan", text: "Kein Rätselraten mehr. Du bekommst genau das, was du brauchst – und weißt warum." },
-                            { label: "Meine Verantwortung", text: "Ich trage die Verantwortung für deinen Fortschritt. Du lieferst die Ausführung." },
-                            { label: "Kein Overhead", text: "Schluss mit widersprüchlichen Tipps. Ein System. Ein Ansprechpartner. Ergebnisse." },
+                            { label: "Keine Pläne von der Stange", text: "Alles was du bekommst, wurde für dich erstellt. Deine Situation, deine Ziele, deine Grenzen." },
+                            { label: "Ich bin da – wirklich", text: "24/7 erreichbar. Wöchentlicher Check-In. Wenn du hängest, bist du nicht allein damit." },
+                            { label: "Der ganze Mensch zählt", text: "Training und Ernährung sind nur ein Teil. Schlaf, Stress, mentale Energie – ich sehe das große Bild." },
                         ].map((item) => (
                             <motion.div key={item.label} variants={fadeUp} className="rounded-2xl p-6"
                                 style={{ background: "rgba(190,40,20,0.14)", border: "1px solid rgba(190,40,20,0.24)" }}
@@ -137,9 +137,9 @@ function SolutionSection() {
 
 // ─── Benefits Section ──────────────────────────────────────────────
 const benefits = [
-    { title: "Vollständige Kontrolle", text: "Training, Ernährung, Regeneration – ich behalte den Überblick, damit dein Kopf frei bleibt." },
-    { title: "Du fährst, ich navigiere", text: "Betrachte mich als deinen Co-Piloten. Die Richtung stimmt – du gibst Gas." },
-    { title: "Sichtbare Ergebnisse", text: "Kein Bullshit, keine falschen Versprechen. Intelligente Planung liefert echten Physique und Performance." },
+    { title: "Ein Plan für dein echtes Leben", text: "Kein Idealplan für ideale Umstände. Wir arbeiten mit dem, was du hast – Schichtdienst, Familie, Stress – und trotzdem kommen Ergebnisse." },
+    { title: "Jemand der wirklich zuhört", text: "Nicht nur beim Check-In. Ich kenne deine Geschichte, deine Baustellen und was dich antreibt. Genau das macht den Unterschied." },
+    { title: "Ergebnisse, die bleiben", text: "Kein Jojo. Kein kurzfristiger Hype. Wir bauen etwas auf, das in deinem Alltag funktioniert – heute, nächstes Jahr und danach." },
 ];
 
 function BenefitsSection() {
@@ -155,10 +155,10 @@ function BenefitsSection() {
                     <motion.div variants={fadeUp}>
                         <SectionLabel>Was du bekommst</SectionLabel>
                         <h2 className="text-4xl sm:text-5xl font-bold tracking-tight" style={{ color: "#f0e8e0" }}>
-                            Dein Kopf wird frei.
+                            Nicht mehr allein damit.
                             <br />
                             <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(160deg, #f0e8e0 30%, #cc2d18 100%)" }}>
-                                Dein Körper zieht nach.
+                                Endlich Ergebnisse.
                             </span>
                         </h2>
                     </motion.div>
@@ -225,16 +225,16 @@ function CTASection() {
                     <motion.div variants={fadeUp}>
                         <SectionLabel>Bereit?</SectionLabel>
                         <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6" style={{ color: "#f0e8e0" }}>
-                            Bist du bereit, die Verantwortung
+                            Schreib mir.
                             <br />
                             <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(160deg, #f0e8e0 30%, #cc2d18 100%)" }}>
-                                in meine Hände zu legen?
+                                Ich antworte persönlich.
                             </span>
                         </h2>
                     </motion.div>
 
                     <motion.p variants={fadeUp} className="text-lg mb-10 leading-relaxed" style={{ color: "#c0a898" }}>
-                        Schreib mir – ich melde mich persönlich zurück.
+                        Kein Verkaufsgespräch, keine leeren Versprechen. Nur ein ehrliches Gespräch darüber, was für dich möglich ist.
                     </motion.p>
 
                     {/* ── Tab Switcher ── */}

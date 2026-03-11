@@ -58,7 +58,7 @@ export function BackgroundPaths() {
                         className="text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed"
                         style={{ color: "#c0a898" }}
                     >
-                        Willkommen. Ich bin Thomas – dein Coach für Ernährung, Training und nachhaltige Veränderung. Hier findest du alles, was du brauchst, um endlich voranzukommen.
+                        Du hast es schon versucht. Alleine, mit irgendwelchen Plänen, mit Apps. Irgendetwas fehlte immer. Ich bin Thomas – und das hier ist kein Schema F.
                     </motion.p>
 
                     {/* Social Media Buttons */}

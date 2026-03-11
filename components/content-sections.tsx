@@ -8,6 +8,11 @@ const fadeUp: Variants = {
     visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
 };
 
+const headlineReveal: Variants = {
+    hidden: { opacity: 0, y: 48, clipPath: "inset(0 0 100% 0)" },
+    visible: { opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)", transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] } },
+};
+
 const stagger: Variants = {
     hidden: {},
     visible: { transition: { staggerChildren: 0.15 } },
@@ -49,7 +54,7 @@ const problems = [
 
 function ProblemSection() {
     return (
-        <section className="relative py-28 px-6" style={{ backgroundColor: "transparent" }}>
+        <section id="coaching" className="relative py-28 px-6" style={{ backgroundColor: "transparent" }}>
             <Divider />
             <div className="max-w-5xl mx-auto pt-20">
                 <motion.div
@@ -59,14 +64,16 @@ function ProblemSection() {
                 >
                     <motion.div variants={fadeUp}>
                         <SectionLabel>Das Problem</SectionLabel>
-                        <h2 className="text-4xl sm:text-5xl font-bold tracking-tight" style={{ color: "#f0e8e0" }}>
+                    </motion.div>
+                    <div style={{ overflow: "hidden" }}>
+                        <motion.h2 variants={headlineReveal} className="text-4xl sm:text-5xl font-bold tracking-tight" style={{ color: "#f0e8e0" }}>
                             Nicht du warst das Problem.
                             <br />
                             <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(160deg, #f0e8e0 30%, #cc2d18 100%)" }}>
                                 Niemand war wirklich da.
                             </span>
-                        </h2>
-                    </motion.div>
+                        </motion.h2>
+                    </div>
                 </motion.div>
 
                 <motion.div
@@ -102,14 +109,16 @@ function SolutionSection() {
                 >
                     <motion.div variants={fadeUp}>
                         <SectionLabel>Die Lösung</SectionLabel>
-                        <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6" style={{ color: "#f0e8e0" }}>
+                    </motion.div>
+                    <div style={{ overflow: "hidden" }}>
+                        <motion.h2 variants={headlineReveal} className="text-4xl sm:text-5xl font-bold tracking-tight mb-6" style={{ color: "#f0e8e0" }}>
                             Kein Copy-Paste.
                             <br />
                             <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(160deg, #f0e8e0 30%, #cc2d18 100%)" }}>
                                 Kein Schema F.
                             </span>
-                        </h2>
-                    </motion.div>
+                        </motion.h2>
+                    </div>
 
                     <motion.p variants={fadeUp} className="text-lg max-w-2xl mx-auto leading-relaxed mb-16" style={{ color: "#c0a898" }}>
                         Nach Jahren mit Menschen in den unterschiedlichsten Lebenssituationen weiß ich: Es gibt keinen universellen Weg. Was du bekommst, passt sich deinem Leben an – nicht umgekehrt.
@@ -171,13 +180,13 @@ function BenefitsSection() {
                 >
                     {benefits.map((b, i) => (
                         <motion.div key={b.title} variants={fadeUp} className="rounded-2xl p-8 relative overflow-hidden"
-                            style={{ background: "rgba(190,40,20,0.10)", border: "1px solid rgba(190,40,20,0.22)" }}
+                            style={{ background: "rgba(190,40,20,0.16)", border: "1px solid rgba(190,40,20,0.38)" }}
                         >
                             <div className="absolute top-0 left-0 w-full h-px"
-                                style={{ background: `linear-gradient(90deg, transparent, rgba(190,40,20,${0.2 + i * 0.1}), transparent)` }}
+                                style={{ background: `linear-gradient(90deg, transparent, rgba(190,40,20,${0.35 + i * 0.1}), transparent)` }}
                             />
                             <h3 className="text-xl font-semibold mb-4" style={{ color: "#f0e8e0" }}>{b.title}</h3>
-                            <p className="text-base leading-relaxed" style={{ color: "#c0a898" }}>{b.text}</p>
+                            <p className="text-base leading-relaxed" style={{ color: "#ddd0c8" }}>{b.text}</p>
                         </motion.div>
                     ))}
                 </motion.div>

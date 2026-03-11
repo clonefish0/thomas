@@ -90,6 +90,12 @@ const testimonials: Testimonial[] = [
         role: "Client",
         image: "/testimonials/Sandy.jpeg",
     },
+    {
+        quote: "Das Coaching bei Thomas ist insgesamt eine sehr positive Erfahrung. Besonders hervorzuheben ist die fachliche Kompetenz und die klare Struktur im Coaching. Trainingspläne, Anpassungen und Erklärungen zu Übungen sind immer nachvollziehbar und gut begründet. Sehr hilfreich ist auch das detaillierte Feedback zur Intensität und Trainingsprogression. Dadurch konnte die Trainingsqualität deutlich verbessert werden und Fortschritte waren klar erkennbar. Neben den praktischen Tipps zum Training wurde auch viel Wissen rund um effektives Bodybuilding vermittelt. Insgesamt ein sehr professionelles Coaching, das sowohl motiviert als auch dabei hilft, Training und Fortschritt besser zu verstehen und langfristig umzusetzen.",
+        name: "Marcel P.",
+        role: "Client",
+        image: "/testimonials/Marcel.jpeg",
+    },
 ];
 
 export function TestimonialsSection() {

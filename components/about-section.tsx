@@ -14,6 +14,11 @@ const fadeUp = {
     hidden: { opacity: 0, y: 32 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" as const } },
 };
+
+const headlineReveal = {
+    hidden: { opacity: 0, y: 48, clipPath: "inset(0 0 100% 0)" },
+    visible: { opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)", transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] as const } },
+};
 const stagger = {
     hidden: {},
     visible: { transition: { staggerChildren: 0.15 } },
@@ -21,7 +26,7 @@ const stagger = {
 
 export function AboutSection() {
     return (
-        <section className="relative py-28 px-6">
+        <section id="ueber-mich" className="relative py-28 px-6">
             <div
                 className="absolute top-0 left-0 right-0 h-px"
                 style={{ background: "linear-gradient(90deg, transparent, rgba(190,40,20,0.22), transparent)" }}
@@ -43,7 +48,10 @@ export function AboutSection() {
                             >
                                 Über mich
                             </p>
-                            <h2
+                        </motion.div>
+                        <div style={{ overflow: "hidden" }}>
+                            <motion.h2
+                                variants={headlineReveal}
                                 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6"
                                 style={{ color: "#f0e8e0" }}
                             >
@@ -55,8 +63,8 @@ export function AboutSection() {
                                 >
                                     33 Jahre. Coach aus Überzeugung.
                                 </span>
-                            </h2>
-                        </motion.div>
+                            </motion.h2>
+                        </div>
 
                         <motion.div variants={fadeUp} className="space-y-4" style={{ color: "#c0a898" }}>
                             <p className="text-base leading-relaxed">

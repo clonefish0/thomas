@@ -30,7 +30,7 @@ const stagger = {
 
 export function ProcessSection() {
     return (
-        <section className="relative py-28 px-6">
+        <section id="prozess" className="relative pt-28 pb-12 px-6">
             <div
                 className="absolute top-0 left-0 right-0 h-px"
                 style={{ background: "linear-gradient(90deg, transparent, rgba(190,40,20,0.22), transparent)" }}

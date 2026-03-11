@@ -13,11 +13,11 @@ export default function Home() {
   return (
     <>
       <DemoBackgroundPaths />
+      <AboutSection />
       <StatsSection />
       <MarqueeSection />
       <ContentSections />
       <ProcessSection />
-      <AboutSection />
       <TestimonialsSection />
       <FAQSection />
       <SiteFooter />

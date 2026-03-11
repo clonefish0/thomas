@@ -91,7 +91,7 @@ const stagger = {
 
 export function FAQSection() {
     return (
-        <section className="relative py-28 px-6" style={{ backgroundColor: "transparent" }}>
+        <section id="faq" className="relative py-28 px-6" style={{ backgroundColor: "transparent" }}>
             <div
                 className="absolute top-0 left-0 right-0 h-px"
                 style={{ background: "linear-gradient(90deg, transparent, rgba(190,40,20,0.22), transparent)" }}

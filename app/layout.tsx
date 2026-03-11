@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { FixedBackground } from "@/components/fixed-background";
 import { SiteHeader } from "@/components/site-header";
+import { CustomCursor } from "@/components/custom-cursor";
 
 const siteUrl = "https://cbta-coaching.de";
 
-const inter = Inter({
+const syne = Syne({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const dmSans = DM_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
 });
@@ -213,10 +220,16 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
+        className={`${syne.variable} ${dmSans.variable} ${jetbrainsMono.variable} antialiased`}
         style={{ backgroundColor: "transparent", position: "relative", zIndex: 1, paddingTop: "70px" }}
       >
         <FixedBackground />
+        {/* Film grain overlay */}
+        <div
+          aria-hidden="true"
+          className="grain-overlay"
+        />
+        <CustomCursor />
         <SiteHeader />
         {children}
       </body>

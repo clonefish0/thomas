@@ -65,6 +65,12 @@ const testimonials: Testimonial[] = [
         role: "Client",
         image: "/testimonials/Alina.jpeg",
     },
+    {
+        quote: "Ich bin sehr froh, doch den Schritt gewagt zu haben und dich als Coach zu haben 🫶🏻 Trotz meinen ganzen Krankheiten und Unfällen haben wir in dem halben Jahr schon gut was gerockt – ~10kg 🤯 Also danke dafür!",
+        name: "Lea H.",
+        role: "Client",
+        image: "/testimonials/Lea.jpeg",
+    },
 ];
 
 export function TestimonialsSection() {

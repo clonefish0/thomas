@@ -6,7 +6,7 @@ const items = [
     "Ernährung",
     "Training",
     "Mindset",
-    "24/7 erreichbar",
+    "Immer schnell zurück",
     "Blutbild-Analyse",
     "Wöchentliche Check-Ins",
     "Keine Copy-Paste Pläne",
@@ -25,7 +25,7 @@ function MarqueeRow({ reverse = false }: { reverse?: boolean }) {
             <div
                 className="flex gap-4 w-max"
                 style={{
-                    animation: `marquee${reverse ? "-reverse" : ""} 35s linear infinite`,
+                    animation: `marquee${reverse ? "-reverse" : ""} 60s linear infinite`,
                 }}
             >
                 {doubled.map((item, i) => (

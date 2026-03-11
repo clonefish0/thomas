@@ -6,14 +6,14 @@ import { GradientButton } from "@/components/ui/gradient-button";
 
 const socials = [
     {
-        label: "YouTube",
-        href: "https://www.youtube.com/@ThomasArndt_cbta",
-        icon: Youtube,
-    },
-    {
         label: "Instagram",
         href: "https://www.instagram.com/thomasarndt_cbta/",
         icon: Instagram,
+    },
+    {
+        label: "YouTube",
+        href: "https://www.youtube.com/@ThomasArndt_cbta",
+        icon: Youtube,
     },
     {
         label: "Spotify",

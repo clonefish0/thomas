@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Youtube, Instagram, Music2 } from "lucide-react";
 
 const socials = [
-    { label: "YouTube", href: "https://www.youtube.com/@ThomasArndt_cbta", icon: Youtube },
     { label: "Instagram", href: "https://www.instagram.com/thomasarndt_cbta/", icon: Instagram },
+    { label: "YouTube", href: "https://www.youtube.com/@ThomasArndt_cbta", icon: Youtube },
     { label: "Spotify", href: "https://open.spotify.com/show/4ZmKyh5I2lLhb1nUhRfCK0", icon: Music2 },
 ];
 
@@ -45,7 +45,7 @@ export function SiteFooter() {
                                 aria-label={label}
                                 className="footer-social"
                             >
-                                <Icon className="w-5 h-5" />
+                                <Icon className="w-6 h-6" />
                             </a>
                         ))}
                     </div>

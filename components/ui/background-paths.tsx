@@ -69,8 +69,8 @@ export function BackgroundPaths() {
                         className="flex justify-center mb-6"
                     >
                         <a
-                            href="#coaching"
-                            onClick={e => { e.preventDefault(); document.getElementById("coaching")?.scrollIntoView({ behavior: "smooth" }); }}
+                            href="#kontakt"
+                            onClick={e => { e.preventDefault(); document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" }); }}
                             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-bold tracking-wide transition-all duration-200"
                             style={{
                                 background: "linear-gradient(135deg, #cc2d18 0%, #a02010 100%)",

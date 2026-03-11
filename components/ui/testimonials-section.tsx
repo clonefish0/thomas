@@ -72,7 +72,7 @@ const testimonials: Testimonial[] = [
         image: "/testimonials/Lea.jpeg",
     },
     {
-        quote: "Ich lernte Thomas in einer Zeit kennen, in der bei mir wirklich vieles den Bach runterging. Durch einen seiner Klienten erfuhr ich, wie Thomas arbeitet – und immer wieder fiel derselbe Satz: „Der ist wirklich top!" Ich wusste, dass ich jemanden brauche, der nicht nur fachlich top ist, sondern auch menschlich in der Lage, einen zu erreichen. Er war da. Er hat zugehört. Er hat erklärt, wie sein Plan aussieht – nicht nur körperlich, sondern auch mental. Thomas ist Coach mit Herz, Verstand und Leidenschaft. Er ist mir absolut ans Herz gewachsen und längst nicht nur Coach, sondern Freund. 🔥❤️",
+        quote: "Ich lernte Thomas in einer Zeit kennen, in der bei mir wirklich vieles den Bach runterging. Durch einen seiner Klienten erfuhr ich, wie Thomas arbeitet – und immer wieder fiel derselbe Satz: ‚Der ist wirklich top!' Ich wusste, dass ich jemanden brauche, der nicht nur fachlich top ist, sondern auch menschlich in der Lage, einen zu erreichen. Er war da. Er hat zugehört. Er hat erklärt, wie sein Plan aussieht – nicht nur körperlich, sondern auch mental. Thomas ist Coach mit Herz, Verstand und Leidenschaft. Er ist mir absolut ans Herz gewachsen und längst nicht nur Coach, sondern Freund. 🔥❤️",
         name: "Jamie M.",
         role: "Client",
         image: "/testimonials/Jamie.jpeg",

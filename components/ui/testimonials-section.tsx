@@ -9,43 +9,37 @@ type Testimonial = {
     quote: string;
 };
 
-// ─── Platzhalter – ersetze diese Einträge nach und nach mit echten Kundenstimmen ───
+// ─── Kundenstimmen ───────────────────────────────────────────────────────────────
 const testimonials: Testimonial[] = [
     {
-        quote: "Ich wusste, dass mehr in mir steckt – mir hat nur das richtige System gefehlt. Thomas hat mir in wenigen Wochen mehr geholfen als Jahre des Selbststudiums.",
-        name: "Max M.",
-        role: "Coaching-Teilnehmer",
-        image: "https://randomuser.me/api/portraits/men/32.jpg",
+        quote: "Thomas ist verständnisvoll, direkt und ehrlich in Momenten wenn man es braucht und selber vielleicht nicht sein kann. Er sieht dich als ganze Person mit all dem was gut und ausbaufähig bei dir ist. Ich bin sehr dankbar für die Zeit die er sich nimmt für mich, und das zahlt sich auch aus! Keiner der dich reduziert auf Ziele sondern einer der mit dir gemeinsam dran arbeitet. Ein toller Coach :)",
+        name: "Magdalena D.",
+        role: "Client",
+        image: "/testimonials/Magda.jpeg",
     },
     {
-        quote: "Endlich jemand, der nicht einfach einen Ernährungsplan rausschmeißt, sondern versteht, warum meine bisherigen Versuche nicht funktionierten. Klarer Kopf, klares System.",
-        name: "Sarah K.",
-        role: "Coaching-Teilnehmerin",
-        image: "https://randomuser.me/api/portraits/women/44.jpg",
+        quote: "Ich habe seit meiner Kindheit unter starkem Übergewicht und Gewichtsschwankungen gelitten. Ich hatte Dinge wie weight watchers und iifym in Verbindung mit viel Sport probiert. Erst seit ich bei Thomas trainiere verstehe ich meinen Körper besser, habe endlich ein normales Gewicht und bin gesünder als je zuvor.",
+        name: "Alex V.",
+        role: "Client",
+        image: "/testimonials/Alex.jpeg",
     },
     {
-        quote: "Thomas erklärt komplexe Themen so, dass man sie wirklich versteht. Ich bin nicht mehr abhängig von widersprüchlichen Social-Media-Tipps.",
-        name: "Lukas B.",
-        role: "Coaching-Teilnehmer",
-        image: "https://randomuser.me/api/portraits/men/56.jpg",
+        quote: "Du hilfst mir sehr, weil du mich nicht nur als Coach kennst, sondern auch wie ein guter Freund weißt, wie ich ticke und wie ich denke. Du bist jemand, der sich wirklich in andere Menschen hineinversetzen kann und dich auf sie einstellen kann. Auch wenn wir erst seit zwei Monaten zusammen arbeiten – ich freue mich auf viele weitere Monate, in denen wir gemeinsam an meinen Zielen arbeiten. Ich bin wirklich dankbar, dich zu kennen und dass du sowohl als Coach als auch als Freund an meiner Seite bist. 🙏🏻",
+        name: "Serhat T.",
+        role: "Client",
+        image: "/testimonials/Serhat.jpeg",
     },
     {
-        quote: "Das Coaching war die beste Investition in mich selbst. Ich habe zum ersten Mal das Gefühl, dass mein Fortschritt kein Zufall ist, sondern Ergebnis eines echten Plans.",
-        name: "Jana R.",
-        role: "Coaching-Teilnehmerin",
-        image: "https://randomuser.me/api/portraits/women/28.jpg",
+        quote: "Coach T ist einfach immer da und hat mir in allen Lebenslagen geholfen, ich würde sagen mein persönlicher lifesaver ✨ Ich bin ganz stolz ein Teil des cbta Teams zu sein ❤️",
+        name: "Tanja S.",
+        role: "Client",
+        image: "/testimonials/Tanni.jpeg",
     },
     {
-        quote: "Keine leeren Versprechen, keine Standardpläne. Thomas nimmt sich wirklich Zeit, um zu verstehen wo man steht – und wo man hinwill.",
-        name: "Felix W.",
-        role: "Coaching-Teilnehmer",
-        image: "https://randomuser.me/api/portraits/men/41.jpg",
-    },
-    {
-        quote: "Ich habe viele Coaches ausprobiert, aber niemand hat mich so klar durch den ganzen Prozess geführt. Ergebnisse sprechen für sich.",
-        name: "Anna S.",
-        role: "Coaching-Teilnehmerin",
-        image: "https://randomuser.me/api/portraits/women/62.jpg",
+        quote: "Was kann ich nach 12 Monaten Coaching by Thomas Arndt sagen? Es war eine spannende und verdammt gute Zeit. Angesetzt auf 9 Monate – verlängert nach 6. Er hat mir viel beigebracht, ob Training, Ernährung oder Mindset. Thomas hatte immer ein offenes Ohr für Fragen und Zweifel, und hat diese schnell & sachlich aus dem Weg geräumt. In 12 Monaten wurde aus einem Coach ein Freund. Herzlich und prall gefüllt mit Kompetenz, ohne viel Schnickschnack. So sollte ein Coaching sein.",
+        name: "Simon W.",
+        role: "Client",
+        image: "/testimonials/Simon.jpeg",
     },
 ];
 

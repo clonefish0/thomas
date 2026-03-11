@@ -35,19 +35,24 @@ export function SiteFooter() {
                     </div>
 
                     {/* Socials */}
-                    <div className="flex items-center gap-4">
-                        {socials.map(({ label, href, icon: Icon }) => (
-                            <a
-                                key={label}
-                                href={href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label={label}
-                                className="footer-social"
-                            >
-                                <Icon className="w-6 h-6" />
-                            </a>
-                        ))}
+                    <div className="flex flex-col items-center gap-3">
+                        <div className="flex items-center gap-4">
+                            {socials.map(({ label, href, icon: Icon }) => (
+                                <a
+                                    key={label}
+                                    href={href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={label}
+                                    className="footer-social"
+                                >
+                                    <Icon className="w-6 h-6" />
+                                </a>
+                            ))}
+                        </div>
+                        <p className="text-xs tracking-[0.12em] footer-link" style={{ fontFamily: "var(--font-mono)" }}>
+                            @thomasarndt_cbta
+                        </p>
                     </div>
 
                     {/* Legal nav */}

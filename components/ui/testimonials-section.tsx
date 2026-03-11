@@ -41,6 +41,12 @@ const testimonials: Testimonial[] = [
         role: "Client",
         image: "/testimonials/Simon.jpeg",
     },
+    {
+        quote: "Thomas ist für mich weit mehr als nur ein Coach. Das Besondere ist das menschliche Verhältnis – mit der Zeit ist daraus etwas entstanden, das über klassisches Coaching hinausgeht: eine vertrauensvolle, fast freundschaftliche Verbindung. Er hört zu, nimmt sich Zeit und schafft es, dass man sich öffnen kann ohne sich bewertet zu fühlen. Was ich besonders schätze, ist sein Humor – die Zusammenarbeit fühlt sich nie schwer an. Selbst jetzt, wo ich pausiere, ist er weiterhin da. Das zeigt mir, dass es ihm nicht nur um Coaching geht, sondern um ehrliche Unterstützung.",
+        name: "Melinda H.",
+        role: "Client",
+        image: "/testimonials/Mel.jpeg",
+    },
 ];
 
 export function TestimonialsSection() {

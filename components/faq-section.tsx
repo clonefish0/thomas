@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { HelpCircle, CalendarDays, Timer, Wallet } from "lucide-react";
 import {
     Accordion,
     AccordionContent,
@@ -10,40 +9,74 @@ import {
 
 const faqItems = [
     {
-        value: "was-ist-coaching",
-        title: "Was ist Coaching?",
-        subtitle: "Grundlagen & Methoden",
-        content: "Coaching ist ein strukturierter Entwicklungsprozess, bei dem ich dich unterstütze, eigene Ressourcen zu entdecken, klare Ziele zu setzen und diese konsequent umzusetzen. Es geht nicht darum, dir Antworten vorzugeben – sondern die richtigen Fragen zu stellen.",
-        icon: HelpCircle,
-        color: "#cc2d18",
-        bg: "rgba(204,45,24,0.1)",
-    },
-    {
         value: "ablauf",
-        title: "Wie läuft eine Sitzung ab?",
-        subtitle: "Struktur & Prozess",
-        content: "Jede Session beginnt mit deinem persönlichen Fokus-Ziel für die Einheit. Wir arbeiten dann mit gezielten Fragen, konkreten Übungen und ehrlichem Feedback. Eine Sitzung dauert 60–90 Minuten und findet per Video-Call oder persönlich statt.",
-        icon: CalendarDays,
-        color: "#d44820",
-        bg: "rgba(212,72,32,0.1)",
+        title: "Wie läuft das Coaching genau ab?",
+        content: "Im ersten Schritt führen wir gemeinsam ein kostenloses Erstgespräch, in dem wir deine individuellen Ziele besprechen und eine konkrete Strategie festlegen. Danach erhältst du dein Onboarding über unsere App: Du füllst den Anamnesebogen aus und bekommst alle auf dich abgestimmten Pläne – jederzeit abrufbar an einem Ort. Über die App hast du außerdem 24/7 die Möglichkeit, mich direkt per Chat zu erreichen und bekommst immer innerhalb von 24 Stunden eine Antwort. 1x pro Woche machst du einen Check-In und erhältst dein persönliches Feedback sowie deine Ziele für die neue Woche.",
     },
     {
-        value: "dauer",
-        title: "Wie viele Sitzungen brauche ich?",
-        subtitle: "Zeitrahmen & Intensität",
-        content: "Das hängt von deinem Anliegen ab. Für ein konkretes Thema reichen oft 3–5 Sessions. Für nachhaltige Veränderungen empfehle ich ein 3–6-monatiges Begleitprogramm. Im kostenlosen Erstgespräch klären wir, was für dich sinnvoll ist.",
-        icon: Timer,
-        color: "#be3810",
-        bg: "rgba(190,56,16,0.1)",
+        value: "kommunikation",
+        title: "Über welchen Kommunikationskanal läuft das Coaching?",
+        content: "Das Coaching läuft über eine App. Das hat den Vorteil, dass du sämtliche Informationen und Pläne an einem Ort hast und jederzeit darauf zugreifen kannst. Zudem hast du in der App eine 24/7 verfügbare Chatfunktion für alle Fragen und Bedürfnisse.",
     },
     {
-        value: "kosten",
-        title: "Was kostet das Coaching?",
-        subtitle: "Investition & Pakete",
-        content: "Die Preise variieren je nach Format (Einzel-Session, Paket, Intensiv-Programm). Alle Details besprechen wir im kostenlosen Erstgespräch – schreib mir einfach über das Kontaktformular und ich melde mich persönlich zurück.",
-        icon: Wallet,
-        color: "#c82814",
-        bg: "rgba(200,40,20,0.1)",
+        value: "daten",
+        title: "Muss ich jeden Tag meine Daten erfassen?",
+        content: "Alles kann, nichts muss! Natürlich kann ich umso besser arbeiten, je mehr Daten ich von dir habe. Allerdings ist es nicht Ziel der Sache, bei dir Stress auszulösen. Geh gerne in die Kommunikation und wir finden einen gesunden Mittelweg, der in deinen Alltag passt.",
+    },
+    {
+        value: "krank",
+        title: "Was passiert wenn ich mal krank bin?",
+        content: "Wenn du krank bist, helfe ich dir z.B. durch den gezielten Einsatz von Supplementen (Vitaminen und Mineralien), deine Gesundheit zu unterstützen, damit du schnell wieder fit wirst. Gemeinsam passen wir deinen Plan an die Situation an.",
+    },
+    {
+        value: "pause",
+        title: "Kann ich das Coaching pausieren?",
+        content: "Das Leben ist individuell – die Päckchen, die wir tragen, sind es auch. Bitte such bei Problemen immer die direkte Kommunikation mit mir. Wir finden immer eine Lösung.",
+    },
+    {
+        value: "anfaenger",
+        title: "Kann ich auch als kompletter Anfänger starten?",
+        content: "Selbstverständlich! Auch als Trainingsanfänger nehme ich dich an die Hand. Ich empfehle sogar, früh mit professioneller Betreuung zu starten – so erzielen wir vom ersten Tag an echte Ergebnisse und vermeiden schlechte Gewohnheiten von Beginn an.",
+    },
+    {
+        value: "preise",
+        title: "Welche Laufzeiten und Preise gibt es?",
+        content: "Es gibt drei Modelle – je länger die Laufzeit, desto günstiger der monatliche Beitrag:\n\n1 Monat: 250 €/Monat\n3 Monate: 200 €/Monat\n12 Monate: 150 €/Monat\n\nDu erhältst selbstverständlich einen Vertrag sowie monatliche Rechnungen. Alle Details klären wir im kostenlosen Erstgespräch.",
+    },
+    {
+        value: "ernaehrung",
+        title: "Darf ich flexibel essen oder muss ich mich an einen festen Plan halten?",
+        content: "Ich plane immer abgestimmt auf deine Bedürfnisse – egal ob du einen konkreten Ernährungsplan wünschst, Kalorienvorgaben oder mehr Flexibilität. Wir finden gemeinsam den passenden Weg. Die Coaching-App bietet zudem eine Trackingfunktion, damit wir deine Ernährung auch bei flexibler Handhabung nachvollziehen können.",
+    },
+    {
+        value: "kein-kochen",
+        title: "Kann ich auch abnehmen wenn ich wenig Zeit zum Kochen habe?",
+        content: "Auch für Menschen, die keine Zeit zum Kochen haben oder einfach ungern vorkochen, finden wir eine Lösung, die im Alltag umsetzbar ist – damit du deine Ziele erreichst.",
+    },
+    {
+        value: "studio",
+        title: "Brauche ich ein Fitnessstudio oder kann ich auch zuhause trainieren?",
+        content: "Du benötigst nicht zwingend ein Fitnessstudio. Auch Übungen daheim sind möglich, oder wir finden gemeinsam eine andere Lösung für mehr Aktivität in deinem Alltag.",
+    },
+    {
+        value: "haeufigkeit",
+        title: "Wie oft pro Woche muss ich trainieren?",
+        content: "Wir finden gemeinsam das Trainingspensum, das in deinem Alltag realistisch umsetzbar ist. Es gibt keine starre Vorgabe – was zählt, ist Kontinuität, nicht Perfektion.",
+    },
+    {
+        value: "warum",
+        title: "Ich habe schon vieles ausprobiert – warum sollte es jetzt funktionieren?",
+        content: "Weil ich dich begleite. Du bist nicht allein mit deinen Struggles und ich stehe jederzeit an deiner Seite. Mein Coaching ist kein starres Gerüst – es ist ein Coaching, das zu deinem Leben passt und dir damit leichter von der Hand geht. Mit langjähriger Erfahrung und echtem Interesse an deiner Person finden wir den Weg, der wirklich funktioniert.",
+    },
+    {
+        value: "stress",
+        title: "Kann ich auch gute Ergebnisse erzielen wenn ich viel Stress / Reise / Schichtdienst habe?",
+        content: "Jeder Mensch hat sein Paket zu tragen und ist individuell zu betrachten. Auch für stressige Lebenssituationen finden wir die richtige Lösung. Ich begleite dich z.B. auch auf Dienstreisen und finde individuelle Wege im Rahmen deiner Umstände.",
+    },
+    {
+        value: "blutbild",
+        title: "Werden auch Blutbilder analysiert?",
+        content: "Deine Gesundheit steht für mich an erster Stelle. Blutbilder sind mir daher sehr wichtig und werden selbstverständlich ausgewertet und mit dir persönlich besprochen.",
     },
 ];
 
@@ -59,47 +92,50 @@ const stagger = {
 export function FAQSection() {
     return (
         <section className="relative py-28 px-6" style={{ backgroundColor: "transparent" }}>
-            <div className="absolute top-0 left-0 right-0 h-px"
+            <div
+                className="absolute top-0 left-0 right-0 h-px"
                 style={{ background: "linear-gradient(90deg, transparent, rgba(190,40,20,0.22), transparent)" }}
             />
             <div className="max-w-3xl mx-auto">
                 <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={stagger}>
                     <motion.div variants={fadeUp} className="text-center mb-14">
-                        <p className="text-xs tracking-[0.18em] uppercase mb-4"
-                            style={{ color: "#cc2d18", fontFamily: "var(--font-mono)" }}>
+                        <p
+                            className="text-xs tracking-[0.18em] uppercase mb-4"
+                            style={{ color: "#cc2d18", fontFamily: "var(--font-mono)" }}
+                        >
                             FAQ
                         </p>
-                        <h2 className="text-4xl sm:text-5xl font-bold tracking-tight" style={{ color: "#f0e8e0" }}>
+                        <h2
+                            className="text-4xl sm:text-5xl font-bold tracking-tight"
+                            style={{ color: "#f0e8e0" }}
+                        >
                             Häufige Fragen
                         </h2>
                     </motion.div>
 
                     <motion.div variants={fadeUp}>
-                        <Accordion type="single" collapsible defaultValue="was-ist-coaching" className="w-full -space-y-px">
-                            {faqItems.map((item) => {
-                                const Icon = item.icon;
-                                return (
-                                    <AccordionItem key={item.value} value={item.value}
-                                        className="px-4 first:rounded-t-xl last:rounded-b-xl last:border-b"
-                                        style={{ backgroundColor: "rgba(255,255,255,0.03)", borderColor: "rgba(190,40,20,0.2)" }}
+                        <Accordion type="single" collapsible className="w-full">
+                            {faqItems.map((item) => (
+                                <AccordionItem
+                                    key={item.value}
+                                    value={item.value}
+                                    className="border-b"
+                                    style={{ borderColor: "rgba(190,40,20,0.18)" }}
+                                >
+                                    <AccordionTrigger
+                                        className="py-5 text-left font-semibold hover:no-underline"
+                                        style={{ color: "#f0e8e0" }}
                                     >
-                                        <AccordionTrigger className="hover:no-underline">
-                                            <div className="flex items-center gap-3">
-                                                <div className="p-2.5 rounded-xl flex-shrink-0" style={{ backgroundColor: item.bg }}>
-                                                    <Icon size={20} style={{ color: item.color }} />
-                                                </div>
-                                                <div className="flex flex-col items-start text-left">
-                                                    <span style={{ color: "#f0e8e0" }}>{item.title}</span>
-                                                    <span className="text-sm" style={{ color: "#9a7c68" }}>{item.subtitle}</span>
-                                                </div>
-                                            </div>
-                                        </AccordionTrigger>
-                                        <AccordionContent className="ps-[3.75rem]" style={{ color: "#c0a898" }}>
-                                            {item.content}
-                                        </AccordionContent>
-                                    </AccordionItem>
-                                );
-                            })}
+                                        {item.title}
+                                    </AccordionTrigger>
+                                    <AccordionContent
+                                        className="pb-5 text-sm leading-relaxed whitespace-pre-line"
+                                        style={{ color: "#c0a898" }}
+                                    >
+                                        {item.content}
+                                    </AccordionContent>
+                                </AccordionItem>
+                            ))}
                         </Accordion>
                     </motion.div>
                 </motion.div>

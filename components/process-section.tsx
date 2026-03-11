@@ -53,13 +53,13 @@ export function ProcessSection() {
                             className="text-4xl sm:text-5xl font-bold tracking-tight"
                             style={{ color: "#f0e8e0" }}
                         >
-                            Drei Schritte.
+                            Drei einfache Schritte.
                             <br />
                             <span
                                 className="text-transparent bg-clip-text"
                                 style={{ backgroundImage: "linear-gradient(160deg, #f0e8e0 30%, #cc2d18 100%)" }}
                             >
-                                Kein Overhead.
+                                Kein Chaos.
                             </span>
                         </h2>
                     </motion.div>

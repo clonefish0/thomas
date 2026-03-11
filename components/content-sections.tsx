@@ -112,10 +112,10 @@ function SolutionSection() {
                     </motion.div>
                     <div style={{ overflow: "hidden" }}>
                         <motion.h2 variants={headlineReveal} className="text-4xl sm:text-5xl font-bold tracking-tight mb-6" style={{ color: "#f0e8e0" }}>
-                            Kein Copy-Paste.
+                            Individuell.
                             <br />
                             <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(160deg, #f0e8e0 30%, #cc2d18 100%)" }}>
-                                Kein Schema F.
+                                Nur für dich.
                             </span>
                         </motion.h2>
                     </div>
@@ -127,8 +127,8 @@ function SolutionSection() {
                     <motion.div variants={stagger} className="grid md:grid-cols-3 gap-6 text-left">
                         {[
                             { label: "Keine Pläne von der Stange", text: "Alles was du bekommst, wurde für dich erstellt. Deine Situation, deine Ziele, deine Grenzen." },
-                            { label: "Ich bin da – wirklich", text: "24/7 erreichbar. Wöchentlicher Check-In. Wenn du hängest, bist du nicht allein damit." },
-                            { label: "Der ganze Mensch zählt", text: "Training und Ernährung sind nur ein Teil. Schlaf, Stress, mentale Energie – ich sehe das große Bild." },
+                            { label: "Ich bin da – wirklich", text: "Ich bin fast immer erreichbar – wenns brennt noch schneller. Wöchentlicher Check-In. Du bist nicht allein damit." },
+                            { label: "Du als Mensch zählst", text: "Training und Ernährung sind nur ein Teil. Schlaf, Stress, mentale Energie – ich sehe das große Bild." },
                         ].map((item) => (
                             <motion.div key={item.label} variants={fadeUp} className="rounded-2xl p-6"
                                 style={{ background: "rgba(190,40,20,0.14)", border: "1px solid rgba(190,40,20,0.24)" }}
@@ -148,7 +148,7 @@ function SolutionSection() {
 const benefits = [
     { title: "Ein Plan für dein echtes Leben", text: "Kein Idealplan für ideale Umstände. Wir arbeiten mit dem, was du hast – Schichtdienst, Familie, Stress – und trotzdem kommen Ergebnisse." },
     { title: "Jemand der wirklich zuhört", text: "Nicht nur beim Check-In. Ich kenne deine Geschichte, deine Baustellen und was dich antreibt. Genau das macht den Unterschied." },
-    { title: "Ergebnisse, die bleiben", text: "Kein Jojo. Kein kurzfristiger Hype. Wir bauen etwas auf, das in deinem Alltag funktioniert – heute, nächstes Jahr und danach." },
+    { title: "Ergebnisse, die bleiben", text: "Wir bauen etwas auf, das wirklich zu deinem Leben passt. Nichts was nach vier Wochen wieder weg ist." },
 ];
 
 function BenefitsSection() {

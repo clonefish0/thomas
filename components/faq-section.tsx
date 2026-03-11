@@ -36,7 +36,7 @@ const faqItems = [
     {
         value: "anfaenger",
         title: "Kann ich auch als kompletter Anfänger starten?",
-        content: "Gerade als Anfänger macht professionelle Begleitung am meisten Sinn. Du lernst es von Anfang an richtig – keine schlechten Gewohnheiten, keine Verletzungen durch falsches Training, keine verlorene Zeit durch sinnlose Diäten. Ich nehme dich an die Hand, egal bei null du startest.",
+        content: "Gerade als Anfänger macht professionelle Begleitung am meisten Sinn. Du lernst es von Anfang an richtig – keine schlechten Gewohnheiten, keine Verletzungen durch falsches Training, keine verlorene Zeit durch sinnlose Diäten. Ich nehme dich an die Hand, egal wo bei null du startest.",
     },
     {
         value: "preise",

@@ -71,6 +71,28 @@ export function SiteHeader() {
                         {label}
                     </button>
                 ))}
+                <a
+                    href="https://kahunas.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-2 px-4 py-1.5 text-xs tracking-[0.12em] uppercase font-semibold rounded-lg transition-all duration-200"
+                    style={{
+                        color: "#f0e8e0",
+                        fontFamily: "var(--font-mono)",
+                        border: "1px solid rgba(190,40,20,0.45)",
+                        backgroundColor: "rgba(190,40,20,0.08)",
+                    }}
+                    onMouseEnter={e => {
+                        (e.currentTarget as HTMLAnchorElement).style.backgroundColor = "rgba(190,40,20,0.18)";
+                        (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(190,40,20,0.8)";
+                    }}
+                    onMouseLeave={e => {
+                        (e.currentTarget as HTMLAnchorElement).style.backgroundColor = "rgba(190,40,20,0.08)";
+                        (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(190,40,20,0.45)";
+                    }}
+                >
+                    Kunden ↗
+                </a>
             </nav>
 
             {/* Mobile burger */}
@@ -102,6 +124,16 @@ export function SiteHeader() {
                             {label}
                         </button>
                     ))}
+                    <a
+                        href="https://kahunas.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-3 text-left text-xs tracking-[0.15em] uppercase font-semibold"
+                        style={{ color: "#cc2d18", fontFamily: "var(--font-mono)" }}
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        Kunden ↗
+                    </a>
                 </div>
             )}
         </header>

@@ -96,6 +96,12 @@ const testimonials: Testimonial[] = [
         role: "Client",
         image: "/testimonials/Marcel.jpeg",
     },
+    {
+        quote: "Ich bin seit Oktober 2025 im Team CBTA und kann wirklich von Herzen sagen, dass es eine der besten Entscheidungen war, damit zu starten. Thomas überzeugt nicht nur mit seinem Fachwissen, sondern vor allem auch menschlich. Man merkt sofort, dass ihm die Menschen im Coaching wirklich wichtig sind und er sich für alle zu 100% einsetzt. Er hat immer ein offenes Ohr, nimmt sich Zeit für Fragen und unterstützt einen auch oder gerade dann, wenn es mal schwieriger wird. Was ich besonders an ihm schätze ist, dass egal mit welchem Thema oder welcher Frage man kommt, Thomas hilft einem IMMER weiter. Und wenn er mal etwas nicht sofort beantworten kann, bleibt er so lange dran und recherchiert, bis er eine Lösung findet. Dieses Engagement ist alles andere als selbstverständlich und heutzutage nur noch selten anzutreffen.",
+        name: "Jacqueline F.",
+        role: "Client",
+        image: "/testimonials/Jacky.jpeg",
+    },
 ];
 
 export function TestimonialsSection() {

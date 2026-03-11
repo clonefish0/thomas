@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { GridPattern } from "@/components/ui/grid-pattern";
 
 type Testimonial = {
@@ -92,8 +93,13 @@ const testimonials: Testimonial[] = [
 ];
 
 export function TestimonialsSection() {
+    const [focused, setFocused] = useState<number | null>(null);
+
     return (
-        <section className="relative w-full py-28 px-6">
+        <section
+            className="relative w-full py-28 px-6"
+            onClick={() => setFocused(null)}
+        >
             {/* Divider top */}
             <div
                 className="absolute top-0 left-0 right-0 h-px"
@@ -141,12 +147,31 @@ export function TestimonialsSection() {
                             whileInView={{ filter: "blur(0px)", translateY: 0, opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.08 * index + 0.1, duration: 0.7 }}
-                            className="relative grid grid-cols-[auto_1fr] gap-x-3 overflow-hidden p-5 rounded-2xl"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setFocused((prev) => (prev === index ? null : index));
+                            }}
+                            className="relative grid grid-cols-[auto_1fr] gap-x-3 overflow-hidden p-5 rounded-2xl cursor-pointer"
                             style={{
                                 background: "rgba(190,40,20,0.08)",
-                                border: "1px solid rgba(190,40,20,0.20)",
+                                border:
+                                    focused === index
+                                        ? "1px solid rgba(190,40,20,0.55)"
+                                        : "1px solid rgba(190,40,20,0.20)",
+                                transition: "border-color 0.25s ease",
                             }}
                         >
+                            {/* Dim overlay for non-focused cards */}
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                animate={{
+                                    opacity: focused !== null && focused !== index ? 1 : 0,
+                                }}
+                                transition={{ duration: 0.25 }}
+                                className="absolute inset-0 z-10 rounded-2xl pointer-events-none"
+                                style={{ background: "rgba(10,8,6,0.72)" }}
+                            />
+
                             {/* Decorative grid in card background */}
                             <div className="pointer-events-none absolute top-0 left-1/2 -mt-2 -ml-20 h-full w-full [mask-image:linear-gradient(white,transparent)]">
                                 <div className="absolute inset-0 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)]">

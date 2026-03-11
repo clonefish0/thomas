@@ -93,22 +93,23 @@ export function AboutSection() {
                         variants={fadeUp}
                         className="grid grid-cols-3 grid-rows-3 gap-3 h-[480px]"
                     >
-                        {/* Large photo top-left */}
+                        {/* Large photo top-left — Gesicht */}
                         <div className="col-span-2 row-span-2 relative overflow-hidden rounded-2xl">
                             <Image
-                                src="/Foto1.jpg"
-                                alt="Thomas Arndt"
+                                src="/Foto5.jpg"
+                                alt="Thomas Arndt – cbta Coach"
                                 fill
-                                className="object-cover"
+                                className="object-cover object-top"
                                 sizes="(max-width: 768px) 100vw, 400px"
+                                priority
                             />
                         </div>
 
                         {/* Small top-right */}
                         <div className="relative overflow-hidden rounded-xl">
                             <Image
-                                src="/Foto2.jpg"
-                                alt="Thomas Arndt"
+                                src="/Foto1.jpg"
+                                alt="Thomas Arndt Training"
                                 fill
                                 className="object-cover"
                                 sizes="150px"
@@ -118,8 +119,8 @@ export function AboutSection() {
                         {/* Small mid-right */}
                         <div className="relative overflow-hidden rounded-xl">
                             <Image
-                                src="/Foto3.jpg"
-                                alt="Thomas Arndt"
+                                src="/Foto2.jpg"
+                                alt="Thomas Arndt Training"
                                 fill
                                 className="object-cover"
                                 sizes="150px"
@@ -129,8 +130,8 @@ export function AboutSection() {
                         {/* Bottom row: 3 small */}
                         <div className="relative overflow-hidden rounded-xl">
                             <Image
-                                src="/Foto4.jpg"
-                                alt="Thomas Arndt"
+                                src="/Foto3.jpg"
+                                alt="Thomas Arndt Training"
                                 fill
                                 className="object-cover"
                                 sizes="150px"
@@ -138,8 +139,8 @@ export function AboutSection() {
                         </div>
                         <div className="relative overflow-hidden rounded-xl">
                             <Image
-                                src="/Foto5.jpg"
-                                alt="Thomas Arndt"
+                                src="/Foto4.jpg"
+                                alt="Thomas Arndt Training"
                                 fill
                                 className="object-cover"
                                 sizes="150px"

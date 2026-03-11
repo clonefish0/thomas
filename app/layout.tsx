@@ -19,12 +19,15 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Coaching Düsseldorf & Hilden | Ernährung & Training – Thomas Arndt",
+    default: "cbta – Coaching by Thomas Arndt | Ernährung & Training Düsseldorf",
     template: "%s | cbta – Coaching by Thomas Arndt",
   },
   description:
-    "Professionelles Coaching für Ernährung, Training und nachhaltige Veränderung in Düsseldorf & Hilden. Persönliche Betreuung, klare Ergebnisse. Jetzt kostenloses Erstgespräch sichern.",
+    "cbta – Coaching by Thomas Arndt. Persönliches Coaching für Ernährung, Training & nachhaltige Ergebnisse in Düsseldorf & Hilden. Kein Schema F. Kostenloses Erstgespräch sichern.",
   keywords: [
+    "cbta",
+    "cbta Coaching",
+    "cbta Thomas Arndt",
     "Coaching Düsseldorf",
     "Coaching Hilden",
     "Personal Trainer Düsseldorf",
@@ -33,9 +36,7 @@ export const metadata: Metadata = {
     "Online Coaching Deutschland",
     "Ernährung Training Coach",
     "Thomas Arndt Coach",
-    "cbta Coaching",
     "Abnehmen Coaching Düsseldorf",
-    "Lifestyle Coach Düsseldorf",
     "Muskelaufbau Coaching",
   ],
   authors: [{ name: "Thomas Arndt", url: siteUrl }],
@@ -45,24 +46,24 @@ export const metadata: Metadata = {
     locale: "de_DE",
     url: siteUrl,
     siteName: "cbta – Coaching by Thomas Arndt",
-    title: "Coaching Düsseldorf & Hilden | Ernährung & Training – Thomas Arndt",
+    title: "cbta – Coaching by Thomas Arndt | Ernährung & Training Düsseldorf",
     description:
-      "Professionelles Coaching für Ernährung, Training und nachhaltige Veränderung in Düsseldorf & Hilden. Jetzt kostenloses Erstgespräch sichern.",
+      "cbta – Persönliches Coaching für Ernährung, Training & nachhaltige Veränderung in Düsseldorf & Hilden. Kein Schema F. Jetzt kostenloses Erstgespräch sichern.",
     images: [
       {
-        url: "/Logo.png",
-        width: 800,
-        height: 800,
-        alt: "cbta – Coaching by Thomas Arndt",
+        url: "/Foto5.jpg",
+        width: 1080,
+        height: 1578,
+        alt: "Thomas Arndt – cbta Coach für Ernährung und Training",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Coaching Düsseldorf & Hilden | Thomas Arndt",
+    title: "cbta – Coaching by Thomas Arndt",
     description:
-      "Coaching für Ernährung, Training & nachhaltige Veränderung. Persönlich in Düsseldorf & Hilden oder online.",
-    images: ["/Logo.png"],
+      "Persönliches Coaching für Ernährung, Training & nachhaltige Veränderung. Kein Schema F. In Düsseldorf & Hilden oder online.",
+    images: ["/Foto5.jpg"],
   },
   robots: {
     index: true,
@@ -80,20 +81,22 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
+const jsonLdBusiness = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": siteUrl,
   name: "cbta – Coaching by Thomas Arndt",
+  alternateName: "cbta",
   description:
-    "Professionelles Coaching für Ernährung, Training und nachhaltige Veränderung in Düsseldorf & Hilden.",
+    "cbta ist das persönliche Coaching von Thomas Arndt: Ernährung, Training und nachhaltige Veränderung ohne Schema F – in Düsseldorf, Hilden und online.",
   url: siteUrl,
   logo: `${siteUrl}/Logo.png`,
-  image: `${siteUrl}/Logo.png`,
+  image: `${siteUrl}/Foto5.jpg`,
   founder: {
     "@type": "Person",
     name: "Thomas Arndt",
     jobTitle: "Coach für Ernährung und Training",
+    image: `${siteUrl}/Foto5.jpg`,
     sameAs: [
       "https://www.youtube.com/@ThomasArndt_cbta",
       "https://www.instagram.com/thomasarndt_cbta/",
@@ -123,9 +126,69 @@ const jsonLd = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ernährungscoaching" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Trainingscoaching" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Online Coaching" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Persönliches Coaching" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Persönliches Coaching Düsseldorf" } },
     ],
   },
+};
+
+const jsonLdPerson = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Thomas Arndt",
+  alternateName: "cbta",
+  jobTitle: "Fitness- und Ernährungscoach",
+  description: "Thomas Arndt ist Gründer von cbta – Coaching by Thomas Arndt. Seit 2013 hilft er Menschen mit individuellem Ernährungs- und Trainingscoaching in Düsseldorf, Hilden und online.",
+  url: siteUrl,
+  image: `${siteUrl}/Foto5.jpg`,
+  sameAs: [
+    "https://www.youtube.com/@ThomasArndt_cbta",
+    "https://www.instagram.com/thomasarndt_cbta/",
+    "https://open.spotify.com/show/4ZmKyh5I2lLhb1nUhRfCK0",
+  ],
+  worksFor: {
+    "@type": "Organization",
+    name: "cbta – Coaching by Thomas Arndt",
+    url: siteUrl,
+  },
+};
+
+const jsonLdFaq = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Was ist cbta?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "cbta steht für 'Coaching by Thomas Arndt'. Ich biete individuelles Coaching für Ernährung, Training und Lifestyle – kein Schema F, sondern Pläne, die zu deinem echten Leben passen.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Wie viel kostet das Coaching bei cbta?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Das Coaching bei cbta kostet: 1 Monat 250€, 3 Monate 200€ pro Monat, 12 Monate 150€ pro Monat. Alle Pakete beinhalten individuelle Pläne, wöchentliche Check-Ins und 24/7 Erreichbarkeit.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Bietet cbta Online Coaching an?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ja, cbta bietet vollständiges Online Coaching an. Das Coaching funktioniert deutschlandweit – alles läuft digital über eine App, mit wöchentlichen Check-Ins und direktem Kontakt zu Thomas Arndt.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Wo ist cbta ansässig?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "cbta ist in Hilden ansässig, betreut Klienten in Düsseldorf, Hilden und im gesamten deutschsprachigen Raum. Online Coaching ist überall möglich.",
+      },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -138,7 +201,15 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBusiness) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPerson) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
         />
       </head>
       <body

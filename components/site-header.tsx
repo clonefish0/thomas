@@ -8,8 +8,8 @@ const navLinks = [
     { label: "Über mich", href: "#ueber-mich" },
     { label: "Coaching", href: "#coaching" },
     { label: "Prozess", href: "#prozess" },
-    { label: "FAQ", href: "#faq" },
     { label: "Kunden", href: "#kunden" },
+    { label: "FAQ", href: "#faq" },
 ];
 
 function scrollTo(id: string) {

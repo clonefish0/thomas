@@ -72,7 +72,7 @@ export function SiteFooter() {
                     className="mt-10 pt-6 text-xs text-center footer-link"
                     style={{ borderTop: "1px solid rgba(190,40,20,0.18)" }}
                 >
-                    © 2025 Thomas Arndt · Heiligenstraße 44c, 40721 Hilden
+                    © 2026 Thomas Arndt · Heiligenstraße 44c, 40721 Hilden
                 </div>
             </div>
         </footer>

@@ -65,7 +65,7 @@ function ProblemSection() {
                     <motion.div variants={fadeUp}>
                         <SectionLabel>Das Problem</SectionLabel>
                     </motion.div>
-                    <div style={{ overflow: "hidden" }}>
+                    <div style={{ overflow: "hidden", paddingBottom: "0.12em" }}>
                         <motion.h2 variants={headlineReveal} className="text-4xl sm:text-5xl font-bold tracking-tight" style={{ color: "#f0e8e0" }}>
                             Nicht du warst das Problem.
                             <br />
@@ -110,7 +110,7 @@ function SolutionSection() {
                     <motion.div variants={fadeUp}>
                         <SectionLabel>Die Lösung</SectionLabel>
                     </motion.div>
-                    <div style={{ overflow: "hidden" }}>
+                    <div style={{ overflow: "hidden", paddingBottom: "0.12em" }}>
                         <motion.h2 variants={headlineReveal} className="text-4xl sm:text-5xl font-bold tracking-tight mb-6" style={{ color: "#f0e8e0" }}>
                             Individuell.
                             <br />

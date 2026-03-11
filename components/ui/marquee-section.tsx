@@ -21,7 +21,7 @@ const items = [
 function MarqueeRow({ reverse = false }: { reverse?: boolean }) {
     const doubled = [...items, ...items];
     return (
-        <div className="overflow-hidden">
+        <div style={{ overflowX: "clip", overflowY: "visible" }}>
             <div
                 className="flex gap-4 w-max"
                 style={{
@@ -67,7 +67,7 @@ export function MarqueeSection() {
                     to { transform: translateX(0); }
                 }
             `}</style>
-            <section className="relative py-10 overflow-hidden">
+            <section className="relative py-10" style={{ overflowX: "clip", overflowY: "visible" }}>
                 <div
                     className="absolute inset-0 pointer-events-none"
                     style={{

@@ -3,7 +3,6 @@ import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { FixedBackground } from "@/components/fixed-background";
 import { SiteHeader } from "@/components/site-header";
-import { CustomCursor } from "@/components/custom-cursor";
 
 const siteUrl = "https://cbta-coaching.de";
 
@@ -229,7 +228,6 @@ export default function RootLayout({
           aria-hidden="true"
           className="grain-overlay"
         />
-        <CustomCursor />
         <SiteHeader />
         {children}
       </body>

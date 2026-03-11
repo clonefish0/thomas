@@ -53,6 +53,12 @@ const testimonials: Testimonial[] = [
         role: "Client",
         image: "/testimonials/Sarah.jpeg",
     },
+    {
+        quote: "Eine der besten Entscheidungen, die ich getroffen habe. Lange selber versucht mich perfekt zu ernähren und zu trainieren – aber da steht man sich am Ende selbst im Weg. Bei Thomas konnte ich das alles abgeben. Jetzt mache ich mir keine Gedanken mehr, habe weniger Stress und meine Einheiten sind kürzer bei besserer Regeneration. Keine Copy-Paste Pläne, sondern alles individuell angepasst – ob Training oder Ernährung. Thomas steht einem immer mit Rat und Tat zur Seite, egal ob Schlaf oder andere Themen. Fundiertes Fachwissen weit über das Training hinaus. 💪",
+        name: "Markus G.",
+        role: "Client",
+        image: "/testimonials/Markus.jpeg",
+    },
 ];
 
 export function TestimonialsSection() {

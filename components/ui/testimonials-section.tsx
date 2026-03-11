@@ -47,6 +47,12 @@ const testimonials: Testimonial[] = [
         role: "Client",
         image: "/testimonials/Mel.jpeg",
     },
+    {
+        quote: "Ich bin seit Juli 2025 bei Thomas im Coaching – zweifache Mama, damals mehr als unzufrieden mit meinem Körper. Mittlerweile habe ich fast 18 Kilo abgenommen und Muskeln aufgebaut, Kraft, Verdauung, Schlaf und Ernährung dauerhaft verbessert. Thomas ist nicht nur fachlich, sondern auch menschlich außergewöhnlich: der empathischste und verständnisvollste Mensch, den ich kenne. Ihm geht es nie ums Geld – er möchte das Leben seiner Klienten langfristig verbessern. Danke für alles was wir bereits geschafft haben und für alles was noch kommt! 🫶🏻",
+        name: "Sarah G.",
+        role: "Client",
+        image: "/testimonials/Sarah.jpeg",
+    },
 ];
 
 export function TestimonialsSection() {

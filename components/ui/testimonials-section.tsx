@@ -102,6 +102,12 @@ const testimonials: Testimonial[] = [
         role: "Client",
         image: "/testimonials/Jacky.jpeg",
     },
+    {
+        quote: "Ich bin zu Thomas ins Coaching gekommen, weil ich mein Training auf ein neues Level bringen und meine Ziele wirklich ernsthaft erreichen wollte. Genau dabei unterstützt er mich extrem gut. Sein Coaching ist sehr individuell aufgebaut. Egal ob es um Training, Ernährung oder andere Themen rund um den Fortschritt geht – Thomas nimmt sich Zeit, alles genau anzuschauen und passende Lösungen zu finden. Besonders schätze ich, dass er jederzeit für Fragen erreichbar ist und seine Antworten nicht nur gibt, sondern auch verständlich erklärt. Die Trainingsplanung ist durchdacht und klar strukturiert, sodass man schnell Fortschritte sieht und motiviert bleibt, weiter an seinen Zielen zu arbeiten. Man merkt einfach, dass Thomas viel Erfahrung hat und wirklich möchte, dass seine Klienten erfolgreich werden.",
+        name: "Finn G.",
+        role: "Client",
+        image: "/testimonials/Finn.jpeg",
+    },
 ];
 
 export function TestimonialsSection() {

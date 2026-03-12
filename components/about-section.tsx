@@ -49,7 +49,7 @@ export function AboutSection() {
                                 Über mich
                             </p>
                         </motion.div>
-                        <div style={{ overflow: "hidden" }}>
+                        <div style={{ overflow: "hidden", paddingBottom: "0.15em" }}>
                             <motion.h2
                                 variants={headlineReveal}
                                 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6"

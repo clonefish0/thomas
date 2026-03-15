@@ -108,6 +108,12 @@ const testimonials: Testimonial[] = [
         role: "Client",
         image: "/testimonials/Finn.jpeg",
     },
+    {
+        quote: "Thomas begleitet mich nun schon seit einigen Jahren auf meinem sportlichen Weg. Als ich ihn kennengelernt habe, habe ich selbst noch viel mit Training experimentiert. Damals dachte ich, es ginge vor allem darum, sich abzuhungern und möglichst viel Sport zu machen, um gut auszusehen und gesund zu sein.\n\nSchon in der ersten Zeit hat Thomas mir geholfen, diesen Irrglauben loszulassen und Training ganz anders zu verstehen. Durch seine Unterstützung habe ich gelernt, auf meinen Körper zu hören und nachhaltiger mit meiner Gesundheit umzugehen.\n\nHeute komme ich im Alltag gut alleine zurecht, aber ich greife immer wieder gerne auf Thomas zurück, wenn ich Fragen zu meiner Gesundheit oder zu meinen sportlichen Zielen habe. Für mich ist er wirklich ein Wegbegleiter geworden – und ich bin sehr dankbar, ihn auf diesem Weg an meiner Seite zu haben.",
+        name: "Sven S.",
+        role: "Client",
+        image: "/testimonials/Sven.jpeg",
+    },
 ];
 
 export function TestimonialsSection() {

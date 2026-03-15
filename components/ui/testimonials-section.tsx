@@ -114,6 +114,12 @@ const testimonials: Testimonial[] = [
         role: "Client",
         image: "/testimonials/Sven.jpeg",
     },
+    {
+        quote: "Gym war für mich nie etwas an dem ich so richtig Freude gefunden habe. Nachdem ich neu mit Football angefangen habe und in der ersten Saison gym nicht wirklich ernst genommen habe, mir aber jeder gesagt hat das die beiden Dinge hand in hand gehen, wollte ich meinen Plan strukturierter angehen und mir jmd zur Seite holen der mich accountable hält und pushen kann. Thomas hat diesen spark nicht nur erfüllt sondern übertrifft ihn sogar. Auch wenn Gym mal nicht bockt merk ich, wie er mich in meinem Sport als sekundärer Impuls weiter pushed und verbessert. Jemanden gefunden zu haben der meine Probleme und Pläne ernst nimmt und das Training entsprechend anpasst ist absolut gold wert. Ich mache körperliche Fortschritte die ich mit Anläufen ohne Coach nie erreicht habe und merke wie meine Fähigkeiten auf und neben dem Footballfeld ständig wachsen. Aus Leistungssportsicht ist Thomas neben dem Feld die beste Unterstützung die ich mir wünschen hätte können.",
+        name: "Mario H.",
+        role: "Client",
+        image: "/testimonials/Mario.jpeg",
+    },
 ];
 
 export function TestimonialsSection() {
